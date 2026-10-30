@@ -1,5 +1,9 @@
 # GitHub release delivery / 30 October 2026
 
+Historical private-delivery record. The current clean public submission and
+working Demo are documented in [Public submission](PUBLIC_SUBMISSION_20261030.md)
+and the root README. No old private Release attachment was copied here.
+
 The release candidate is a private, versioned application delivery. Its tag pins
 the exact source commit; the Release assets contain the self-contained interactive
 test build, source archive, verified 123-second movie, subtitles, review bundle

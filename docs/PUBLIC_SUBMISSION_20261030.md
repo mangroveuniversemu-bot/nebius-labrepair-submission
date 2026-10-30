@@ -20,6 +20,19 @@ Only public GitHub Pages static hosting is authorized. No paid runner, custom
 domain, new cloud compute, account plan or model request is part of publication.
 Public video upload and final Devpost submission are separate remaining steps.
 
+## Observed public access
+
+- Repo: https://github.com/mangroveuniversemu-bot/nebius-labrepair-submission
+- Demo: https://mangroveuniversemu-bot.github.io/nebius-labrepair-submission/
+- GitHub Pages: `gh-pages` root, HTTPS enforced, build `ae56a1d` completed.
+- Six unauthenticated HTTP asset requests returned 200 and exact reviewed hashes.
+- Desktop browser: declared repair PASS (4/4), same-total control REJECTED (0/4),
+  incomplete case REVIEW (unknown total), original claim NOT REPRODUCED throughout.
+- The first button focused the verdict and scrolled to results. A real
+  3,615-byte review download included the selected hold intent and source bindings.
+
+The clean public snapshot reran 61 offline product/mock/budget checks and 18
+browser-engine/DOM checks, all passing. No new provider/Sandbox call was made.
+This does not claim mobile, screen-reader or direct `file://` browser testing.
 Older dated private-delivery documents are preserved as engineering history.
-The root README will carry the observed public Demo URL after successful Pages
-deployment and browser checks. A generated build is not evidence of deployment.
+Public YouTube upload and final Devpost submission remain pending.

@@ -4,7 +4,8 @@ import json
 from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = ROOT / 'evidence/judge_release_20261028.json'
+PUBLIC_MANIFEST = ROOT / 'evidence/public_release_20261030.json'
+MANIFEST = PUBLIC_MANIFEST if PUBLIC_MANIFEST.is_file() else ROOT / 'evidence/judge_release_20261028.json'
 
 
 def file_digest(name):

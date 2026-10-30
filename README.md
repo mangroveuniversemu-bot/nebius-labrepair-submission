@@ -14,8 +14,16 @@ This is the clean, MIT-licensed public submission snapshot. Previous Git/PR
 history and old private Release bundles are not included. The separately retained
 development repository stays private.
 
-The public GitHub Pages endpoint is being activated. Until its deployment is
-verified, use the portable build below; publication alone does not make a demo live.
+**[Open the interactive Demo](https://mangroveuniversemu-bot.github.io/nebius-labrepair-submission/)**
+
+No login, API key, installation or model charge is needed. Click **Check the
+wrong-pair repair**, compare the declared repair, then try missing evidence.
+Download a source-bound review. These three cases run entirely in your browser.
+
+The public HTTPS build was verified on 30 October: all six assets matched the
+reviewed hashes, all three cases behaved correctly, the first button revealed
+its result, and an actual review download succeeded. The saved cloud record is
+a separate historical execution, not a new model call by this page.
 
 The [portable browser review](judge-site/README.md) is the shortest path: open
 its built `index.html`, select the wrong-pair repair, and check the evidence.
@@ -157,7 +165,8 @@ snapshot. The original private development repository, its PR history and old
 Release assets are not published here. Earlier dated private-release documents
 are historical records, not the current access status.
 
-Public video upload and confirmed Devpost submission remain pending.
+The public Demo is live on GitHub Pages. The original development repo stays
+private. Public YouTube upload and confirmed Devpost submission remain pending.
 See [submission preparation](docs/SUBMISSION_DRAFT_20261026.md).
 
 Automatic provider dispatch stays disabled. Existing saved runs do not establish

@@ -1,0 +1,59 @@
+{
+  "schema": "LABREPAIR_PUBLIC_HTTP_READBACK_V1",
+  "observed_at_utc": "2026-10-30T09:35:39.674725+00:00",
+  "url": "https://mangroveuniversemu-bot.github.io/nebius-labrepair-submission/",
+  "status": "PASS",
+  "authentication_sent": false,
+  "cookies_sent": false,
+  "files": [
+    {
+      "name": "app.js",
+      "status": 200,
+      "bytes": 8354,
+      "sha256": "86d8926014c98610812f172ce5cdb94995bc469191227de639f18a42244a0055",
+      "matches": true,
+      "final_url": "https://mangroveuniversemu-bot.github.io/nebius-labrepair-submission/app.js"
+    },
+    {
+      "name": "data.js",
+      "status": 200,
+      "bytes": 5844,
+      "sha256": "b9599fee32209384a816e26637fe89200ebb5422bbe6ed0bf7a8c3a8a822faaf",
+      "matches": true,
+      "final_url": "https://mangroveuniversemu-bot.github.io/nebius-labrepair-submission/data.js"
+    },
+    {
+      "name": "engine.js",
+      "status": 200,
+      "bytes": 8116,
+      "sha256": "de712944e6600280a6d29b2e832e941e21a228132feed45085ae907a71cfda7d",
+      "matches": true,
+      "final_url": "https://mangroveuniversemu-bot.github.io/nebius-labrepair-submission/engine.js"
+    },
+    {
+      "name": "index.html",
+      "status": 200,
+      "bytes": 40010,
+      "sha256": "ce80c16ba62ca1da8111b414202d5303d6046af2c33510e726a3209e7b596549",
+      "matches": true,
+      "final_url": "https://mangroveuniversemu-bot.github.io/nebius-labrepair-submission/index.html"
+    },
+    {
+      "name": "integrity.js",
+      "status": 200,
+      "bytes": 713,
+      "sha256": "f6a1c67e8e264e9f5b5559c98b89798e3e894cbc10817813a20be4d185610391",
+      "matches": true,
+      "final_url": "https://mangroveuniversemu-bot.github.io/nebius-labrepair-submission/integrity.js"
+    },
+    {
+      "name": "style.css",
+      "status": 200,
+      "bytes": 8532,
+      "sha256": "46b10a9eee88113b070465b2803bd069959737eba33057fac2f7e7a0aa259a70",
+      "matches": true,
+      "final_url": "https://mangroveuniversemu-bot.github.io/nebius-labrepair-submission/style.css"
+    }
+  ],
+  "provider_calls": 0
+}

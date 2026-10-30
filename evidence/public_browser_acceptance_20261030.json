@@ -1,0 +1,42 @@
+{
+  "schema": "LABREPAIR_PUBLIC_BROWSER_ACCEPTANCE_V1",
+  "observed_at_utc": "2026-10-30T09:37:59.704Z",
+  "url": "https://mangroveuniversemu-bot.github.io/nebius-labrepair-submission/",
+  "status": "PASS",
+  "browser": "Actual in-app desktop browser",
+  "wrong_pair": {
+    "verdict": "Repair rejected",
+    "total": "2.60",
+    "pairs_match": "0 of 4",
+    "observed_scroll_y": 677.293212890625,
+    "observed_focus_id": "verdict"
+  },
+  "other_cases": [
+    {
+      "case": "channel-fix",
+      "claim": "NOT REPRODUCED",
+      "detail": "4 of 4 pair values match",
+      "total": "2.60",
+      "verdict": "Repair matches"
+    },
+    {
+      "case": "missing-pair",
+      "claim": "NOT REPRODUCED",
+      "detail": "Incomplete four-pair evidence",
+      "total": "—",
+      "verdict": "More evidence needed"
+    }
+  ],
+  "download": {
+    "bytes": 3615,
+    "sha256": "d69f93da81ebab16d2f6e56ea3e66800be8c64f351f85c6862fd326c748d7b14",
+    "schema": "LABREPAIR_BROWSER_EXPORT_V1",
+    "review_receipt_sha256": "c10b563970962938abd71e1abf776cbcbf48015aebdc9650337d4262eff7785f",
+    "intent": "hold-for-evidence",
+    "source_payload_sha256": "991f570692eb8ef4dbe06b62318d5d3ac93318ccd44e9e540236568020413662"
+  },
+  "provider_calls": 0,
+  "candidate_execution": "NOT_RUN",
+  "mobile_and_screen_reader": "NOT_RUN",
+  "local_file_url": "NOT_RUN"
+}

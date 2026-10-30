@@ -1,4 +1,10 @@
-# Portable judge demo
+# Portable and hosted judge demo
+
+**[Open the public HTTPS Demo](https://mangroveuniversemu-bot.github.io/nebius-labrepair-submission/).**
+No sign-in or key is required. Actual desktop-browser checks on 30 October
+verified all three cases, primary-button result scrolling/focus, and a downloaded
+3,615-byte source-bound review. Six anonymous HTTP asset hashes matched the
+reviewed build. Direct local-file testing remains a separate unperformed check.
 
 **`dist/index.html`** is designed to open directly in a current browser: the page
 is self-contained and needs no server, Python installation, account or API key.
@@ -6,7 +12,8 @@ It makes no fetch or provider request. Direct local-file browser validation is
 **NOT_RUN**: the available browser tool rejects `file://` URLs. That restriction
 has not been bypassed. The actual checks completed are the offline Node engine,
 standalone-script syntax and exact inline CSP hash checks described below.
-The repository and build remain private; generating this export publishes nothing.
+The clean submission repository and hosted build are public. Generating an
+export alone does not publish it; GitHub Pages is configured separately.
 
 Start with **Check the wrong-pair repair**. The browser recomputes correlations
 and the CHSH total from fixed synthetic counts using exact rational arithmetic:
@@ -59,14 +66,15 @@ receipts and cross-case intents; and verify the standalone CSP/build boundaries.
 for inspection and tests, but only `index.html` is needed to open the demo.
 
 The self-contained file requires WebCrypto. If unavailable, source checks fail
-closed and calculation/download remain disabled. Direct local-file browser
-behavior, download behavior and final layout remain pending manual validation.
+closed and calculation/download remain disabled. Direct local-file behavior
+remains untested; hosted HTTPS calculation and download were observed to work.
 The separate offline DOM-contract suite verifies result-focus/scroll ordering,
 reduced-motion behavior, busy gating and fail-closed errors. It does not measure
 actual browser pixels, speech output or download dialogs.
 Hosting access control is a separate decision; an unlisted URL alone is not a
 private deployment.
 
-No changes to `review-app/`, `labrepair/serve.py`, provider adapters, original
-EvidencePilot repositories, external sharing or deployment are part of this
-demo export.
+The original loopback server, provider adapters and EvidencePilot repositories
+are unchanged by the static export. The hosted page has no live provider key
+or dispatch path. Its publication is separately recorded in
+`docs/PUBLIC_SUBMISSION_20261030.md`.
