@@ -2,6 +2,9 @@
 
 **Two patches. Same total. One is wrong.**
 
+> **Windows:** run `python scripts/verify_poc.py`. The full legacy suite requires
+> the reviewed Linux environment.
+
 LabRepair checks whether a repaired analysis agrees with the evidence behind its
 headline number. Quantum research software is the first demonstration: a plausible
 patch can reproduce the score while every registered correlation is wrong.
