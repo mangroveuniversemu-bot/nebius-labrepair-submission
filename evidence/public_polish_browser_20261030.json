@@ -1,0 +1,39 @@
+{
+  "schema": "LABREPAIR_PUBLIC_POLISH_BROWSER_V1",
+  "observed_at_utc": "2026-10-30T10:13:14.357Z",
+  "status": "PASS",
+  "url": "https://mangroveuniversemu-bot.github.io/nebius-labrepair-submission/",
+  "pages_commit": "afd6592efea63bc6053378ddd06ff83f48bb4dd0",
+  "source_commit": "e3c86f8aa41525c1b31cb9b54ef7bb0a04abd407",
+  "cases": [
+    {
+      "case": "missing-pair",
+      "claim": "NOT REPRODUCED",
+      "detail": "3 known pair values · fourth pair unknown",
+      "focused": "verdict",
+      "rows": "A0B0\t0.70\t0.70\tMATCH\nA0B1\t0.65\t0.65\tMATCH\nA1B0\t0.75\t0.75\tMATCH\nA1B1\t-0.50\tUNKNOWN\tUNKNOWN",
+      "scrollY": 908.8721923828124,
+      "total": "—",
+      "verdict": "More evidence needed"
+    },
+    {
+      "case": "channel-fix",
+      "claim": "NOT REPRODUCED",
+      "detail": "4 of 4 pair values match",
+      "rows": "A0B0\t0.70\t0.70\tMATCH\nA0B1\t0.65\t0.65\tMATCH\nA1B0\t0.75\t0.75\tMATCH\nA1B1\t-0.50\t-0.50\tMATCH",
+      "total": "2.60",
+      "verdict": "Repair matches"
+    },
+    {
+      "case": "same-total",
+      "claim": "NOT REPRODUCED",
+      "detail": "0 of 4 pair values match",
+      "rows": "A0B0\t0.70\t0.80\tDIFF\nA0B1\t0.65\t0.75\tDIFF\nA1B0\t0.75\t0.65\tDIFF\nA1B1\t-0.50\t-0.40\tDIFF",
+      "total": "2.60",
+      "verdict": "Repair rejected"
+    }
+  ],
+  "console_errors": 0,
+  "new_provider_calls": 0,
+  "current_revision_download": "Not repeated; download handler unchanged; partial-receipt binding verified by current engine tests"
+}

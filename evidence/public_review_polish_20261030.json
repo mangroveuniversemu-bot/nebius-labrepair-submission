@@ -47,12 +47,14 @@
   },
   "new_provider_calls": 0,
   "paid_resources_created": false,
-  "hosted_revision_browser_check": "PENDING_NEW_PAGES_DEPLOYMENT",
+  "hosted_revision_browser_check": "PASS",
   "current_film_sha256": "df520bcf87b50d80e34805783462f030f18d386a1009ed4c1696609267e3b887",
   "source_sha256": {
     "judge-site/src/engine.js": "2872f95ce570153801c972b9a9d11fc973f09ced1f31cb92011cddc8366ceb85",
     "judge-site/src/app.js": "d3e56b74f513c18349301c3505cb3058dfded9354a5f5fa1dff67b6acb80f947",
     "judge-site/tests/engine.test.mjs": "95b50797af2d8454c2dd2ade52edf4340d6b8bb1423aefdb3848c61980244bd8",
     "judge-site/tests/visibility.test.mjs": "fd23bf22f4e468602d8bda4f0eedbd013acf9437232957d34ddc643b436f4cf9"
-  }
+  },
+  "hosted_verification_at_utc": "2026-10-30T10:13:14.357Z",
+  "pages_commit": "afd6592efea63bc6053378ddd06ff83f48bb4dd0"
 }

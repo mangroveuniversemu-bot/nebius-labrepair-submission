@@ -60,6 +60,11 @@ The public browser provides **exactly three fixed interactive cases**:
 | Same-total, wrong-pair control | 2.60 | 0/4 | Repair rejected |
 | Missing pair | unknown | Incomplete | REVIEW |
 
+For the missing-pair case, the table preserves the three available candidate
+values (0.70, 0.65, 0.75) and marks only the fourth as UNKNOWN. The complete
+candidate vector and total remain unknown; partial evidence cannot approve a
+complete result.
+
 The original **3.40 claim remains NOT_REPRODUCED in every case**. Browser
 calculation is local, needs no key/account, sends no inference request and does
 not execute candidate Python. The incomplete-evidence sample is a curated browser

@@ -36,3 +36,19 @@ browser-engine/DOM checks, all passing. No new provider/Sandbox call was made.
 This does not claim mobile, screen-reader or direct `file://` browser testing.
 Older dated private-delivery documents are preserved as engineering history.
 Public YouTube upload and final Devpost submission remain pending.
+
+## Reviewer clarity update
+
+The hosted missing-pair case now retains its three available candidate values
+(0.70, 0.65, 0.75), with UNKNOWN only for the fourth pair. Its total stays unknown
+and its verdict stays REVIEW. The current 18 engine/DOM checks cover partial
+evidence binding and preserve the original A/B receipts. Actual HTTPS browser
+acceptance and six served asset hashes are recorded in
+`evidence/public_polish_browser_20261030.json` and
+`evidence/public_polish_http_20261030.json`.
+
+The root README prominently directs Windows users to `scripts/verify_poc.py`;
+the complete legacy suite remains a reviewed-Linux verification path. The current
+123-second film, public ending, decoded frames and portable renderer are indexed
+in `media/demo-public-20261030/README.md`. The older private-ending renderer is
+explicitly archival. No new inference, TTS or paid infrastructure was required.
