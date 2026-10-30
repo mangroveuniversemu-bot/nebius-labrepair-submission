@@ -1,22 +1,22 @@
 {
   "schema": "LABREPAIR_PAGES_PACKAGE_V1",
-  "source_commit": "9c2187165e61247fe99b687e5911216aa5c88400",
+  "source_commit": "e3c86f8aa41525c1b31cb9b54ef7bb0a04abd407",
   "files": {
     "app.js": {
-      "bytes": 8354,
-      "sha256": "86d8926014c98610812f172ce5cdb94995bc469191227de639f18a42244a0055"
+      "bytes": 8531,
+      "sha256": "d3e56b74f513c18349301c3505cb3058dfded9354a5f5fa1dff67b6acb80f947"
     },
     "data.js": {
       "bytes": 5844,
       "sha256": "b9599fee32209384a816e26637fe89200ebb5422bbe6ed0bf7a8c3a8a822faaf"
     },
     "engine.js": {
-      "bytes": 8116,
-      "sha256": "de712944e6600280a6d29b2e832e941e21a228132feed45085ae907a71cfda7d"
+      "bytes": 8497,
+      "sha256": "2872f95ce570153801c972b9a9d11fc973f09ced1f31cb92011cddc8366ceb85"
     },
     "index.html": {
-      "bytes": 40010,
-      "sha256": "ce80c16ba62ca1da8111b414202d5303d6046af2c33510e726a3209e7b596549"
+      "bytes": 40568,
+      "sha256": "fa248f6ef17d9f9c38f05c7cc8bf046af5136903f32379f82a1ee00f9d66183e"
     },
     "integrity.js": {
       "bytes": 713,
