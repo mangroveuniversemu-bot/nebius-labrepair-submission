@@ -13,7 +13,7 @@ single-pass workflow. No autonomous repair loop or scientific discovery is claim
 - [Public MIT-licensed submission repository](https://github.com/mangroveuniversemu-bot/nebius-labrepair-submission)
 - [Public key-free interactive Demo](https://mangroveuniversemu-bot.github.io/nebius-labrepair-submission/)
 - [Selected public film and canonical media index](../media/demo-public-20261030/README.md)
-- Public YouTube URL: **NOT_UPLOADED**.
+- Public YouTube URL: https://www.youtube.com/watch?v=ZTwxr5o-MIM — **PUBLIC**, playback verified.
 - Event registration: **REGISTER_NOT_JOINED**. The signed-in account's My projects
   screen requested event registration. Its form is open but not submitted.
   Owner survey responses and eligibility/rules/terms confirmation remain pending.
@@ -179,11 +179,12 @@ latest portable result-scrolling fix. The old
 `media/demo-20261030-live-review/render_live_review.py` is an archived predecessor
 renderer, not the selected-public-film entry point.
 
-Remaining actions are event registration, public YouTube upload/watch-URL
-verification and Devpost entry submission. Open registration/upload dialogs are
-not completed actions. The YouTube channel is signed in, but no video has been
-sent. Required owner answers and binding rules/terms confirmations are pending;
-this draft does not supply them.
+The YouTube film is published publicly on Mangrove-Universe and playback was
+observed. Its English SRT was imported, and YouTube's upload copyright check
+reported no issues. Remaining actions are event registration and Devpost entry
+preparation/submission. The event requires registration before opening its
+project form. Owner survey answers and binding event rules/terms confirmation
+are pending; this draft does not supply them.
 
 The [official rules](https://nebiusglobalaihackathon.devpost.com/rules) were checked
 on 30 October: deadline **30 October 2026, 10:00 PDT / 31 October 2026, 01:00

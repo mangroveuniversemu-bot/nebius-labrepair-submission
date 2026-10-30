@@ -11,13 +11,17 @@ not the ending of the current movie.
 - SHA-256: **`df520bcf87b50d80e34805783462f030f18d386a1009ed4c1696609267e3b887`**.
 - [Interactive public judge demo](https://mangroveuniversemu-bot.github.io/nebius-labrepair-submission/)
 - [Public source repository](https://github.com/mangroveuniversemu-bot/nebius-labrepair-submission)
+- [Public YouTube film](https://www.youtube.com/watch?v=ZTwxr5o-MIM): published on
+  Mangrove-Universe; playback observed, upload copyright check reported no issues.
 - Owner's existing [Drive preview](https://drive.google.com/file/d/1G4mSo6diaacyMf_W0y93G1jd0uTKhhRk/view):
   **private access**, not the public YouTube submission link.
 
 The MP4 is a delivery artifact, not embedded in this source folder. The owner
 workspace's current delivery is `outputs/nebius-publication-20261030/video/`.
-The upload workflow must select the filename and digest above. Public YouTube
-upload and Devpost submission are **not established by this directory**.
+The uploaded source matched the filename and digest above. The separate
+`evidence/youtube_publication_20261030.json` records publication/playback. Devpost
+registration and final submission are still pending; publication of this film
+does not submit a hackathon entry.
 
 ## Inspect the actual ending
 

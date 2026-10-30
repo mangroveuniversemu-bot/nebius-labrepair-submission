@@ -2,8 +2,8 @@
   "schema": "LABREPAIR_CURRENT_PUBLIC_FILM_SOURCE_INDEX_V1",
   "files": {
     "CURRENT_FILM.json": {
-      "bytes": 1403,
-      "sha256": "c3aa0fbba8e7ee9770976cdd7b0f452a897e177361845f37bf5053793b6f555b"
+      "bytes": 1498,
+      "sha256": "c73fa7e72ba3492ecdb73d7546be54c252cd7d3c0c889477f050dc5280f5db92"
     },
     "current_movie_readback.json": {
       "bytes": 1182,
@@ -38,8 +38,8 @@
       "sha256": "715124c80655e4d07300c9cc9c4664e893b4e3a1469f0a0bad1c386bee11939d"
     },
     "README.md": {
-      "bytes": 4868,
-      "sha256": "162563d57872a9d4224e088dd42f8e20ab93521cf3089950712deb634db76c51"
+      "bytes": 5367,
+      "sha256": "17f20d8c7dc67b92f1241688a332fbe52b7c8235939dbb153c336d1328af34a3"
     },
     "render_public_endcard.py": {
       "bytes": 11221,

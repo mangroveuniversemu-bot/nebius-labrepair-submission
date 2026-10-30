@@ -35,7 +35,9 @@ The clean public snapshot reran 61 offline product/mock/budget checks and 18
 browser-engine/DOM checks, all passing. No new provider/Sandbox call was made.
 This does not claim mobile, screen-reader or direct `file://` browser testing.
 Older dated private-delivery documents are preserved as engineering history.
-Public YouTube upload and final Devpost submission remain pending.
+The [public YouTube film](https://www.youtube.com/watch?v=ZTwxr5o-MIM) was published
+and playback verified. Devpost event registration and final submission remain
+pending owner confirmation.
 
 ## Reviewer clarity update
 

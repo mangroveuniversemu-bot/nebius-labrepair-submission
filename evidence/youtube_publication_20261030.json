@@ -1,0 +1,24 @@
+{
+  "schema": "LABREPAIR_YOUTUBE_PUBLICATION_V1",
+  "observed_published_at_utc": "2026-10-30T15:25:14.142Z",
+  "url": "https://www.youtube.com/watch?v=ZTwxr5o-MIM",
+  "channel": "Mangrove-Universe",
+  "title": "LabRepair | Two patches. Same total. One is wrong. | Nebius x NVIDIA",
+  "visibility": "PUBLIC",
+  "confirmation": "YouTube UI: \u5f71\u7247\u5df2\u767c\u5e03",
+  "source_movie_sha256": "df520bcf87b50d80e34805783462f030f18d386a1009ed4c1696609267e3b887",
+  "source_movie_bytes": 12468647,
+  "playback": {
+    "current_time": 24.820695,
+    "duration": 123.021,
+    "paused": false,
+    "ready_state": 4
+  },
+  "copyright_check": "COMPLETE_NO_ISSUES",
+  "captions": "English SRT saved in Studio; burned-in captions also present",
+  "ai_disclosure": true,
+  "paid_promotion": false,
+  "new_paid_resources": false,
+  "devpost_registration": "Pending owner survey/rules confirmation",
+  "devpost_submission": "NOT_SUBMITTED"
+}

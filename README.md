@@ -19,6 +19,8 @@ development repository stays private.
 
 **[Open the interactive Demo](https://mangroveuniversemu-bot.github.io/nebius-labrepair-submission/)**
 
+**[Watch the public YouTube demo](https://www.youtube.com/watch?v=ZTwxr5o-MIM)**
+
 No login, API key, installation or model charge is needed. Click **Check the
 wrong-pair repair**, compare the declared repair, then try missing evidence.
 Download a source-bound review. These three cases run entirely in your browser.
@@ -203,10 +205,10 @@ identifies the current artifact; `media/demo-20261030-live-review/render_live_re
 is an archived predecessor renderer.
 
 The current Devpost account is **REGISTER_NOT_JOINED**: the event registration
-form was opened but not submitted. Public YouTube upload is **NOT_UPLOADED**, and
-Devpost entry is **NOT_SUBMITTED**. An open upload/registration dialog is not a
-completed action. Owner survey responses and action-time rules/terms confirmation
-remain pending.
+form was opened but not submitted. The [YouTube film](https://www.youtube.com/watch?v=ZTwxr5o-MIM)
+is **PUBLIC**, with playback observed after publication and no copyright issue
+reported by YouTube's upload check. Devpost entry is **NOT_SUBMITTED**. Owner
+survey responses and event rules/terms confirmation remain pending.
 See [submission preparation](docs/SUBMISSION_DRAFT_20261026.md).
 
 Automatic provider dispatch stays disabled. Existing saved runs do not establish

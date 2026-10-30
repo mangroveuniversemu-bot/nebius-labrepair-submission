@@ -1,16 +1,16 @@
 {
   "schema": "LABREPAIR_JUDGE_RELEASE_V1",
-  "observed_at_utc": "2026-10-30T10:15:39.805817+00:00",
-  "source_parent_commit": "5747ccef539cb6dc86ea5ca9d31070f73772025c",
+  "observed_at_utc": "2026-10-30T15:30:26.574134+00:00",
+  "source_parent_commit": "1d94f0ce920375f328287d453ae3ab8b49d766be",
   "source_branch": "main",
   "hash_mode": "UTF8_LF_WITHOUT_BOM",
   "historical_manifest_preserved_sha256": "c21ff258ef9a7025d1ba775b1f86577136ac5b8fa59a37a2d84df968f52d3e41",
-  "source_tree_sha256": "6c7ec64519b00386f5991cf0c8b62c15a87b94f762d2b80340d32ba01e19e714",
+  "source_tree_sha256": "41bd4dc77e3afe947364f22ad9e84b1e0769e1ece4d3332940bd2a204fd564b0",
   "files": {
     ".env.example": "d5f2ce70e8bb1bfbd32ccaea1f55806a5b99290932d7d32ce10a7ba3fd7c8092",
     ".gitattributes": "0234146a810bd16378eaf66fe0cbea0963d45e1c73873f37eb53e2d525f6c358",
     ".gitignore": "0cbd61617e000487b0abf797825c434ec32b83617cc668bae01fd235f12e1f5f",
-    "README.md": "c923790e1b8fb874331a2ad21f8802db58ea9051398157263e6602966423eedf",
+    "README.md": "50a8b4ed810c93e363f0b11388a549b254256bb2eee3e3409a08aab630023fa6",
     "docs/ARCHIVED_VALIDATION.md": "dcd61525da48b0dc8508013be9465bbe5ba47a11dffd010b4120106523834f36",
     "docs/CINEMATIC_REDESIGN_20261030.md": "932291e7498875580fc6a6cb43a2259df456ac0ccf18ffb113946cee1051e682",
     "docs/DAILY_LIMITS_AND_OVERAGE_20261030.md": "7b413138a100d647364d1cde7e78b3f431d1a55b0dd5e4f44ca672eb647f1dd3",
@@ -24,9 +24,9 @@
     "docs/JUDGE_ACCEPTANCE_20261028.md": "3c486ec699f02055f7e49638a280328a3aca2c93b3f9562e197d347ea54ea043",
     "docs/LIVE_MODE_20261030.md": "ce3081a65b029f4f79d8193c08a5c8ad9db6fc5c6ccdbb779a6915068174ae24",
     "docs/POC_REVIEW_GUIDE.md": "0f28fd7338ab9305afb5699ea4f10135ce842eb24479b6c81959b64e11b183aa",
-    "docs/PUBLIC_SUBMISSION_20261030.md": "5120891161d69a30a24b7406dcd248ac37cc86f9804eeccd1a3cbaa07663165f",
+    "docs/PUBLIC_SUBMISSION_20261030.md": "a9415f3b2ce46c5c58bb614c9f55f77413cce2b95244d4758170272e82901ca3",
     "docs/RELEASE_DESIGN_20261030.md": "ab51c81882812104ac45c7da9fb330cc23ef6b56dc69102279be616228eb9b7f",
-    "docs/SUBMISSION_DRAFT_20261026.md": "af78ac92fdf19ffd94ac5ce3da1d60875f78a80fc486996c31f50184a49cd9f0",
+    "docs/SUBMISSION_DRAFT_20261026.md": "f71289bf9ead2109dd996a8a9d4dba52b978801a0fc4497e92be75b317d12fe1",
     "docs/demo_narration_20261028.json": "1f320145293c5d4e470548ea1776531a44606092dae4720ffffdabac48e568ca",
     "docs/demo_narration_20261029.json": "7614913d771450f4e83ff6fa0d728a6ca37feeb0b5d9785884f3e8e803dd9e2c",
     "docs/demo_narration_20261030.json": "6a4c66409608bd008612382b94c082fcb88866789acb7e47b920560bc8968f6b",
@@ -69,6 +69,7 @@
     "evidence/release_rules_20261030.json": "bfa2330dbea54ab0719b8aba6bef60ff9e31c624d3a30acb2ca26bfdfb2edded",
     "evidence/ui_decision_race_20261028.txt": "e2fcb58f4e153e7358fe1b705cf92c5bb463bdaeb4a6c64dd165c65abbd53b7b",
     "evidence/ui_decision_race_20261029.txt": "1e2ddef0744b4a6af154b7e3078d0df3854b6a0006781881756972145be23dd7",
+    "evidence/youtube_publication_20261030.json": "358da03ce543a0818bf310477316d268b8ccbc4251fb082fdd86897c1b8c13fe",
     "fixtures/scientific/analysis.py": "d53efa1e35238352505388a975685412509b784e0528878ef524ed8e82071879",
     "fixtures/scientific/counts.json": "ebe15738fd6443328681cc53f549d7d7d299b4c1958e2db7082d0de032c12eca",
     "fixtures/scientific/test_analysis.py": "d83e65c56f5244e61a49c2d300fe8df2e29f63f6aa7cba97fc1c2daca4b7e3e4",
@@ -154,10 +155,10 @@
     "media/demo-20261030/render_cinematic.py": "e098bcac580e578742a2514a59f3563afa95995506011e1a32bc0c3cece6ba6a",
     "media/demo-20261030/synthesize_narration.py": "0e609639f14d508ab896979e85784ef9a7c01ffc21d03a1a883a729681a9631a",
     "media/demo-20261030/verify_cinematic.py": "19c66bfa09468d733d55f01ced93acee47d5289e56df0a3b5af88a817d53107b",
-    "media/demo-public-20261030/CURRENT_FILM.json": "c3aa0fbba8e7ee9770976cdd7b0f452a897e177361845f37bf5053793b6f555b",
+    "media/demo-public-20261030/CURRENT_FILM.json": "e86aca98f1f5d940ac2812d8fab9f966993afd642b39fac27f51ae7d8217fb83",
     "media/demo-public-20261030/LabRepair_DEMO_Public_20261030.en.srt": "34d174f0e221985eeac33dcff68ee2c109578fb169441955649da9859f7c98df",
-    "media/demo-public-20261030/README.md": "2c9fddefe07ca6c57e658ffcbf09d83cb0c890685028a78630ac072fe4b1bfa4",
-    "media/demo-public-20261030/artifact_index.json": "29091bd52c32e73271fa3a0a8e7f85c976a6509be6ad95e009a841b602874db3",
+    "media/demo-public-20261030/README.md": "17f20d8c7dc67b92f1241688a332fbe52b7c8235939dbb153c336d1328af34a3",
+    "media/demo-public-20261030/artifact_index.json": "e93e6bd2b07c6ce43756df812514e600ac1929f9d2abc20a450cef48b38980ac",
     "media/demo-public-20261030/current_movie_readback.json": "34af35bf93c24061278817908633f64d01c0d3d67f5af8e0ddf7ca888d2676b4",
     "media/demo-public-20261030/media_verification.json": "e7268fd9e9f77b64ba3cefedb94408a873be454162ca2ed070ada8556ed206da",
     "media/demo-public-20261030/predecessor-captions.ass": "8dee4fe752043b7e653cb773627afd5dc40e356ef04ac758b9936a6ab5d9aaf4",
@@ -185,7 +186,8 @@
     "old_development_repository": "PRIVATE",
     "demo_url": "https://mangroveuniversemu-bot.github.io/nebius-labrepair-submission/",
     "https": true,
-    "sign_in_or_key_required": false
+    "sign_in_or_key_required": false,
+    "youtube_url": "https://www.youtube.com/watch?v=ZTwxr5o-MIM"
   },
   "verification": {
     "offline_product_mock_budget_checks": 61,
@@ -197,7 +199,7 @@
   "provider_calls_this_publication": 0,
   "submission_ready": false,
   "remaining": [
-    "Public YouTube upload",
+    "Devpost event registration",
     "Final Devpost submission"
   ],
   "limits": [
