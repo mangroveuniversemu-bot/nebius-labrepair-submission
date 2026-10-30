@@ -1,0 +1,163 @@
+1
+00:00:00,320 --> 00:00:05,013
+A quantum research software engineer turns detector counts into results
+
+2
+00:00:05,013 --> 00:00:06,890
+a team can defend.
+
+3
+00:00:06,890 --> 00:00:09,706
+Channel-mapping errors can change those results.
+
+4
+00:00:10,320 --> 00:00:11,179
+Two patches.
+
+5
+00:00:11,179 --> 00:00:12,039
+Same total.
+
+6
+00:00:12,039 --> 00:00:13,328
+One is wrong.
+
+7
+00:00:17,320 --> 00:00:20,367
+Here, I run two curated local samples.
+
+8
+00:00:20,367 --> 00:00:22,978
+Both produce two point six zero.
+
+9
+00:00:22,978 --> 00:00:26,025
+Only one preserves every registered pair correlation.
+
+10
+00:00:26,025 --> 00:00:28,637
+The deliberately wrong control is rejected.
+
+11
+00:00:28,637 --> 00:00:32,990
+All study inputs are synthetic, and this browser review makes
+
+12
+00:00:32,990 --> 00:00:34,731
+no new model call.
+
+13
+00:00:41,320 --> 00:00:46,548
+For the real model step, NVIDIA Nemotron ran on Nebius Token Factory.
+
+14
+00:00:46,548 --> 00:00:50,034
+Our prompt supplied the declared A-one channel convention.
+
+15
+00:00:50,034 --> 00:00:54,391
+The model translated it into two parameter arrays; it did
+
+16
+00:00:54,391 --> 00:00:56,134
+not discover the correction.
+
+17
+00:00:56,134 --> 00:01:01,798
+A deterministic adapter built the patch, while protected counts and tests stayed fixed.
+
+18
+00:01:09,320 --> 00:01:15,474
+A separate recorded Nebius Sandbox run tested three variants against unchanged protected tests.
+
+19
+00:01:15,474 --> 00:01:16,894
+The baseline failed.
+
+20
+00:01:16,894 --> 00:01:20,208
+The NVIDIA repair passed all four checks.
+
+21
+00:01:20,208 --> 00:01:22,575
+The wrong-pair control was rejected.
+
+22
+00:01:22,575 --> 00:01:27,308
+The disposable operation took one point two seven three seconds,
+
+23
+00:01:27,308 --> 00:01:29,202
+with guest networking disabled.
+
+24
+00:01:32,320 --> 00:01:35,737
+The repaired analysis computes two point six zero.
+
+25
+00:01:35,737 --> 00:01:39,155
+The original claim was three point four zero.
+
+26
+00:01:39,155 --> 00:01:43,000
+Passing the code checks does not reproduce that claim.
+
+27
+00:01:43,000 --> 00:01:47,271
+LabRepair keeps both decisions separate, so accepting a repair cannot
+
+28
+00:01:47,271 --> 00:01:49,407
+silently approve the scientific conclusion.
+
+29
+00:01:54,320 --> 00:01:56,876
+Now I select the incomplete-evidence sample.
+
+30
+00:01:56,876 --> 00:02:01,561
+This local control asks for review instead of inventing missing values.
+
+31
+00:02:01,561 --> 00:02:05,394
+It was not part of the recorded cloud run.
+
+32
+00:02:05,394 --> 00:02:07,098
+Unknown evidence stays unknown.
+
+33
+00:02:11,320 --> 00:02:15,729
+The researcher records a hold against the reviewed source and
+
+34
+00:02:15,729 --> 00:02:17,492
+downloads its evidence receipt.
+
+35
+00:02:17,492 --> 00:02:21,019
+The handover preserves checks, reasons and source bindings.
+
+36
+00:02:21,019 --> 00:02:25,869
+Review intent launches no job and leaves the original claim unchanged.
+
+37
+00:02:29,320 --> 00:02:30,975
+Code repair: passed.
+
+38
+00:02:30,975 --> 00:02:33,182
+Original claim: not reproduced.
+
+39
+00:02:33,182 --> 00:02:33,734
+LabRepair.
+
+40
+00:02:33,734 --> 00:02:35,389
+Repair the analysis.
+
+41
+00:02:35,389 --> 00:02:37,044
+Preserve the evidence.

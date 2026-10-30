@@ -1,0 +1,30 @@
+{
+  "schema": "LABREPAIR_RELEASE_SAVED_EVIDENCE_V1",
+  "source_date_utc": "2026-10-26",
+  "new_model_or_sandbox_calls": 0,
+  "excerpts_are": "Editorial views of literal saved JSON fields, not new browser or provider capture",
+  "response_to_guest_hash_chain_verified": true,
+  "http_status": 200,
+  "usage": {
+    "completion_tokens": 38,
+    "prompt_tokens": 121,
+    "total_tokens": 159,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null
+  },
+  "operation_duration_seconds": 1.273,
+  "guest_networking_enabled": false,
+  "protected_checks_passed": {
+    "baseline": 2,
+    "model_fix": 4,
+    "same_total_wrong_pairs": 3
+  },
+  "local_wrong_pair_values_matched": "0/4; distinct from protected check count",
+  "files": {
+    "evidence/nebius-nano-repair-20261026-1/response.json": "ed0c2272968d84c4844a1305ca0ad68560451615d147c7eaa9f4f41231419920",
+    "evidence/nebius-nano-repair-20261026-1/cloud-transport-receipt.json": "c3df4390f4990087a1ea72d78dab3cc24e1385e807b127e736c605cf30e91be7",
+    "evidence/nebius-sandbox-validation-20261026-1/nebius-sandbox-validation-20261026-1.operation.safe.json": "0a91a78904e3cb59ef33c9b0233e2bbb568c9e172d82acfef440e3f57b7ad3da",
+    "evidence/nebius-sandbox-validation-20261026-1/nebius-sandbox-validation-20261026-1.stdout.json": "31c9900c3e55c6d2f059cf00f836f7cae836e781921d91de739da7be8f723b36",
+    "evidence/nebius-sandbox-validation-20261026-1/nebius-sandbox-validation-20261026-1.transport.safe.json": "2065a5678f168d9844ec38060904b98c5eb8023cac7330ee355249dc28a6e6b6"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema": "LABREPAIR_DEMO_DELIVERY_V1",
+  "run_id": "labrepair-neural-demo-20261027-1",
+  "date_taipei": "2026-10-27",
+  "status": "FOUR_MEDIA_FILES_EXACT_DRIVE_READBACK_VERIFIED",
+  "source_commit": "d8de8077b05c198d1c3714d558329b2737f7d294",
+  "drive_parent_id": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+  "files": {
+    "LabRepair_DEMO_NeuralVoice_20261027.mp4": {
+      "status": "EXACT_READBACK_VERIFIED",
+      "bytes": 4892064,
+      "sha256": "0fa62eb797aae010d4b250ac3c628104c1fb1b57cbf09003f7aeceb4a28cd1ae",
+      "drive_id": "1_UvPULtKAIgH-M8qE2iJMkBUwg-yAZuv",
+      "drive_url": "https://drive.google.com/file/d/1_UvPULtKAIgH-M8qE2iJMkBUwg-yAZuv/view",
+      "parent_observed": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs"
+    },
+    "LabRepair_DEMO_20261027.en.srt": {
+      "status": "EXACT_READBACK_VERIFIED",
+      "bytes": 3358,
+      "sha256": "0c44a1c324105a85cb3c41414e32e21369c4af1404926d89d1be7e0fb748a871",
+      "drive_id": "1CRTdqK5BlyFsOVylKbHZtyEUT1HVUQ7J",
+      "drive_url": "https://drive.google.com/file/d/1CRTdqK5BlyFsOVylKbHZtyEUT1HVUQ7J/view",
+      "parent_observed": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs"
+    },
+    "LabRepair_natural_narration_20261027.wav": {
+      "status": "EXACT_READBACK_VERIFIED",
+      "bytes": 7440044,
+      "sha256": "5333329cbd0bef8be83e730a2bd3d4c74444e5b249bf6752c7523c23f8ae828f",
+      "drive_id": "1CQeHn9L4FGX_ln9qnsvzXMnCAVOSqQKM",
+      "drive_url": "https://drive.google.com/file/d/1CQeHn9L4FGX_ln9qnsvzXMnCAVOSqQKM/view",
+      "parent_observed": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs"
+    },
+    "LabRepair_DEMO_Production_20261027.zip": {
+      "status": "EXACT_READBACK_VERIFIED",
+      "bytes": 15321797,
+      "sha256": "035e50539444ad7e76870406b8cc8cd5901af961f952540ac4493cf6e36c8803",
+      "manifest_files_verified": 37,
+      "drive_id": "1C1KV0FbbPesXvjB_sep-4MzBLWoDlwRf",
+      "drive_url": "https://drive.google.com/file/d/1C1KV0FbbPesXvjB_sep-4MzBLWoDlwRf/view",
+      "parent_observed": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs"
+    }
+  },
+  "video": {
+    "duration_seconds": 155,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "fps": 25,
+    "codec": "H.264 + AAC",
+    "voice": "Kokoro 82M v1.0 / af_heart",
+    "windows_system_speech": false,
+    "cloud_tts_calls": 0,
+    "new_paid_api_calls": 0,
+    "production_kind": "EDITED_ACTUAL_UI_CAPTURES_AND_LABELED_EVIDENCE_CARDS",
+    "continuous_screen_recording": false,
+    "research_inputs": "SYNTHETIC",
+    "cloud_compute_shown": "SAVED_ACTUAL_RUNS"
+  },
+  "cloud_preview": "PLAYER_CONTROLS_AND_155_SECOND_DURATION_OBSERVED; PICTURE_DECODE_NOT_VERIFIED; USE_EXACT_ORIGINAL_FILE",
+  "visibility": {
+    "repository": "PRIVATE",
+    "pr": "DRAFT_UNMERGED",
+    "movie_share_ui": "ONLY_ME",
+    "sharing_changes": false,
+    "public_video_upload": "NOT_RUN",
+    "competition_submission": "NOT_RUN"
+  }
+}

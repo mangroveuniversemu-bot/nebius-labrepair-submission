@@ -1,0 +1,35 @@
+{
+  "schema": "LABREPAIR_CINEMATIC_SOURCE_REFERENCE_V1",
+  "repository_base_commit": "103d3ca3f9b0a5fc19cb14d8791470b7b865dc80",
+  "ui_capture_commit": "a7cf2f5629975a00511beadd9e2a90eac3349a52",
+  "ui_files_unchanged": true,
+  "ui_files_sha256": {
+    "review-app\\index.html": "681c0c5c9ae960bc20b06456cd85e864d722aaeb93a031b242ccacbc640234ae",
+    "review-app\\style.css": "f5edd04bf91cdd412cef6f1a6f7fafb3bc1b2fd2b1251ad8492f1744d84d7538",
+    "review-app\\app.js": "2153cfcc78094d68333f29dd7b4857b7d2ebdd4af546d19726a6bc2dcf711255"
+  },
+  "previous_full_production": {
+    "drive_file_id": "10ACSTGqGFQQ76w2c4d9WyA7nOkf8GLwN",
+    "name": "LabRepair_DEMO_Production_20261029.zip",
+    "bytes": 39557704,
+    "local_sha256": "29c0ad5d2c83eb4ea661ff3775c6b7edce0171f28f77145661e2b76909aa7d78",
+    "contains": "Original user-generated clips, 82 referenced browser frames, source session and prior UI test build",
+    "cloud_original_byte_hash_matching": "NOT_VERIFIED"
+  },
+  "reference_film": {
+    "name": "VisualGuard final review",
+    "movie_sha256": "f3861cee2c05a08d1ffc94a1d8f7e77e8d0d9e2bc857f31ec349877f2b0d5aed",
+    "matches_supplied_archive": true,
+    "duration_seconds": 139.791667,
+    "scenes": 14,
+    "review_method": "Read timeline, narration and contact sheet; not an independently completed audio listening review",
+    "footage_audio_or_code_reused": false
+  },
+  "source_session_sha256": "c653f214c0473037c4bdab9e87a3d1a08e6eecf392676efa484e3f1b8737e9ea",
+  "new_provider_or_sandbox_calls": 0,
+  "paid_resources_created": false,
+  "previous_cinematic_movie": {
+    "name": "LabRepair_DEMO_Cinematic_20261030.mp4",
+    "sha256": "926514efd82fcdf7954b4218b958e6baf0be9b7f199c77a4364d7e872a2ed3ab"
+  }
+}

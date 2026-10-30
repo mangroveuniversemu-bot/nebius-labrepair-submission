@@ -1,0 +1,143 @@
+1
+00:00:00,000 --> 00:00:05,000
+An analysis can run successfully and still
+support the wrong
+
+2
+00:00:05,000 --> 00:00:10,000
+conclusion. LabRepair gives reviewers a
+reproducible handover instead of another
+
+3
+00:00:10,000 --> 00:00:15,000
+confident explanation. This prototype shows
+what was checked, what was
+
+4
+00:00:15,000 --> 00:00:20,000
+rejected, and what has not run.
+
+5
+00:00:20,000 --> 00:00:25,600
+Here is a fixed, synthetic invoice fixture.
+Only ledger dot
+
+6
+00:00:25,600 --> 00:00:31,200
+py is editable as a proposal; the cases and
+runner
+
+7
+00:00:31,200 --> 00:00:36,800
+are protected. The reviewed literal response
+suggests removing duplicate invoices.
+
+8
+00:00:36,800 --> 00:00:42,400
+It is not output from a live NVIDIA model, and
+
+9
+00:00:42,400 --> 00:00:48,000
+we do not execute its candidate code.
+
+10
+00:00:48,000 --> 00:00:54,000
+Source, request and policy hashes bind this
+diff to one
+
+11
+00:00:54,000 --> 00:01:00,000
+exact workspace. A fresh local replay
+reproduces the saved decision:
+
+12
+00:01:00,000 --> 00:01:06,000
+blocked. We have not verified an isolated
+backend or an
+
+13
+00:01:06,000 --> 00:01:12,000
+enforceable spending limit. A plausible patch
+is therefore a reviewable
+
+14
+00:01:12,000 --> 00:01:18,000
+proposal, not a tested or approved repair.
+
+15
+00:01:18,000 --> 00:01:24,000
+Now the negative control tries to change the
+protected runner.
+
+16
+00:01:24,000 --> 00:01:30,000
+It is rejected. A separate bundle forges an
+accepted verdict
+
+17
+00:01:30,000 --> 00:01:36,000
+and recomputes its checksum. Independent
+replay still refuses it, and
+
+18
+00:01:36,000 --> 00:01:42,000
+the failure page contains no successful result
+or download links.
+
+19
+00:01:42,000 --> 00:01:48,000
+A checksum cannot grant authorization.
+
+20
+00:01:48,000 --> 00:01:54,000
+The scientific record stays separate. In the
+existing synthetic Maya
+
+21
+00:01:54,000 --> 00:02:00,000
+case, the submitted S value is two point six
+one;
+
+22
+00:02:00,000 --> 00:02:06,000
+registered replay is one point nine six two
+five. The
+
+23
+00:02:06,000 --> 00:02:12,000
+original claim remains blocked. Fixing invoice
+code cannot validate a
+
+24
+00:02:12,000 --> 00:02:18,000
+Bell claim, and this is not a hardware
+experiment.
+
+25
+00:02:18,000 --> 00:02:22,500
+The three downloads preserve the offline
+bundle, fresh replay and
+
+26
+00:02:22,500 --> 00:02:27,000
+historical context. The planned NVIDIA on
+Nebius integration still requires
+
+27
+00:02:27,000 --> 00:02:31,500
+verified model access, covered credits, a
+monetary cap and real
+
+28
+00:02:31,500 --> 00:02:36,000
+isolation. Real inference and isolated
+execution have not run. Our
+
+29
+00:02:36,000 --> 00:02:40,500
+current deliverable is evidence another
+reviewer can inspect and replay
+
+30
+00:02:40,500 --> 00:02:45,000
+without trusting model prose.

@@ -1,0 +1,8 @@
+{
+  "data_origin": "NEW_SYNTHETIC_LABREPAIR_FIXTURE_20261026",
+  "pairs": ["A0B0", "A0B1", "A1B0", "A1B1"],
+  "rows": [[850, 150, 150, 850], [825, 175, 175, 825], [125, 875, 875, 125], [750, 250, 250, 750]],
+  "registered_channel_signs": [1, 1, -1, -1],
+  "chsh_terms": [1, 1, 1, -1],
+  "original_claim": {"claimed_s": "3.4", "claim_state": "NOT_REPRODUCED", "physical_interpretation": "NOT_ESTABLISHED"}
+}

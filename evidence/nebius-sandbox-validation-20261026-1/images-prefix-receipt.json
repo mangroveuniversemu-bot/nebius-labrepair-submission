@@ -1,0 +1,48 @@
+{
+  "architecture": "unknown; not in schema",
+  "catalog_bytes": 558,
+  "catalog_sha256": "4be2b08257c34fe460fad96dc103bbba82e10c3b8d07b728dfa63ae2ce5e9031",
+  "elapsed_ms": 625.76,
+  "endpoint": "https://api.tokenfactory.nebius.com/sandboxes/v1/images?tag=python%3A3.12&limit=1000",
+  "http_status": 200,
+  "images": [
+    {
+      "tag": "python:3.12",
+      "uuid": "db458f4b-a505-310b-8565-b7bb7919a528"
+    },
+    {
+      "tag": "python:3.12-alpine",
+      "uuid": "5d9c115b-ff92-3c53-b8c7-683531868efd"
+    },
+    {
+      "tag": "python:3.12-slim",
+      "uuid": "4fa16c8f-62a9-35a4-a4ea-07b7e8cd44ae"
+    }
+  ],
+  "imports": 0,
+  "observed_at_utc": "2026-10-26T16:01:37.378714+00:00",
+  "pagination": {
+    "limit": 1000,
+    "more_pages_needed": false,
+    "offset": 0,
+    "prefix_filter": "python:3.12",
+    "returned": 3
+  },
+  "per_item_key_names": [
+    "created_at",
+    "operation_uuid",
+    "tag",
+    "uuid"
+  ],
+  "policy": "enforced",
+  "prior_raw_catalog_available": false,
+  "readiness_revision": "29",
+  "redirects": 0,
+  "request_count": 1,
+  "retries": 0,
+  "sandbox_operations": 0,
+  "secret": "ready",
+  "top_level_keys": [
+    "images"
+  ]
+}

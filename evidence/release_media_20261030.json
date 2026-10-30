@@ -1,0 +1,75 @@
+{
+  "schema": "LABREPAIR_CINEMATIC_MEDIA_VERIFICATION_V1",
+  "stream": {
+    "ffmpeg_version": "7.1-essentials_build-www.gyan.dev built with gcc 14.2.0 (Rev1, Built by MSYS2 project)",
+    "codec": "h264",
+    "pix_fmt": "yuv420p(tv, smpte170m/bt709/iec61966-2-1, progressive)",
+    "audio_codec": "aac",
+    "fps": 25.0,
+    "source_size": [
+      1920,
+      1080
+    ],
+    "size": [
+      1920,
+      1080
+    ],
+    "rotate": 0,
+    "duration": 123.0
+  },
+  "full_decode_exit_code": 0,
+  "measured_audio": {
+    "input_i": "-16.83",
+    "input_tp": "-1.34",
+    "input_lra": "5.40",
+    "input_thresh": "-27.39",
+    "output_i": "-16.25",
+    "output_tp": "-1.50",
+    "output_lra": "5.30",
+    "output_thresh": "-26.78",
+    "normalization_type": "dynamic",
+    "target_offset": "0.25"
+  },
+  "shots": 28,
+  "subtitle_intervals": 35,
+  "subtitle_timing_valid": true,
+  "sampled_final_frame_seconds": [
+    0,
+    7,
+    14,
+    24,
+    34,
+    40,
+    60,
+    70,
+    83,
+    96,
+    109,
+    119
+  ],
+  "voice": "Local Kokoro am_michael",
+  "voice_clips_fit": true,
+  "windows_system_speech": false,
+  "tts_model_weights_reverified": true,
+  "new_model_or_sandbox_calls": 0,
+  "new_paid_calls": 0,
+  "ui_source": "Unchanged from a7cf2f5; edited actual browser captures, not new provider dispatch",
+  "continuous_live_capture": false,
+  "motion_graphics": "Editorial reveals derived from the same fixed synthetic case",
+  "reference_footage_or_audio_reused": false,
+  "cloud_original_byte_hash_matching": "NOT_VERIFIED",
+  "files": {
+    "LabRepair_DEMO_Release_20261030.mp4": {
+      "bytes": 13811050,
+      "sha256": "d7603453833c30b8a44c64d02cdbd855237a6e9a96c2f746491c91ad574b98a7"
+    },
+    "LabRepair_DEMO_Release_20261030.en.srt": {
+      "bytes": 2602,
+      "sha256": "3301ddbdf0d7e982d7f45ec2a091f0eb102031beb57e42287f706b0fbdcbdce0"
+    },
+    "LabRepair_release_narration_20261030.wav": {
+      "bytes": 5904044,
+      "sha256": "568e09109ec15246882c67046a0024cebc76919cbad52af34e797f9c06f38c69"
+    }
+  }
+}

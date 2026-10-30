@@ -1,0 +1,16 @@
+{
+  "schema": "LABREPAIR_MEDIA_DRIVE_READBACK_V1",
+  "parent": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+  "receipt_id": "1vDH7O6IaWeywFbfvZI2R1VJ-JAWaj5dv",
+  "receipt_parsed_object_matches_local": true,
+  "receipt_local_sha256": "3263146dff2fc6e35abe914d7fd37191d0cfbd9c14e5ca2231dd08aa27b58c6c",
+  "movie_id": "1dwH4B47FB7vdiuvMoF87zMZdShxkHzWR",
+  "movie_picture_playback_verified": true,
+  "movie_duration_observed": "2:40",
+  "files_uploaded_and_metadata_observed": 5,
+  "sharing_changed": false,
+  "movie_access_observed": "ONLY_ME",
+  "remote_original_byte_sha256_matching": "NOT_VERIFIED",
+  "srt_preview": "UNAVAILABLE",
+  "scope": "Cloud JSON content semantic readback plus actual movie picture playback and archive listing; not byte-exact original file verification."
+}

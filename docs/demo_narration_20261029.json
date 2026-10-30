@@ -1,0 +1,19 @@
+{
+  "schema": "LABREPAIR_DEMO_NARRATION_V3",
+  "target_seconds": 142,
+  "language": "en-US",
+  "voice": {"engine": "Kokoro ONNX", "voice": "af_heart", "execution": "local CPU", "windows_system_speech": false, "paid_api_calls": 0},
+  "scenes": [
+    {"id":"01_hook","duration":8,"title":"Two repairs. Same total.","narration":"Two patches. Same total. One is wrong."},
+    {"id":"02_person","duration":9,"title":"Which repair can Nora trust?","narration":"Meet Nora, a quantum research software engineer. Her job is to accept a repair without changing what the evidence supports."},
+    {"id":"03_action","duration":22,"title":"A decision, not a dashboard.","narration":"In the real interface, I choose a sample and run its local review. The valid repair matches all four pairs. Now I select the deliberately wrong control. Its total is still two point six zero, but the verifier rejects it."},
+    {"id":"04_difference","duration":14,"title":"The number matches. The evidence does not.","narration":"The individual correlations tell a different story. A matching total hides conflicting pair values. LabRepair shows the difference that changes the decision. These local samples use synthetic data."},
+    {"id":"05_model","duration":24,"title":"A real model. A deliberately bounded job.","narration":"For the recorded model step, NVIDIA Nemotron ran on Nebius Token Factory. Our prompt supplied the channel convention. The model translated it into typed parameters; it did not discover the correction. A deterministic adapter built the patch, keeping the counts and tests protected."},
+    {"id":"06_execution","duration":19,"title":"Then test the repair against protected evidence.","narration":"A real Nebius Sandbox operation tested three source variants. Baseline: two of four checks. Model repair: four of four. Wrong-pair control: three of four, rejected. The recorded operation took one point two seven three seconds, with guest networking disabled."},
+    {"id":"07_claim","duration":10,"title":"The code passed. The claim did not.","narration":"The repair passes at two point six zero. The original three point four zero claim remains not reproduced. Those are separate decisions."},
+    {"id":"08_unknown","duration":14,"title":"Missing evidence changes the next step.","narration":"For incomplete evidence, the interface asks for review. It does not invent the missing value. This is a local uncertainty control, not another cloud execution."},
+    {"id":"09_handover","duration":12,"title":"Leave a decision someone else can inspect.","narration":"Nora records a hold against the reviewed source. The evidence receipt preserves the checks and her intent. Recording intent launches no new job."},
+    {"id":"10_close","duration":10,"title":"Repair the analysis. Preserve the evidence.","narration":"LabRepair. Repair the analysis. Preserve the evidence. A passing repair is not a reproduced result."}
+  ],
+  "boundaries": ["One synthetic case; no physical hardware or customer testimonial.","AI-generated character shots are illustrative; all generated screen text is masked or cropped.","Actual UI captures and recorded real provider execution are separately labeled.","Wrong-pair control is operator-authored; prompt supplies channel convention.","No fresh provider, Sandbox, or paid TTS calls for this edit."]
+}

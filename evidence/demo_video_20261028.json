@@ -1,0 +1,94 @@
+{
+  "schema": "LABREPAIR_DEMO_DELIVERY_V2",
+  "observed_utc": "2026-10-27T18:07:43.528619+00:00",
+  "ui_source_commit": "4c1cc58bf244db9b3a63704a12c62068136bbd72",
+  "media_source_commit": "b5f3fbe64c050c2bf597108ab0be1ca4c0ee8e74",
+  "source_branch": "codex/poc-completion-20261026",
+  "repo_private": true,
+  "pr_number": 1,
+  "pr_draft": true,
+  "film_seconds": 160,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 25,
+  "voice": "Kokoro82Mv1.0 af_heart; generic local neural voice",
+  "files": [
+    {
+      "name": "LabRepair_DEMO_NeuralVoice_20261028.mp4",
+      "bytes": 6332363,
+      "sha256": "edcaa6b08ae9a348f9687c8e976e0a093ad6d056263c8ee732d22a24396cb497",
+      "drive_id": "1dwH4B47FB7vdiuvMoF87zMZdShxkHzWR",
+      "drive_parent": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+      "metadata_readback_observed": true,
+      "remote_original_sha256": "unknown; original byte readback not performed"
+    },
+    {
+      "name": "LabRepair_DEMO_20261028.en.srt",
+      "bytes": 3365,
+      "sha256": "1f50564c361cf1a032042de1f6f913c38aaea0d513e9cef79024d589248ae8c3",
+      "drive_id": "1X1MxSK0u3-Ji0kZJwiphHIWJjkSK0-M7",
+      "drive_parent": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+      "metadata_readback_observed": true,
+      "remote_original_sha256": "unknown; original byte readback not performed"
+    },
+    {
+      "name": "LabRepair_natural_narration_20261028.wav",
+      "bytes": 7680044,
+      "sha256": "08a63d41f6649507708569cdce1fe88cf65fb19941a2680006eb74caa3deb70c",
+      "drive_id": "1NmwnK8zneHh5UnGwywePX4LgdROh-xGA",
+      "drive_parent": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+      "metadata_readback_observed": true,
+      "remote_original_sha256": "unknown; original byte readback not performed"
+    },
+    {
+      "name": "LabRepair_DEMO_Production_20261028.zip",
+      "bytes": 48218915,
+      "sha256": "8097faef3d89313849ca6205abcb05b79dd684c243a7f80d3ff243ccc1be2203",
+      "drive_id": "100rsp6TCc0u56j5mYORF3S_kDM15ULrD",
+      "drive_parent": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+      "metadata_readback_observed": true,
+      "remote_original_sha256": "unknown; original byte readback not performed"
+    }
+  ],
+  "local_full_decode": "PASS",
+  "local_subtitle_intervals": 41,
+  "all9_tts_clips_fit": true,
+  "measured_integrated_lufs": -16.5,
+  "measured_true_peak_dbtp": -1.32,
+  "package_entries": 544,
+  "local_package_hashes_verified": 543,
+  "source_browser_frames": 514,
+  "source_distinct_image_hashes": 54,
+  "source_recorded_actions": 16,
+  "screen_recording": "Actual timestamped browser interaction frames; edited holds,crops and omitted waits. Not continuous real-time desktopvideo.",
+  "raw_receipt_download_wait_seconds": 952.592,
+  "recording_is_speed_benchmark": false,
+  "drive": {
+    "upload_complete": true,
+    "metadata_readback_complete": true,
+    "movie_picture_playback_verified": true,
+    "movie_duration_observed": "2:40",
+    "movie_sharing_observed": "ONLY_ME",
+    "sharing_changed": false,
+    "production_archive_contents_preview_readable": true,
+    "srt_preview": "UNAVAILABLE; GitHub/source subtitles independently verified",
+    "remote_original_byte_readback": "NOT_RUN; do not treat local hashes as cloud-original verification"
+  },
+  "new_provider_calls": 0,
+  "new_sandbox_jobs": 0,
+  "new_paid_tts_calls": 0,
+  "new_paid_resources": false,
+  "public_youtube_url": null,
+  "devpost_submitted": false,
+  "submission_ready": false,
+  "old155s_movie_preserved": true,
+  "boundaries": [
+    "Synthetic inputs only",
+    "Model prompt supplied channel convention; no autonomous correction discovery",
+    "Local incomplete-evidence case is not a fourth recorded cloud case",
+    "Saved real TokenFactory/Nemotron/Sandbox run remains26Oct2026UTC",
+    "Original3.40claim remains NOT_REPRODUCED; physical interpretation not established"
+  ]
+}

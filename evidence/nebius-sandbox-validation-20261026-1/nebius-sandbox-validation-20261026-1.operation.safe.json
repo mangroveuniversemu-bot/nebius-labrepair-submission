@@ -1,0 +1,37 @@
+{
+  "disposable": true,
+  "duration": 1.273,
+  "error": null,
+  "image_uuid": "4fa16c8f-62a9-35a4-a4ea-07b7e8cd44ae",
+  "networking": {
+    "enabled": false
+  },
+  "process": {
+    "exit_code": 0,
+    "signal": -1,
+    "timed_out": false
+  },
+  "resources": {
+    "block_input": 0,
+    "block_output": 0,
+    "cost": 0.0073179000000000004,
+    "elapsed_time": 0.71928,
+    "involuntary_switches": 3,
+    "layer_bytes": -1,
+    "max_rss": 25020,
+    "monotonic_time": 0.948141477,
+    "page_faults": 147,
+    "page_faults_io": 18464,
+    "shared_memory": 0,
+    "signals": 0,
+    "swaps": 0,
+    "system_cpu_time": 0.055973,
+    "unshared_memory": 0,
+    "user_cpu_time": 0.663307,
+    "voluntary_switches": 3507
+  },
+  "result_image_uuid": null,
+  "status": "SUCCESS",
+  "timeout": 30,
+  "uuid": "01a178f7-ee09-7133-a4c4-87922e4db2eb"
+}

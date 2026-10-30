@@ -1,0 +1,29 @@
+{
+  "schema": "LABREPAIR_LIVE_BROWSER_ACCEPTANCE_V1",
+  "observed_at_utc": "2026-10-26T16:25:29.449041+00:00",
+  "actual_http_export_bytes": 3265,
+  "actual_http_export_sha256": "c20f9662bea0aeb1524064f2206edc3bfd0e08b3d992236cc6af0752e775dbe1",
+  "export_http_status": 200,
+  "native_attachment_header_verified": true,
+  "fresh_pinned_replay_matches": true,
+  "recorded_expected_case_outcomes": [
+    1,
+    0,
+    1
+  ],
+  "curated_success_and_same_total_failure_exercised": true,
+  "provider_calls_from_browser": 0,
+  "recorded_run_is_playback": true,
+  "local_review_is_curated": true,
+  "browser_native_file_delivery": "NOT_OBSERVED_IN_IAB; readable evidence link provided",
+  "account_balance_after_run_displayed_usd": "25.00",
+  "balance_display_precision_decimals": 2,
+  "rounded_balance_is_not_billing_receipt": true,
+  "actual_billed_currency": "unknown",
+  "topup_or_billing_plan_changed": false,
+  "repo_visibility": "PRIVATE",
+  "browser_readable_evidence_view_verified": true,
+  "browser_rendered_json_bytes": 3265,
+  "browser_rendered_json_sha256": "c20f9662bea0aeb1524064f2206edc3bfd0e08b3d992236cc6af0752e775dbe1",
+  "workbench_screenshot_sha256": "17131c19fa421f08b03990ec505bb97cfb324ae9768ed529cd1c9cd408e7eab1"
+}

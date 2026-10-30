@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LabRepair · Judge workbench</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+<header>
+  <a class="brand" href="/" aria-label="LabRepair home"><span class="brand-mark">L↗</span> LabRepair</a>
+  <span class="breadcrumb">Quantum research software</span>
+  <a class="header-link" href="#recorded-run">Recorded real run ↗</a>
+  <span class="offline"><span aria-hidden="true">●</span> Local review · no key needed</span>
+</header>
+<main>
+  <section class="intro" aria-labelledby="hero-title">
+    <div class="intro-copy">
+      <p class="eyebrow">FOR THE QUANTUM RESEARCH SOFTWARE ENGINEER</p>
+      <h1 id="hero-title">Same total.<br><span>Different evidence.</span></h1>
+      <p class="lead">Two code repairs both return <b>2.60</b>. Only one preserves the registered evidence. Find the difference before accepting the repair.</p>
+      <nav class="hero-actions" aria-label="Judge starting points">
+        <a class="primary-link" href="#input">Compare the repairs <span aria-hidden="true">↗</span></a>
+      </nav>
+      <p class="hero-caption">Repair the analysis. Preserve the evidence.</p>
+    </div>
+    <aside class="case-card" aria-label="Fixed synthetic case preview, not a review result">
+      <div class="case-caption"><span class="eyebrow">THE SAME-TOTAL TRAP</span><span class="case-index">01 / BELL–CHSH</span></div>
+      <div class="preview-comparison">
+        <article><span class="preview-label">Declared repair</span><strong>2.60</strong><div class="evidence-strips" aria-hidden="true"><i></i><i></i><i></i><i></i></div><span class="preview-note">Registered pairs preserved</span></article>
+        <span class="comparison-divider" aria-hidden="true">=</span>
+        <article class="wrong-preview"><span class="preview-label">Wrong-pair control</span><strong>2.60</strong><div class="evidence-strips" aria-hidden="true"><i></i><i></i><i></i><i></i></div><span class="preview-note">Different pair values</span></article>
+      </div>
+      <p class="preview-boundary">Fixed synthetic case preview · not a review result</p>
+    </aside>
+  </section>
+  <nav class="journey" aria-label="Review journey"><span><b>01</b> Choose a repair</span><span><b>02</b> Check the evidence</span><span><b>03</b> Keep the decisions separate</span></nav>
+  <section id="input" class="input-panel" aria-labelledby="input-title">
+    <div class="section-heading"><div><p class="eyebrow">01 / INPUT</p><h2 id="input-title">Which repair would you trust?</h2></div><span class="badge neutral">LOCAL REPLAY · SYNTHETIC INPUTS</span></div>
+    <p class="section-note">Choose a curated sample. The independent check recomputes its evidence here, without a model call.</p>
+    <div class="samples" role="group" aria-label="Quick sample selection">
+      <button class="sample" data-scenario="channel-fix" aria-pressed="true"><span class="sample-index">A / DECLARED REPAIR</span><strong>Fix the channel mapping</strong><span>All four pairs agree.</span></button>
+      <button class="sample" data-scenario="same-total" aria-pressed="false"><span class="sample-index">B / WRONG-PAIR CONTROL</span><strong>Same total, wrong pairs</strong><span>2.60 alone is insufficient.</span></button>
+      <button class="sample" data-scenario="missing-pair" aria-pressed="false"><span class="sample-index">C / MISSING EVIDENCE</span><strong>Keep the decision on hold</strong><span>Missing evidence stays REVIEW.</span></button>
+    </div>
+    <div class="toolbar" aria-label="Review controls">
+      <label for="scenario">Sample</label><select id="scenario" disabled></select>
+      <button id="run" disabled>Check this repair ↗</button>
+      <span id="run-status" role="status" aria-live="polite">Loading review cases…</span>
+    </div>
+    <p class="fineprint">Local arithmetic only. Candidate code is never executed. No model call or provider charge. Saved real cloud execution is shown separately below.</p>
+  </section>
+  <section id="review-results" aria-label="Local review results" aria-busy="false">
+    <div class="section-heading result-heading"><p class="eyebrow">LOCAL REVIEW RESULTS</p><span id="review-state" class="state" data-state="READY" role="status">READY</span></div>
+    <section class="numbers" aria-label="Result comparison">
+      <article class="candidate-number"><span>THIS REPAIR RETURNS</span><strong id="candidate">—</strong><p id="candidate-detail">Run a check to inspect this candidate.</p></article>
+      <article><span>REGISTERED REFERENCE</span><strong id="registered">2.60</strong><p>From all four registered pairs</p></article>
+      <article class="verdict"><span>INDEPENDENT REVIEW</span><strong id="verdict">Awaiting review</strong><p id="verdict-detail">Run the selected sample to inspect its evidence.</p></article>
+    </section>
+    <div class="work-area">
+      <section class="panel patch-panel">
+        <div class="panel-title"><span class="step-no">02</span><h2>The proposed change</h2><span class="small-label">CURATED LOCAL SAMPLE</span></div>
+        <p id="proposal-context">This local proposal is a curated fixture. The real model response and its execution are shown in the recorded run.</p>
+        <div class="filebar"><span>analysis.py</span><span>counts.json 🔒 &nbsp; tests 🔒</span></div>
+        <pre id="diff" aria-label="Proposed source diff">No proposal reviewed yet.</pre>
+        <div class="binding"><span>SNAPSHOT SHA-256</span><code id="snapshot">—</code></div>
+        <p class="fineprint">Only two literal parameter tuples may change. Hashes bind content; they are not a provider signature.</p>
+      </section>
+      <section class="panel evidence-panel">
+        <div class="panel-title"><span class="step-no">03</span><h2>Does every pair agree?</h2><span class="small-label">TRUSTED ARITHMETIC</span></div>
+        <p>Same counts. Fixed convention. A matching total is only the beginning.</p>
+        <table><thead><tr><th scope="col">Pair</th><th scope="col">Registered</th><th scope="col">Candidate</th><th scope="col">Check</th></tr></thead><tbody id="pairs"><tr><td colspan="4">Run a review to compare the evidence.</td></tr></tbody></table>
+        <div class="contrast"><span>THE TOTAL-ONLY TRAP</span><p id="trap">A matching S value can hide the wrong pair correlations. Compare sample A with sample B.</p></div>
+        <details><summary>What runs on this computer?</summary><p>Trusted tools recompute count arithmetic and inspect candidate syntax. Candidate Python is never imported or executed. No model or Sandbox request is made.</p></details>
+      </section>
+    </div>
+    <section class="bottom-row">
+      <article class="panel decision">
+        <div class="panel-title"><span class="step-no">04</span><h2>Verdict and human decision</h2></div>
+        <div class="claim-status"><span>ORIGINAL SCIENTIFIC CLAIM</span><div><strong id="claimed">3.40</strong><b>NOT REPRODUCED</b></div><p>A passing code repair cannot approve this claim.</p></div>
+        <p>Record your next step against this exact review. These controls save intent; they dispatch no job.</p>
+        <div class="decision-buttons"><button id="hold" class="secondary" disabled>Hold for evidence</button><button id="rerun" class="secondary" disabled>Request isolated rerun</button></div>
+        <p id="decision-note" role="status">Review intent only. Nothing is dispatched.</p>
+      </article>
+      <article class="panel">
+        <div class="panel-title"><span class="step-no">05</span><h2>Evidence receipt</h2></div>
+        <p>Download the checked source bindings, pair values, reasons and your review intent together.</p>
+        <a id="download" class="download" role="button" aria-disabled="true" href="#" download="labrepair-review.json">Download local receipt ↓</a>
+        <details><summary>Show tool record</summary><ol id="steps"><li>Ready to inspect the selected scenario.</li></ol></details>
+      </article>
+    </section>
+  </section>
+  <section class="panel recorded-run" id="recorded-run" aria-labelledby="recorded-title">
+    <div class="section-heading"><p class="eyebrow">SAVED REAL EXECUTION / 26 OCTOBER 2026 UTC</p><span id="recorded-state" class="state" data-state="RUNNING" role="status">CHECKING RECEIPTS</span></div>
+    <div class="recorded-title"><h2 id="recorded-title">A real model proposal. A separately verified run.</h2><a id="download-recorded" href="#" class="download" aria-disabled="true" download>Download saved cloud receipt ↓</a></div>
+    <p class="recorded-intro">NVIDIA Nemotron on Nebius Token Factory, checked in a disposable Nebius Sandbox.</p>
+    <p id="recorded-description" role="status" aria-live="polite">Verifying pinned provider records. This is playback, not a new cloud call.</p>
+    <p id="recorded-error" class="error-message" role="alert" hidden></p>
+    <div id="recorded-content" hidden>
+      <div class="recorded-metrics"><article><span>NEBIUS TOKEN FACTORY / NVIDIA NEMOTRON</span><strong id="recorded-tokens">—</strong></article><article><span>REAL NEBIUS SANDBOX</span><strong id="recorded-runtime">—</strong></article><article><span>ORIGINAL SCIENTIFIC CLAIM</span><strong>Not reproduced</strong></article></div>
+      <table><thead><tr><th scope="col">Executed case</th><th scope="col">S</th><th scope="col">Protected checks</th><th scope="col">Outcome</th></tr></thead><tbody id="recorded-cases"></tbody></table>
+      <p class="scope-note"><strong>The model's job was deliberately small.</strong> The prompt supplied the declared A1 channel flip. NVIDIA Nemotron translated that convention into two parameter arrays; it did not autonomously discover the correction. A deterministic adapter built the patch. The wrong-pair control was operator-authored.</p>
+      <p class="fineprint" id="recorded-boundary"></p>
+      <details><summary>Inspect provider, source bindings and measured usage</summary><p id="recorded-model"></p><p id="recorded-provenance"></p><code id="recorded-operation"></code><p><a href="/api/recorded-validation" target="_blank" rel="noopener">Open the verified JSON record ↗</a></p></details>
+    </div>
+  </section>
+  <p class="baseline-context">Case context: before correction <strong id="baseline">0.10</strong> · protected counts and tests remain unchanged · synthetic inputs only.</p>
+  <details class="capabilities"><summary>Execution limits and historical access diagnostics</summary><p>Automatic cloud dispatch is disabled. There is no live inference button, arbitrary upload or code runner here. Account-wide spending controls and actual billed money remain unverified. Replay consumes no provider quota.</p><div id="capability-list"></div><p class="fineprint">Access observations can have different dates. The pinned recorded run above is checked independently on every load. Missing records never become a successful run.</p></details>
+  <footer><span>LABREPAIR / EVIDENCE BEFORE AUTHORIZATION</span><span>Synthetic demonstration · no claim of a physical Bell experiment or quantum advantage</span></footer>
+</main>
+</body>
+</html>

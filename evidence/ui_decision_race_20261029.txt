@@ -1,0 +1,6 @@
+Observed actual Node test output on 29 October 2026:
+late Sample A decision cannot contaminate Sample B: PASS
+pending intent disables overlapping decisions: PASS
+stale A completion cannot unlock B controls: PASS
+tests 3; pass 3; fail 0; skipped 0
+No provider calls.

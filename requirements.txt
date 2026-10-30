@@ -1,0 +1,2 @@
+# Minimal offline domain bridge; the provider SDK is not required yet.
+pydantic==2.13.5

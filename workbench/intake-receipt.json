@@ -1,0 +1,161 @@
+{
+  "run_id": "20261003T155145Z-nebius-004",
+  "demo": "Independent offline candidate intake, not the historical Q4 3-of-8 repair demo",
+  "source_sha256": {
+    "solution.py": "e1a894022d1a082987b87adecb623438c9e386d86b2b621cff4a5fe7fdf7edc8",
+    "tests/test_solution.py": "b551cc339c3fb313bb70d5e1b8e6270b12e8f3f073af388ae65ddc1ec8a93d23",
+    "policy.json": "9b25d7014fd6a3e7c7787e333bb8fc89e32905001e13d47e1497c75153bfaf49"
+  },
+  "cases": [
+    {
+      "case": "reviewable_diff",
+      "contract_and_operator_gates": "LABELED_SYNTHETIC_FIXTURES_NOT_REAL_ENTITLEMENTS",
+      "result": {
+        "schema_version": 1,
+        "proposal_sha256": "43497142a8e062124b9d3e51e678e00298dfc79b642ed2a1e076f07093dad5b9",
+        "status": "READY_FOR_ISOLATED_TEST",
+        "reasons": [],
+        "changes": [
+          {
+            "path": "solution.py",
+            "before_sha256": "e1a894022d1a082987b87adecb623438c9e386d86b2b621cff4a5fe7fdf7edc8",
+            "after_sha256": "ba1a531f581d2e6094e978ed6f7aca7a8d92eeb62c6e7ad73ee692f7f18bc772",
+            "diff": "--- original/solution.py\n+++ candidate/solution.py\n@@ -1,2 +1,2 @@\n def add(a, b):\n-    return a - b\n+    return a + b\n"
+          }
+        ],
+        "execution": "NOT_RUN",
+        "model": "NOT_RUN_BY_REVIEWER",
+        "usage": "unknown",
+        "scientific_claim": "UNCHANGED_NOT_EVALUATED_BY_THIS_GATE",
+        "source_written": false,
+        "network_requests": 0,
+        "snapshot_sha256": "b38745061e0d1d1290827912eedc4a2e955fe3116c6c83bf12ea5a532f0f54e4",
+        "policy_sha256": "5da24453e262bff24e05500f14b9bb6808123e1134963e022e9088d612a789a7"
+      }
+    },
+    {
+      "case": "protected_test_change",
+      "contract_and_operator_gates": "LABELED_SYNTHETIC_FIXTURES_NOT_REAL_ENTITLEMENTS",
+      "result": {
+        "schema_version": 1,
+        "proposal_sha256": "1b32734b35e74debb873dc736984b0ec90c170ebcbe6fd18a49c5943609e6f4f",
+        "status": "REJECTED",
+        "reasons": [
+          "PROTECTED_FILE_CHANGE"
+        ],
+        "changes": [],
+        "execution": "NOT_RUN",
+        "model": "NOT_RUN_BY_REVIEWER",
+        "usage": "unknown",
+        "scientific_claim": "UNCHANGED_NOT_EVALUATED_BY_THIS_GATE",
+        "source_written": false,
+        "network_requests": 0,
+        "snapshot_sha256": "b38745061e0d1d1290827912eedc4a2e955fe3116c6c83bf12ea5a532f0f54e4",
+        "policy_sha256": "5da24453e262bff24e05500f14b9bb6808123e1134963e022e9088d612a789a7"
+      }
+    },
+    {
+      "case": "stale_snapshot",
+      "contract_and_operator_gates": "LABELED_SYNTHETIC_FIXTURES_NOT_REAL_ENTITLEMENTS",
+      "result": {
+        "schema_version": 1,
+        "proposal_sha256": "b3fc4d380ddc4a7b39404aa0ff49b8efedcc68e17091b0a845a592cf82a20aee",
+        "status": "REJECTED",
+        "reasons": [
+          "STALE_OR_WRONG_SOURCE"
+        ],
+        "changes": [],
+        "execution": "NOT_RUN",
+        "model": "NOT_RUN_BY_REVIEWER",
+        "usage": "unknown",
+        "scientific_claim": "UNCHANGED_NOT_EVALUATED_BY_THIS_GATE",
+        "source_written": false,
+        "network_requests": 0,
+        "snapshot_sha256": "b38745061e0d1d1290827912eedc4a2e955fe3116c6c83bf12ea5a532f0f54e4",
+        "policy_sha256": "5da24453e262bff24e05500f14b9bb6808123e1134963e022e9088d612a789a7"
+      }
+    },
+    {
+      "case": "wrong_policy",
+      "contract_and_operator_gates": "LABELED_SYNTHETIC_FIXTURES_NOT_REAL_ENTITLEMENTS",
+      "result": {
+        "schema_version": 1,
+        "proposal_sha256": "4f9bea722c36b0048a4905ba419867e9dd734e5021ed301215a22177ad3022cd",
+        "status": "REJECTED",
+        "reasons": [
+          "POLICY_BINDING_MISMATCH"
+        ],
+        "changes": [],
+        "execution": "NOT_RUN",
+        "model": "NOT_RUN_BY_REVIEWER",
+        "usage": "unknown",
+        "scientific_claim": "UNCHANGED_NOT_EVALUATED_BY_THIS_GATE",
+        "source_written": false,
+        "network_requests": 0,
+        "snapshot_sha256": "b38745061e0d1d1290827912eedc4a2e955fe3116c6c83bf12ea5a532f0f54e4",
+        "policy_sha256": "5da24453e262bff24e05500f14b9bb6808123e1134963e022e9088d612a789a7"
+      }
+    },
+    {
+      "case": "missing_external_gates",
+      "contract_and_operator_gates": "LABELED_SYNTHETIC_FIXTURES_NOT_REAL_ENTITLEMENTS",
+      "result": {
+        "schema_version": 1,
+        "proposal_sha256": "43497142a8e062124b9d3e51e678e00298dfc79b642ed2a1e076f07093dad5b9",
+        "status": "BLOCKED",
+        "reasons": [
+          "ISOLATED_BACKEND_UNVERIFIED",
+          "SPENDING_LIMIT_UNVERIFIED"
+        ],
+        "changes": [
+          {
+            "path": "solution.py",
+            "before_sha256": "e1a894022d1a082987b87adecb623438c9e386d86b2b621cff4a5fe7fdf7edc8",
+            "after_sha256": "ba1a531f581d2e6094e978ed6f7aca7a8d92eeb62c6e7ad73ee692f7f18bc772",
+            "diff": "--- original/solution.py\n+++ candidate/solution.py\n@@ -1,2 +1,2 @@\n def add(a, b):\n-    return a - b\n+    return a + b\n"
+          }
+        ],
+        "execution": "NOT_RUN",
+        "model": "NOT_RUN_BY_REVIEWER",
+        "usage": "unknown",
+        "scientific_claim": "UNCHANGED_NOT_EVALUATED_BY_THIS_GATE",
+        "source_written": false,
+        "network_requests": 0,
+        "snapshot_sha256": "b38745061e0d1d1290827912eedc4a2e955fe3116c6c83bf12ea5a532f0f54e4",
+        "policy_sha256": "5da24453e262bff24e05500f14b9bb6808123e1134963e022e9088d612a789a7"
+      }
+    },
+    {
+      "case": "source_unavailable",
+      "contract_and_operator_gates": "LABELED_SYNTHETIC_FIXTURES_NOT_REAL_ENTITLEMENTS",
+      "result": {
+        "schema_version": 1,
+        "proposal_sha256": "43497142a8e062124b9d3e51e678e00298dfc79b642ed2a1e076f07093dad5b9",
+        "status": "BLOCKED",
+        "reasons": [
+          "VERIFIED_SOURCE_UNAVAILABLE"
+        ],
+        "changes": [],
+        "execution": "NOT_RUN",
+        "model": "NOT_RUN_BY_REVIEWER",
+        "usage": "unknown",
+        "scientific_claim": "UNCHANGED_NOT_EVALUATED_BY_THIS_GATE",
+        "source_written": false,
+        "network_requests": 0
+      }
+    }
+  ],
+  "expected_statuses": [
+    "READY_FOR_ISOLATED_TEST",
+    "REJECTED",
+    "REJECTED",
+    "REJECTED",
+    "BLOCKED",
+    "BLOCKED"
+  ],
+  "provider": "NOT_RUN",
+  "sandbox": "NOT_RUN",
+  "patch_applied_or_executed": false,
+  "usage": "unknown",
+  "expected_statuses_match": true
+}

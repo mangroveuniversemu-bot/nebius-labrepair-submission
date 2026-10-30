@@ -1,0 +1,18 @@
+{
+  "available_minimum_envelope_slots": 4,
+  "control_scope": "LOCAL_APPLICATION_LEDGER_ONLY_NOT_PROVIDER_ACCOUNT_CAP",
+  "daily_max_calls": 5,
+  "daily_max_usd": "0.050000",
+  "daily_reserved_calls": 1,
+  "daily_reserved_usd": "0.010000",
+  "day": "2026-10-30",
+  "disabled": false,
+  "ledger_id": "8415fd9c-c343-4bb3-9eeb-44e6b3e53a99",
+  "pricing_and_provider_overage_verification": "CALLER_REQUIRED_BEFORE_DISPATCH",
+  "provider_charge_usd": "unknown",
+  "request_slot_granted": false,
+  "schema": "LABREPAIR_DAILY_BUDGET_STATUS_V1",
+  "status": "READY",
+  "timezone": "Asia/Taipei (UTC+08:00)",
+  "warning": null
+}

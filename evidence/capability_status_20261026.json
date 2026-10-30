@@ -1,0 +1,17 @@
+{
+  "schema": "LABREPAIR_PUBLIC_SAFE_CAPABILITY_SNAPSHOT_V1",
+  "observed_date": "2026-10-26",
+  "source": "Authenticated control-plane observations and separately retained sanitized provider receipts",
+  "snapshot_is_not_a_runtime_grant": true,
+  "nvidia_developer_smoke": {"status": "VERIFIED", "http_status": 200, "marker": "LABREPAIR_OK", "prompt_tokens": 25, "completion_tokens": 6, "total_tokens": 31, "latency_ms": 478.58, "retries": 0, "qualifies_as_nebius_inference": false},
+  "nebius_model_catalog": {"status": "VERIFIED_READ_ONLY", "http_status": 200, "model_count": 30},
+  "nebius_sandbox_permissions": {"status": "VERIFIED_READ_ONLY", "http_status": 200, "spawn": true, "spawn_disposable": true, "cancel": true},
+  "nebius_generation": "NOT_RUN",
+  "nebius_sandbox_execution": "NOT_RUN",
+  "monetary_guard": "UNVERIFIED",
+  "sandbox_pricing_and_promotion_coverage": "UNVERIFIED",
+  "new_paid_resources": false,
+  "repo_visibility": "PRIVATE",
+  "eligible_nebius_runtime_evidence": "MISSING",
+  "submission_ready": false
+}

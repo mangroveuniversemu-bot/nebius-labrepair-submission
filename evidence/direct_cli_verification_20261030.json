@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "source_commit": "54fcd8de6647bedda1ef965398821720ddb5aadb",
+  "raw_files": [
+    {
+      "name": "request.json",
+      "bytes": 566,
+      "sha256": "03f944bb8d8bc9b27df6fc9b44689eb65c4d2be025600870ed55e14010acf6da"
+    },
+    {
+      "name": "response.json",
+      "bytes": 795,
+      "sha256": "3cd7e7aafe8078fda8800c385ee95b8001bcdb47a5a425b40d29a96d79c9fbf1"
+    },
+    {
+      "name": "local-review.json",
+      "bytes": 5372,
+      "sha256": "84a072e9c1e49e7955e515f1a1f1b2fcb1237967b1a71f1c8c3872104f142b06"
+    },
+    {
+      "name": "transport-receipt.json",
+      "bytes": 2075,
+      "sha256": "f9f735eb8e48232308112806824d89b2944f00d93947288b94b7a0aaad8a137a"
+    },
+    {
+      "name": "budget-status.json",
+      "bytes": 620,
+      "sha256": "a42286a1d4e2aa5ddf5e9ad39c9bbd96a9a2b12bef1474f33945efb3026bd59e"
+    }
+  ],
+  "http_status": 200,
+  "usage": {
+    "prompt_tokens": 121,
+    "completion_tokens": 38,
+    "total_tokens": 159
+  },
+  "direct_cli_result": "MODEL_REPAIR_VERIFIED",
+  "elapsed_seconds": 0.9245,
+  "budget_calls": 1,
+  "budget_reserved_usd": "0.010000",
+  "actual_billed_currency": "unknown",
+  "independent_local_review_replay": "MATCH",
+  "claim": "NOT_REPRODUCED"
+}

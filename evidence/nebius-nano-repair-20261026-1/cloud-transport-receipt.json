@@ -1,0 +1,58 @@
+{
+  "account_wide_no_overdraft_cap": "NOT_ESTABLISHED",
+  "attempt_state": "COMPLETE_PROVIDER_RESPONSE",
+  "attempted_count": 1,
+  "base_credit_estimate_ceiling_usd": "0.00004608",
+  "billing_receipt": "unknown",
+  "candidate_execution": "NOT_RUN",
+  "conservative_input_ceiling": 512,
+  "desktop_tokenizer_input_count": 121,
+  "finish_reason": "stop",
+  "fixture_unchanged": true,
+  "http_status": 200,
+  "input_ceiling_check": true,
+  "input_tokenizer_discrepancy": false,
+  "latency_ms": 826.48,
+  "money_charged": "unknown",
+  "original_index_unchanged": true,
+  "permission_grant": {
+    "filesystem": false,
+    "network": true,
+    "scope": "turn"
+  },
+  "provider_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+  "published_rates_usd_per_million": {
+    "evidence": "Desktop authenticated account pricing; non-batch eu-north1",
+    "input": "0.06",
+    "output": "0.24"
+  },
+  "readiness": {
+    "NEBIUS_API_KEY_state": "ready",
+    "exact_host_allowed": true,
+    "observations_current": true,
+    "policy_state": "enforced",
+    "revision": "24"
+  },
+  "redirects": 0,
+  "request_bytes": 566,
+  "request_sha256": "03f944bb8d8bc9b27df6fc9b44689eb65c4d2be025600870ed55e14010acf6da",
+  "response_bytes": 795,
+  "response_read_cap": 65536,
+  "response_sha256": "ed0c2272968d84c4844a1305ca0ad68560451615d147c7eaa9f4f41231419920",
+  "retries": 0,
+  "run_id": "nebius-nano-repair-20261026-1",
+  "safe_request_id": "fb5a0811-976f-4190-bc4d-eb8ea3e5980a",
+  "sandbox_execution": "NOT_RUN",
+  "started_utc": "2026-10-26T15:14:43.064814+00:00",
+  "timeout_seconds": 30,
+  "total_completion_bound_check": true,
+  "total_completion_ceiling": 64,
+  "tracked_worktree_matches_index": true,
+  "usage": {
+    "completion_tokens": 38,
+    "completion_tokens_details": null,
+    "prompt_tokens": 121,
+    "prompt_tokens_details": null,
+    "total_tokens": 159
+  }
+}

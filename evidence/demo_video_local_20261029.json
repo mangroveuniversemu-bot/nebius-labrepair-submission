@@ -1,0 +1,75 @@
+{
+  "schema": "LABREPAIR_MEDIA_VERIFICATION_V3",
+  "ui_source_commit": "a7cf2f5629975a00511beadd9e2a90eac3349a52",
+  "stream": {
+    "ffmpeg_version": "7.1-essentials_build-www.gyan.dev built with gcc 14.2.0 (Rev1, Built by MSYS2 project)",
+    "codec": "h264",
+    "pix_fmt": "yuv420p(tv, smpte170m/bt709/iec61966-2-1, progressive)",
+    "audio_codec": "aac",
+    "fps": 25.0,
+    "source_size": [
+      1920,
+      1080
+    ],
+    "size": [
+      1920,
+      1080
+    ],
+    "rotate": 0,
+    "duration": 142.0
+  },
+  "full_decode_exit_code": 0,
+  "measured_audio": {
+    "input_i": "-16.52",
+    "input_tp": "-1.48",
+    "input_lra": "3.80",
+    "input_thresh": "-26.91",
+    "output_i": "-16.20",
+    "output_tp": "-1.50",
+    "output_lra": "3.80",
+    "output_thresh": "-26.59",
+    "normalization_type": "dynamic",
+    "target_offset": "0.20"
+  },
+  "subtitle_intervals": 42,
+  "subtitle_timing_valid": true,
+  "subtitle_method": "Phrase timing proportional to actual clip lengths; not forced word alignment",
+  "tts_clips_fit": true,
+  "generic_neural_voice": "Local Kokoro af_heart",
+  "windows_system_speech": false,
+  "new_paid_calls": 0,
+  "new_provider_or_sandbox_calls": 0,
+  "sampled_final_frame_seconds": [
+    4,
+    12,
+    27,
+    46,
+    65,
+    86,
+    101,
+    114,
+    125,
+    136
+  ],
+  "recording_method": "Actual browser screenshot frames sampled during interaction, edited holds and focused crops; not a performance benchmark",
+  "animation_audio_used": false,
+  "cloud_original_byte_hash_matching": "NOT_VERIFIED",
+  "files": {
+    "LabRepair_DEMO_20261029.mp4": {
+      "bytes": 6693616,
+      "sha256": "f455fb15b6b9d0e0ea5e77aec51266e738c95026d0e7ec1f56b1cd0100f4b2be"
+    },
+    "LabRepair_DEMO_20261029.en.srt": {
+      "bytes": 3250,
+      "sha256": "d52fe2d3a9fca66b413d30253d90f0f98f22f19621ff96fea1bf1760f4fd31f6"
+    },
+    "LabRepair_natural_narration_20261029.wav": {
+      "bytes": 6816044,
+      "sha256": "b01042a123484b2ae1b867c87e88696cb51777d03f63bf818ca09f1b2527db7f"
+    },
+    "LabRepair_Judge_TestBuild_20261029.zip": {
+      "bytes": 574991,
+      "sha256": "46443379c146a4ba9a82dc4fc2a567cbd805f48a5a0d59ca4f3b838838fdf3d5"
+    }
+  }
+}

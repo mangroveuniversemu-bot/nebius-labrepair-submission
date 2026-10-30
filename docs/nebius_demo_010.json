@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "run_id": "20261003T224642Z-nebius-010",
+  "status": "RECORDING_DRAFT_NOT_SUBMITTED",
+  "title": "LabRepair: a repair proposal is not an approval token",
+  "timeline_seconds": 165,
+  "video_recorded": false,
+  "actual_recorded_duration_seconds": "unknown",
+  "manual_review_required": true,
+  "source_run_id": "20261003T204649Z-nebius-009",
+  "source_sha256": {
+    "ops/nebius_009_checkpoint_final.json": "4100b9fae7f6b5abef463f8c99f2f3de3aff49b1d205187b98c697d1df587d5b",
+    "handover-workbench/index.html": "b8559425a7fd60516f4818aa5e7e966847e8d3331bcc778e2a3605c1f79cd319",
+    "handover-workbench/qa/rejected.html": "f0dddc684ae1d7da06075d655bde856e0ce7fd6a0e01b5ac92c73b731b04adda",
+    "handover-workbench/offline-handover.json": "2f6690b9b77430ebdd87eb08292241e5ba491f317e92c92616df498b617d30aa",
+    "handover-workbench/fresh-replay.json": "3d294cb0b3b8b10b609ae96895797b402787f3a049398bcb3ec83c76d0469ce4",
+    "handover-workbench/historical-domain.json": "3622d17249b54dc75f9dfaec0fe75c4e1c8d4c07e682ba1cbbddb36c75e97df1"
+  },
+  "source_package_sha256": "e230e9ae7956abbc91446d43ad759ce14c689ae9ad4f8fffe2dd7e50a463c887",
+  "facts": {
+    "normal": "BLOCKED",
+    "protected_change": "REJECTED",
+    "original_claim": "BLOCK",
+    "claimed_s": 2.61,
+    "replayed_s": 1.9625,
+    "model": "NOT_RUN",
+    "candidate_execution": "NOT_RUN",
+    "sandbox": "NOT_RUN",
+    "actual_provider_usage": "unknown"
+  },
+  "scenes": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 20,
+      "title": "Why a handover matters",
+      "shot": "Show the NEBIUS-009 heading and replay boundary; keep OFFLINE visible.",
+      "narration": "An analysis can run successfully and still support the wrong conclusion. LabRepair gives reviewers a reproducible handover instead of another confident explanation. This prototype shows what was checked, what was rejected, and what has not run."
+    },
+    {
+      "start_seconds": 20,
+      "end_seconds": 48,
+      "title": "Inspect an untrusted proposal",
+      "shot": "Show the normal ledger.py diff and its reviewed-literal, synthetic label. Do not stage or run it.",
+      "narration": "Here is a fixed, synthetic invoice fixture. Only ledger dot py is editable as a proposal; the cases and runner are protected. The reviewed literal response suggests removing duplicate invoices. It is not output from a live NVIDIA model, and we do not execute its candidate code."
+    },
+    {
+      "start_seconds": 48,
+      "end_seconds": 78,
+      "title": "A plausible diff is not approval",
+      "shot": "Expand the exact source/request bindings, then show BLOCKED and both missing gate reasons.",
+      "narration": "Source, request and policy hashes bind this diff to one exact workspace. A fresh local replay reproduces the saved decision: blocked. We have not verified an isolated backend or an enforceable spending limit. A plausible patch is therefore a reviewable proposal, not a tested or approved repair."
+    },
+    {
+      "start_seconds": 78,
+      "end_seconds": 108,
+      "title": "A refusal is a product result",
+      "shot": "Show protected-change REJECTED; switch to qa/rejected.html generated from the rehashed forged verdict. Label the negative control.",
+      "narration": "Now the negative control tries to change the protected runner. It is rejected. A separate bundle forges an accepted verdict and recomputes its checksum. Independent replay still refuses it, and the failure page contains no successful result or download links. A checksum cannot grant authorization."
+    },
+    {
+      "start_seconds": 108,
+      "end_seconds": 138,
+      "title": "Do not rewrite the original science",
+      "shot": "Return to Original science, separate record: 2.61 versus 1.9625, BLOCK and NOT_ESTABLISHED. Do not imply the invoice fixture repairs this case.",
+      "narration": "The scientific record stays separate. In the existing synthetic Maya case, the submitted S value is two point six one; registered replay is one point nine six two five. The original claim remains blocked. Fixing invoice code cannot validate a Bell claim, and this is not a hardware experiment."
+    },
+    {
+      "start_seconds": 138,
+      "end_seconds": 165,
+      "title": "A replayable handover, with honest limits",
+      "shot": "Show the three fixed JSON download links and NOT_RUN/unknown metrics. Use local files if the browser transfer remains unverified.",
+      "narration": "The three downloads preserve the offline bundle, fresh replay and historical context. The planned NVIDIA on Nebius integration still requires verified model access, covered credits, a monetary cap and real isolation. Real inference and isolated execution have not run. Our current deliverable is evidence another reviewer can inspect and replay without trusting model prose."
+    }
+  ],
+  "limits": [
+    "All inputs are synthetic; invoice proposals are independent from original Bell/CHSH science.",
+    "The NVIDIA response is a reviewed literal fixture, not live model output.",
+    "No provider transport, candidate execution, isolated runtime or hardware test is demonstrated.",
+    "Checksums detect changes, not authenticated identity.",
+    "The planned 165-second timeline is not a recorded-video duration.",
+    "This draft does not satisfy missing mandatory sponsor integration; no eligibility/registration/submission claim is made.",
+    "Source/UI observations are historical NEBIUS-009 evidence; no fresh provider or browser-transfer result is implied."
+  ]
+}

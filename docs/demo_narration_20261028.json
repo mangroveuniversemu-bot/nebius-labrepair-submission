@@ -1,0 +1,99 @@
+{
+  "schema": "LABREPAIR_DEMO_NARRATION_V2",
+  "target_seconds": 160,
+  "language": "en-US",
+  "protagonist": "Quantum research software engineer; illustrative role, not a customer testimonial",
+  "voice": {
+    "engine": "Kokoro ONNX",
+    "model": "Kokoro 82M v1.0",
+    "voice": "af_heart",
+    "execution": "local CPU",
+    "windows_system_speech": false,
+    "paid_api_calls": 0
+  },
+  "scenes": [
+    {
+      "id": "01_role",
+      "duration": 10,
+      "title": "The quantum research software engineer",
+      "subtitle": "Detector counts \u2192 declared convention \u2192 defensible analysis",
+      "kind": "RECORDED_CURRENT_UI",
+      "narration": "A quantum research software engineer turns detector counts into results a team can defend. Channel-mapping errors can change those results."
+    },
+    {
+      "id": "02_hook",
+      "duration": 7,
+      "title": "Two repairs. Same total. One is wrong.",
+      "subtitle": "A bounded synthetic Bell\u2013CHSH case",
+      "kind": "EDITORIAL_COMPARISON_OF_RECORDED_RESULTS",
+      "narration": "Two patches. Same total. One is wrong."
+    },
+    {
+      "id": "03_pairs",
+      "duration": 24,
+      "title": "A matching total is not enough",
+      "subtitle": "Actual current UI interaction \u00b7 local replay",
+      "kind": "RECORDED_CURRENT_UI",
+      "narration": "Here, I run two curated local samples. Both produce two point six zero. Only one preserves every registered pair correlation. The deliberately wrong control is rejected. All study inputs are synthetic, and this browser review makes no new model call."
+    },
+    {
+      "id": "04_model",
+      "duration": 28,
+      "title": "NVIDIA Nemotron on Nebius Token Factory",
+      "subtitle": "A supplied convention \u2192 typed parameters \u2192 protected patch",
+      "kind": "RECORDED_CURRENT_UI_AND_SAVED_GENERATION",
+      "narration": "For the real model step, NVIDIA Nemotron ran on Nebius Token Factory. Our prompt supplied the declared A-one channel convention. The model translated it into two parameter arrays; it did not discover the correction. A deterministic adapter built the patch, while protected counts and tests stayed fixed."
+    },
+    {
+      "id": "05_sandbox",
+      "duration": 23,
+      "title": "Three variants. One real isolated operation.",
+      "subtitle": "Recorded real run \u00b7 26 October 2026 UTC \u00b7 no new call",
+      "kind": "RECORDED_CURRENT_UI_SAVED_CLOUD_RESULTS",
+      "narration": "A separate recorded Nebius Sandbox run tested three variants against unchanged protected tests. The baseline failed. The NVIDIA repair passed all four checks. The wrong-pair control was rejected. The disposable operation took one point two seven three seconds, with guest networking disabled."
+    },
+    {
+      "id": "06_claim",
+      "duration": 22,
+      "title": "The code passed. The claim did not.",
+      "subtitle": "Code repair 2.60 \u00b7 Original claim 3.40 remains NOT REPRODUCED",
+      "kind": "RECORDED_CURRENT_UI_AND_EDITORIAL_VERDICT",
+      "narration": "The repaired analysis computes two point six zero. The original claim was three point four zero. Passing the code checks does not reproduce that claim. LabRepair keeps both decisions separate, so accepting a repair cannot silently approve the scientific conclusion."
+    },
+    {
+      "id": "07_review",
+      "duration": 17,
+      "title": "Unknown evidence stays unknown",
+      "subtitle": "Curated local uncertainty control \u00b7 not a fourth cloud case",
+      "kind": "RECORDED_CURRENT_UI",
+      "narration": "Now I select the incomplete-evidence sample. This local control asks for review instead of inventing missing values. It was not part of the recorded cloud run. Unknown evidence stays unknown."
+    },
+    {
+      "id": "08_handover",
+      "duration": 18,
+      "title": "A source-bound human decision",
+      "subtitle": "Hold \u2192 receipt \u2192 inspectable handover \u00b7 no job dispatched",
+      "kind": "RECORDED_CURRENT_UI_AND_RECEIPT",
+      "narration": "The researcher records a hold against the reviewed source and downloads its evidence receipt. The handover preserves checks, reasons and source bindings. Review intent launches no job and leaves the original claim unchanged."
+    },
+    {
+      "id": "09_close",
+      "duration": 11,
+      "title": "Repair the analysis. Preserve the evidence.",
+      "subtitle": "A verification-first developer tool for quantum research software",
+      "kind": "CLOSING_TITLE",
+      "narration": "Code repair: passed. Original claim: not reproduced. LabRepair. Repair the analysis. Preserve the evidence."
+    }
+  ],
+  "evidence_boundaries": [
+    "All study inputs are synthetic, not physical quantum measurements.",
+    "The wrong-pair control is operator-authored, not a second model generation.",
+    "Cloud results are recorded actual executions, not new calls during playback.",
+    "Editorial cards are labeled; UI screenshots and captured interaction frames are separate assets.",
+    "A successful bounded code repair does not establish quantum advantage or reproduce the original physical experiment.",
+    "No invented customer, revenue, loss, time-saving or broad benchmark claim.",
+    "Current UI is recorded from commit4c1cc58 using timestamped browser screenshot frames during actual operations; edited holds and scene timing do not imply continuous high-frame-rate desktop video.",
+    "The model prompt supplied the channel convention; it did not autonomously discover the correction."
+  ],
+  "ui_source_commit": "4c1cc58bf244db9b3a63704a12c62068136bbd72"
+}

@@ -1,0 +1,13 @@
+{
+  "model": "nvidia/Nemotron-3_5-Lightning",
+  "choices": [
+    {
+      "index": 0,
+      "finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "{\"snapshot_sha256\": \"8cf0a003ab54e39d292cfc9371f6c7a54fc308ad981218fef0d305da82ad3d05\", \"policy_sha256\": \"547f68a1689ca4058022adb9c1c7a6792826ed097dc5f974b284ea39903ba2be\", \"replacements\": [{\"path\": \"runner.py\", \"before_sha256\": \"4ad730068bd1e0ef7262240efd01e7b30a2eac6bfd6a62026fa3b134c7601039\", \"after_utf8\": \"def total_cents(rows):\\n    seen = {}\\n    for invoice, amount in rows:\\n        if type(amount) is not int or amount < 0:\\n            raise ValueError(\\\"invalid amount\\\")\\n        if invoice in seen and seen[invoice] != amount:\\n            raise ValueError(\\\"conflicting duplicate\\\")\\n        seen[invoice] = amount\\n    return sum(seen.values())\\n\"}]}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "created_at": "2026-05-08T11:55:10.222392Z",
+      "operation_uuid": null,
+      "tag": "python:3.12",
+      "uuid": "db458f4b-a505-310b-8565-b7bb7919a528"
+    },
+    {
+      "created_at": "2026-05-08T11:54:45.989266Z",
+      "operation_uuid": null,
+      "tag": "python:3.12-alpine",
+      "uuid": "5d9c115b-ff92-3c53-b8c7-683531868efd"
+    },
+    {
+      "created_at": "2026-05-08T11:54:48.078898Z",
+      "operation_uuid": null,
+      "tag": "python:3.12-slim",
+      "uuid": "4fa16c8f-62a9-35a4-a4ea-07b7e8cd44ae"
+    }
+  ]
+}

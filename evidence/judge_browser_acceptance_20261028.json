@@ -1,0 +1,51 @@
+{
+  "observed_utc": "2026-10-27T17:15:39.989Z",
+  "scope": "New zero-key localhost tab; not a separate anonymous browser context or hosted deployment. Failure injected in receipt reader without modifying original receipts.",
+  "provider_calls": 0,
+  "runs": [
+    {
+      "case": "channel-fix",
+      "pairs": "A0B0\t0.70\t0.70\tMATCH\nA0B1\t0.65\t0.65\tMATCH\nA1B0\t0.75\t0.75\tMATCH\nA1B1\t-0.50\t-0.50\tMATCH",
+      "receiptHref": "/download?scenario=channel-fix&receipt_sha256=c21379b226f6f5cb8f80304830ecc9007affa2ffb1c1c888a904c5544d88c424&choice=none",
+      "recorded": "VERIFIED RECORDED RUN · NO NEW CALL",
+      "state": "PASS",
+      "verdict": "Locally consistent",
+      "viewport": {
+        "documentWidth": 1265,
+        "height": 720,
+        "width": 1280
+      }
+    },
+    {
+      "case": "selection-only",
+      "downloadDisabled": "true",
+      "state": "READY",
+      "status": "Sample selected · no inference or review started"
+    },
+    {
+      "case": "same-total",
+      "pairs": "A0B0\t0.70\t0.80\tDIFF\nA0B1\t0.65\t0.75\tDIFF\nA1B0\t0.75\t0.65\tDIFF\nA1B1\t-0.50\t-0.40\tDIFF",
+      "state": "FAIL",
+      "trap": "The candidate total matches 2.60, but its pair values disagree. A total-only check would accept this wrong repair; the full evidence check rejects it.",
+      "verdict": "Proposal rejected"
+    },
+    {
+      "case": "missing-pair",
+      "pairs": "A0B0\t0.70\t—\tUNKNOWN\nA0B1\t0.65\t—\tUNKNOWN\nA1B0\t0.75\t—\tUNKNOWN\nA1B1\t-0.50\t—\tUNKNOWN",
+      "state": "REVIEW",
+      "verdict": "More evidence needed"
+    },
+    {
+      "case": "decision",
+      "decision": "Recorded: hold for evidence. Original claim unchanged; no execution authorized.",
+      "receiptHref": "/download?scenario=missing-pair&receipt_sha256=45073aa41c921165f03dbe2b536e67561f6af9586c9f3b5cebb8541c0697e36d&choice=hold-for-evidence"
+    },
+    {
+      "case": "receipt-readback-failure",
+      "cloudReceiptDisabled": "true",
+      "localState": "PASS",
+      "recordedError": "Evidence unavailable: RECORDED_EVIDENCE_UNAVAILABLE. Restore the original pinned files and reload; no automatic retry or provider call.",
+      "recordedState": "SAVED EVIDENCE UNAVAILABLE"
+    }
+  ]
+}

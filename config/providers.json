@@ -1,0 +1,44 @@
+{
+  "live_enabled": false,
+  "offline_admission_policy": {
+    "evaluator": "labrepair.provider_admission",
+    "maximum_authorized_actual_cash_usd": "0",
+    "automatic_charging_allowed": false,
+    "account_evidence_authenticated": false,
+    "runtime_admission": "BLOCKED",
+    "note": "Descriptive only; config, credit balance and evidence claims cannot enable dispatch."
+  },
+  "inference": {
+    "provider": "nebius_token_factory",
+    "base_url": "https://api.tokenfactory.nebius.com/v1/",
+    "model_id_candidate": "nvidia/Nemotron-3_5-Lightning",
+    "credential_environment_variable": "NEBIUS_API_KEY",
+    "model_access": "UNVERIFIED",
+    "credits": "UNVERIFIED",
+    "usage": "UNKNOWN",
+    "status": "NOT_RUN"
+  },
+  "execution": {
+    "preferred": "nebius_sandboxes_contree",
+    "access": "UNVERIFIED_BETA",
+    "status": "NOT_RUN",
+    "host_arbitrary_code_execution": false
+  },
+  "openshell": {
+    "role": "optional_policy_enforced_runtime",
+    "status": "NOT_RUN",
+    "not_equivalent_to_nebius_sandboxes": true
+  },
+  "bounded_test_policy": {
+    "max_requests": 1,
+    "max_input_tokens": 512,
+    "max_completion_tokens": 256,
+    "output_includes_reasoning": true,
+    "sdk_max_retries": 0,
+    "timeout_seconds": 30,
+    "max_credit_cost_usd": "0.01",
+    "max_new_cash_usd": "0",
+    "input_accounting": "entire_request_including_schema_and_template",
+    "dispatch_enabled": false
+  }
+}

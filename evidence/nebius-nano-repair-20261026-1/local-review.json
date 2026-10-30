@@ -1,0 +1,153 @@
+{
+  "schema": "LABREPAIR_MODEL_PARAMETER_REVIEW_V1",
+  "model_text_sha256": "443a0b91964c29c9d1bb1fbd539f17136c9e4ba6d808f9ad60b80089f0aaa0a0",
+  "parameters": {
+    "channel_signs": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "offsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "operator_bound_proposal": {
+    "snapshot_sha256": "2394f56595e8a5775381b440d3e039a0bd1979615c3509aeffa78d9955039af9",
+    "policy_sha256": "9c39f245e283a1003b921149303728fe62625c7b009f5b7da42399530c12ff1a",
+    "replacements": [
+      {
+        "path": "analysis.py",
+        "before_sha256": "d53efa1e35238352505388a975685412509b784e0528878ef524ed8e82071879",
+        "after_utf8": "CHANNEL_SIGNS = (1, 1, -1, -1)\nOFFSETS = (0, 0, 0, 0)\n\n\ndef correlations(rows):\n    return tuple(\n        sign * (row[0] - row[1] - row[2] + row[3]) / sum(row) + offset\n        for row, sign, offset in zip(rows, CHANNEL_SIGNS, OFFSETS)\n    )\n"
+      }
+    ]
+  },
+  "local_review": {
+    "schema": "LABREPAIR_SCIENTIFIC_REVIEW_V1",
+    "scenario": "channel-fix",
+    "title": "Repair the declared channel mapping",
+    "data_origin": "NEW_SYNTHETIC_LABREPAIR_FIXTURE_20261026",
+    "mode": "ACTUAL_LOCAL_TRUSTED_ARITHMETIC; NOT_CANDIDATE_EXECUTION",
+    "proposal_origin": "UNTRUSTED_PROVIDER_PARAMETER_TEXT",
+    "snapshot_sha256": "2394f56595e8a5775381b440d3e039a0bd1979615c3509aeffa78d9955039af9",
+    "policy_sha256": "9c39f245e283a1003b921149303728fe62625c7b009f5b7da42399530c12ff1a",
+    "proposal_sha256": "e61f444c690ea9390fdb63e772ee5c30a8407ceebe338cbd6e8e2fb8c87121df",
+    "original_source_sha256": {
+      "analysis.py": "d53efa1e35238352505388a975685412509b784e0528878ef524ed8e82071879",
+      "counts.json": "ebe15738fd6443328681cc53f549d7d7d299b4c1958e2db7082d0de032c12eca",
+      "test_analysis.py": "d83e65c56f5244e61a49c2d300fe8df2e29f63f6aa7cba97fc1c2daca4b7e3e4"
+    },
+    "original_claim": {
+      "claimed_s": "3.4",
+      "claim_state": "NOT_REPRODUCED",
+      "physical_interpretation": "NOT_ESTABLISHED"
+    },
+    "original_claim_sha256": "6b85bd63c091b35568481f3159f1666bc70126c4cdb85ef78accb3a65dd5ca6a",
+    "original_claim_after_sha256": "6b85bd63c091b35568481f3159f1666bc70126c4cdb85ef78accb3a65dd5ca6a",
+    "original_claim_unchanged": true,
+    "claimed_s": 3.4,
+    "baseline_s": 0.1,
+    "registered_s": 2.6,
+    "pairs": [
+      "A0B0",
+      "A0B1",
+      "A1B0",
+      "A1B1"
+    ],
+    "registered_pairs": [
+      0.7,
+      0.65,
+      0.75,
+      -0.5
+    ],
+    "baseline_pairs": [
+      0.7,
+      0.65,
+      -0.75,
+      0.5
+    ],
+    "candidate_pairs": [
+      0.7,
+      0.65,
+      0.75,
+      -0.5
+    ],
+    "candidate_s": 2.6,
+    "total_only_match": true,
+    "per_pair_match": true,
+    "local_result": "LOCAL_SEMANTIC_MATCH",
+    "reasons": [],
+    "changes": [
+      {
+        "path": "analysis.py",
+        "before_sha256": "d53efa1e35238352505388a975685412509b784e0528878ef524ed8e82071879",
+        "after_sha256": "17118210eb9628cd9e1490807d936d4ecae869bf104b75625afc94f8d1e0793a",
+        "diff": "--- original/analysis.py\n+++ candidate/analysis.py\n@@ -1,4 +1,4 @@\n-CHANNEL_SIGNS = (1, 1, 1, 1)\n+CHANNEL_SIGNS = (1, 1, -1, -1)\n OFFSETS = (0, 0, 0, 0)\n \n \n"
+      }
+    ],
+    "runtime_admission": "BLOCKED",
+    "runtime_reasons": [
+      "MONETARY_GUARD_UNVERIFIED",
+      "ISOLATED_EXECUTION_NOT_RUN"
+    ],
+    "candidate_execution": "NOT_RUN",
+    "nebius_generation": "NOT_RUN",
+    "actual_provider_usage": "unknown",
+    "actual_provider_charge": "unknown",
+    "source_written": false,
+    "network_requests": 0,
+    "claim_promotion": "FORBIDDEN_FROM_REPAIR_RESULT",
+    "physical_interpretation": "NOT_ESTABLISHED_SYNTHETIC_DATA",
+    "limitations": [
+      "Local AST and arithmetic checks are not execution of the candidate.",
+      "This local reviewer makes no model call; upstream generation evidence is separate.",
+      "This new synthetic analysis is not the missing original Maya notebook.",
+      "One matching number is insufficient; every registered pair must match.",
+      "Checksums establish content integrity, not authenticated identity."
+    ],
+    "steps": [
+      {
+        "tool": "inspect_fixture",
+        "result": "Three pinned files verified; synthetic source only."
+      },
+      {
+        "tool": "review_patch",
+        "result": "BLOCKED"
+      },
+      {
+        "tool": "recompute_correlations",
+        "result": "LOCAL_SEMANTIC_MATCH"
+      },
+      {
+        "tool": "compare_pairwise",
+        "result": "MATCH"
+      },
+      {
+        "tool": "preserve_claim",
+        "result": "NOT_REPRODUCED; original claim unchanged."
+      },
+      {
+        "tool": "runtime_admission",
+        "result": "BLOCKED; no paid compute dispatched."
+      }
+    ],
+    "receipt_sha256": "695046a9053c10c989ab5176caf3c78e5b3a77a6891bc1fe31c7fd87877e6668"
+  },
+  "reviewer_network_requests": 0,
+  "candidate_execution": "NOT_RUN",
+  "provider_generation": "NOT_ATTESTED_BY_OFFLINE_REPLAY",
+  "claim_promotion": "FORBIDDEN_FROM_REPAIR_RESULT",
+  "provider_response_sha256": "ed0c2272968d84c4844a1305ca0ad68560451615d147c7eaa9f4f41231419920",
+  "returned_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+  "reported_usage": {
+    "completion_tokens": 38,
+    "prompt_tokens": 121,
+    "total_tokens": 159,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "LABREPAIR_JUDGE_BROWSER_ACCEPTANCE_V2",
+  "observed_at_utc": "2026-10-29T16:03:35.815546+00:00",
+  "ui_files_sha256": {
+    "review-app\\index.html": "681c0c5c9ae960bc20b06456cd85e864d722aaeb93a031b242ccacbc640234ae",
+    "review-app\\style.css": "f5edd04bf91cdd412cef6f1a6f7fafb3bc1b2fd2b1251ad8492f1744d84d7538",
+    "review-app\\app.js": "2153cfcc78094d68333f29dd7b4857b7d2ebdd4af546d19726a6bc2dcf711255"
+  },
+  "desktop": "1280x720 default browser viewport; actual A/B/C and Hold interactions observed",
+  "valid": {
+    "candidate_s": 2.6,
+    "local_review": "PASS",
+    "pair_values_match": "4/4"
+  },
+  "wrong_pair": {
+    "candidate_s": 2.6,
+    "local_review": "FAIL_EXPECTED",
+    "pair_values_match": "0/4",
+    "distinct_recorded_protected_tests": "3/4"
+  },
+  "missing_evidence": "REVIEW_EXPECTED",
+  "hold": "Bound intent recorded; no execution authorized; original claim unchanged",
+  "mobile": {
+    "viewport_width": 390,
+    "body_scroll_width": 375,
+    "same_total_case": "2.60 / Proposal rejected",
+    "viewport_restored": true,
+    "retained_mobile_screenshot": "NOT_VERIFIED; later capture returned desktop dimensions and is excluded"
+  },
+  "recording": {
+    "frame_count": 82,
+    "action_count": 13,
+    "continuous_high_frame_rate_video": false,
+    "timing_is_benchmark": false
+  },
+  "provider_calls": 0,
+  "candidate_code_execution": "NOT_RUN",
+  "screenshots": {
+    "judge-desktop.png": "f3cf8f968e72392df5f11afbaf7ec596162cd96fe9195549c2df3386578b383f"
+  },
+  "receipt_failure_degradation": "Historical acceptance and current Python server regression; not a new browser fault injection",
+  "repository": "PRIVATE",
+  "pull_request": "DRAFT_UNMERGED",
+  "publication": "NOT_AUTHORIZED_BY_THIS_INCREMENT"
+}

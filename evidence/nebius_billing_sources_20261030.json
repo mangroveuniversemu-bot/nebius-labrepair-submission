@@ -1,0 +1,87 @@
+{
+  "schema": "LABREPAIR_NEBIUS_BILLING_SOURCES_V1",
+  "reviewed_date_taipei": "2026-10-30",
+  "scope": "Official public billing, project controls, rate limits and exact Nano product pricing only. No account access, credentials, billing mutations or model calls by this reviewer.",
+  "account_observation_from_root": {
+    "balance_usd": 25,
+    "existing_card_present": true,
+    "status": "REPORTED_BY_ROOT_AUTHENTICATED_CONSOLE_CHECK_NOT_INDEPENDENTLY_OBSERVED_BY_REVIEWER"
+  },
+  "conclusions": {
+    "provider_hard_spending_cap": "NOT_ESTABLISHED_FROM_PUBLIC_DOCS",
+    "disable_automatic_charging": "NOT_DOCUMENTED_IN_CURRENT_BILLING_PAGE",
+    "zero_cash_overage_guarantee": "NOT_ESTABLISHED",
+    "project_or_api_key_monetary_cap": "NOT_ESTABLISHED_FROM_PUBLIC_DOCS",
+    "credits_exhausted_behavior": "Current documentation allows negative balances and automatic collection. Do not rely on the legacy negative-balance API-error statement without account-specific verification.",
+    "throughput_limits_are_spending_caps": false
+  },
+  "sources": [
+    {
+      "url": "https://docs.tokenfactory.nebius.com/other-capabilities/billing-new",
+      "title": "Billing & Consumption",
+      "source_type": "official_current_documentation",
+      "accessed": "2026-10-30",
+      "lines": "116; 136-142; 168-186; 193-200",
+      "findings": [
+        "Balances are debited in real time. A card is automatically charged when a configured billing threshold is reached or at month start if the balance is negative. Failed collection suspends the account.",
+        "Promo credits increase the balance but cannot settle outstanding invoices.",
+        "Organization Usage filters monitor consumption; the page does not document a zero-overdraft setting or a provider-enforced project/key monetary cap."
+      ]
+    },
+    {
+      "url": "https://docs.tokenfactory.nebius.com/other-capabilities/billing",
+      "title": "Billing",
+      "source_type": "official_legacy_documentation",
+      "accessed": "2026-10-30",
+      "findings": [
+        "Older billing instructions describe optional automatic top-ups and API errors when balance is negative.",
+        "These differ from the current linked Billing & Consumption page. Auto-top-up off alone cannot establish that the current account has no automatic collection."
+      ]
+    },
+    {
+      "url": "https://docs.tokenfactory.nebius.com/team-access/org-projects",
+      "title": "Organizations and Projects",
+      "source_type": "official_current_documentation",
+      "accessed": "2026-10-30",
+      "lines": "118-122; 143-151",
+      "findings": [
+        "Projects organize resources and permissions, including API keys. This page does not document a project/key monetary budget. Absence from this page is not proof that no console feature exists."
+      ]
+    },
+    {
+      "url": "https://docs.tokenfactory.nebius.com/ai-models-inference/rate-limits",
+      "title": "Rate Limits & Scaling",
+      "source_type": "official_current_documentation",
+      "accessed": "2026-10-30",
+      "lines": "120-127; 149-155; 165-178",
+      "findings": [
+        "Limits dynamically adjust in rolling 15-minute windows, potentially to 20 times the base allocation.",
+        "Over-limit requests may still be processed with spare capacity. RPM/TPM and their continuously replenishing counters do not impose a daily dollar budget."
+      ]
+    },
+    {
+      "url": "https://nebius.com/services/token-factory/models/nvidia-nemotron-models-inference",
+      "title": "NVIDIA Nemotron models inference",
+      "source_type": "official_product_page_search_result",
+      "accessed": "2026-10-30",
+      "retrieval_limit": "Official search result contains the full Nano pricing section; direct page open returned an accessibility error.",
+      "findings": [
+        "Nemotron-3-Nano-30B-A3B public endpoint: US$0.06 per million input tokens and US$0.24 per million output tokens; 262K context, FP8."
+      ],
+      "model_pricing": {
+        "product_model_name": "Nemotron-3-Nano-30B-A3B",
+        "project_api_model_id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+        "currency": "USD",
+        "input_per_million_tokens": 0.06,
+        "output_per_million_tokens": 0.24,
+        "account_effective_quote_verified": false,
+        "scope": "Public product rates; no dedicated endpoint, batch, cache, tax or negotiated pricing assumed."
+      }
+    }
+  ],
+  "implementation_inference": {
+    "local_guard_is_provider_cap": false,
+    "recommendation": "Use a persistent daily request/token/cost reservation before dispatch with a concurrency lock, fixed model and max output, no retries, and retain reservations for ambiguous outcomes. This bounds this application only; it does not stop other keys or provider automatic collection.",
+    "account_followup": "Root must reconcile the authenticated billing settings and account-effective terms before claiming credits-only service or no cash overage."
+  }
+}

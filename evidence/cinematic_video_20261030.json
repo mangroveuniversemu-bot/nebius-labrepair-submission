@@ -1,0 +1,89 @@
+{
+  "schema": "LABREPAIR_CINEMATIC_DELIVERY_V1",
+  "observed_at_utc": "2026-10-29T16:57:50.074578+00:00",
+  "duration_seconds": 123,
+  "shots": 33,
+  "subtitle_intervals": 38,
+  "voice": "Local generic Kokoro am_michael",
+  "repository": "mangroveuniversemu-bot/nebius-labrepair",
+  "branch": "codex/poc-completion-20261026",
+  "repository_visibility": "PRIVATE",
+  "pull_request": "DRAFT_UNMERGED",
+  "drive_files": [
+    {
+      "name": "LabRepair_Cinematic_Edit_Package_20261030.zip",
+      "id": "12A_2nCDfsbM-52qeLK47iflbU9uJxRtJ",
+      "parent_folder_id": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+      "observed_rounded_size": "22.1 MB",
+      "local": {
+        "bytes": 23126925,
+        "sha256": "166947e31b95f4e28b776529079d6d5c8ff748208d7d21bcb3812bdf1070e686"
+      }
+    },
+    {
+      "name": "LabRepair_DEMO_Cinematic_20261030.mp4",
+      "id": "1HCEIKiPBi2xpSm-c6lWHOe5SOxNp2IPR",
+      "parent_folder_id": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+      "observed_rounded_size": "14.3 MB",
+      "local": {
+        "bytes": 15030372,
+        "sha256": "926514efd82fcdf7954b4218b958e6baf0be9b7f199c77a4364d7e872a2ed3ab"
+      }
+    },
+    {
+      "name": "LabRepair_DEMO_Cinematic_20261030.en.srt",
+      "id": "1ABqvv_X3ydoLJIizRsdPq5TkZfIbP0Ed",
+      "parent_folder_id": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+      "observed_rounded_size": "3 KB",
+      "local": {
+        "bytes": 2777,
+        "sha256": "3e7677d63c6ac8699a706aa185d36299a23c0aef23d7fc554d1008439034f2a7"
+      }
+    },
+    {
+      "name": "LabRepair_cinematic_narration_20261030.wav",
+      "id": "16EvzrR0fGfugnKzv3MhJLwGb3YM_xp_t",
+      "parent_folder_id": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+      "observed_rounded_size": "5.6 MB",
+      "local": {
+        "bytes": 5904044,
+        "sha256": "ea5e64f7fe27d1d9b165006a3e8b289721502faa6bd0485b6a6e0331741bf155"
+      }
+    }
+  ],
+  "drive_movie_preview": "PRIVATE_PICTURE_PLAYBACK_OBSERVED_2M03_WITH_PROFESSION_LABEL",
+  "drive_playback_observation": {
+    "profession_overlay_visible": true,
+    "duration": "2:03",
+    "progress_observed": [
+      "0:01",
+      "0:05"
+    ],
+    "private_access": "Only me",
+    "picture": "Actual visible playback; full-width workplace illustration and Nora job label visible",
+    "observed_at_utc": "2026-10-29T16:57:39.560Z",
+    "cloud_original_byte_hash_matching": "NOT_VERIFIED"
+  },
+  "cloud_original_byte_hash_matching": "NOT_VERIFIED",
+  "package": {
+    "name": "LabRepair_Cinematic_Edit_Package_20261030.zip",
+    "bytes": 23126925,
+    "sha256": "166947e31b95f4e28b776529079d6d5c8ff748208d7d21bcb3812bdf1070e686",
+    "entries": 33,
+    "payload_hashes_verified": 32,
+    "kind": "DIFFERENTIAL_EDIT_PACKAGE"
+  },
+  "ui_unchanged_from_capture": true,
+  "ui_capture_commit": "a7cf2f5629975a00511beadd9e2a90eac3349a52",
+  "new_provider_or_sandbox_calls": 0,
+  "new_paid_calls": 0,
+  "source_material": "Prior full package referenced; unchanged raw footage and UI PNGs not duplicated",
+  "limits": [
+    "One synthetic case; no physical quantum measurements or customer testimonial.",
+    "Prompt supplied channel convention; no autonomous discovery.",
+    "Local pair matching and saved protected-test checks remain distinct.",
+    "Character illustration and actual UI replay are labeled separately.",
+    "Local file hashes do not establish original remote byte equality.",
+    "No public release, merge or submission."
+  ]
+}

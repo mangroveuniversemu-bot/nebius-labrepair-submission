@@ -1,0 +1,6 @@
+# Preserve source snapshot and client-observed evidence bytes on every platform.
+* -text
+evidence/nebius-nano-repair-20261026-1/* -text
+evidence/nebius-sandbox-validation-20261026-1/* -text
+evidence/nebius-direct-cli-20261030-1/* -text
+judge-site/** text eol=lf

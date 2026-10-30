@@ -1,0 +1,11 @@
+✔ late Sample A decision cannot contaminate the completed Sample B review (10.6856ms)
+✔ pending intent disables both controls and refuses overlapping Hold or Rerun (4.2005ms)
+✔ stale A completion does not unlock controls for B's newer pending intent (4.0726ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 176.6274

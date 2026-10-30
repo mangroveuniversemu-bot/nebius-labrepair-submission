@@ -1,0 +1,14 @@
+{
+  "observed_at_utc": "2026-10-26T15:20:07.623736+00:00",
+  "python": "3.12.10",
+  "platform": "Windows",
+  "tests_run": 14,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "success": true,
+  "test_log_sha256": "12e3062d2cb8addb845ee32d97490c46f73cbaf37d2f06e6bee73577d37e0dbd",
+  "scope": "Four model parameter intake controls plus ten scientific workflow controls; fabricated provider-shaped test data distinct from real response replay",
+  "new_provider_calls": 0,
+  "candidate_execution": "NOT_RUN"
+}

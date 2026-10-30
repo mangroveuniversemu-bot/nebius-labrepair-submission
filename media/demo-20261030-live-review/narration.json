@@ -1,0 +1,96 @@
+{
+  "schema": "LABREPAIR_LIVE_REVIEW_NARRATION_V1",
+  "target_seconds": 123,
+  "voice": {
+    "engine": "Local Kokoro ONNX",
+    "voice": "am_michael",
+    "generic_synthetic_voice": true,
+    "windows_system_speech": false,
+    "paid_api_calls": 0
+  },
+  "visual_direction": "Exact opening hook; same-total counterexample; saved real provider and isolated execution proof at 39 seconds; visible limits and actionable close.",
+  "scenes": [
+    {
+      "id": "01_question",
+      "duration": 5,
+      "title": "Would you approve it?",
+      "narration": "Two patches. Same total. One is wrong. LabRepair."
+    },
+    {
+      "id": "02_hook",
+      "duration": 4,
+      "title": "Two patches. Same total.",
+      "narration": "AI agents now patch research code."
+    },
+    {
+      "id": "03_wrong",
+      "duration": 10,
+      "title": "Check the evidence.",
+      "narration": "Check only the final number, and a wrong repair can look right. LabRepair checks the evidence."
+    },
+    {
+      "id": "04_difference",
+      "duration": 11,
+      "title": "The evidence does not match.",
+      "narration": "Every pair is different. The headline matches. The evidence does not. A total-only check would miss this wrong repair."
+    },
+    {
+      "id": "05_repair",
+      "duration": 9,
+      "title": "Same total. Different verdict.",
+      "narration": "Now the declared repair. Same total again. This time, all four pairs agree."
+    },
+    {
+      "id": "07_model",
+      "duration": 16,
+      "title": "A bounded model proposal.",
+      "narration": "NVIDIA Nemotron on Nebius Token Factory proposed this repair. We told it which channels to flip. It returned two arrays; counts and tests stayed protected."
+    },
+    {
+      "id": "08_sandbox",
+      "duration": 13,
+      "title": "One recorded real operation.",
+      "narration": "Nebius Sandbox took one point two seven three seconds. The repair passed four checks. Both controls failed as expected. Guest networking stayed disabled."
+    },
+    {
+      "id": "06_claim",
+      "duration": 9,
+      "title": "The code passed. The claim did not.",
+      "narration": "The code passed. The original three point four zero claim did not. Those are separate decisions."
+    },
+    {
+      "id": "09_unknown",
+      "duration": 12,
+      "title": "Missing evidence needs review.",
+      "narration": "Missing evidence changes the decision. This local control asks for review instead of inventing a result."
+    },
+    {
+      "id": "10_handover",
+      "duration": 14,
+      "title": "Keep the decision inspectable.",
+      "narration": "Nora records a hold against this exact source. Her decision preserves the checks and reasons. It launches no new job. The evidence receipt is ready for the next reviewer."
+    },
+    {
+      "id": "11_person",
+      "duration": 13,
+      "title": "What changed. What failed. What remains.",
+      "narration": "This synthetic case does not prove a quantum result. It shows how to make a repair, and its limits, inspectable."
+    },
+    {
+      "id": "12_close",
+      "duration": 7,
+      "title": "Repair the analysis. Preserve the evidence.",
+      "narration": "Try the wrong-pair case. Leave a decision the next reviewer can inspect."
+    }
+  ],
+  "boundaries": [
+    "Character shots are AI illustration, not customers or physical quantum measurements.",
+    "Actual UI capture is edited replay, not new provider dispatch or a performance benchmark.",
+    "The wrong-pair control is operator-authored.",
+    "The prompt supplies the declared convention; autonomous discovery is not claimed.",
+    "Original 3.40 claim remains NOT_REPRODUCED.",
+    "Local pair matching and recorded protected-test counts are distinct.",
+    "No fresh cloud call, paid TTS or paid resource for this edit."
+  ],
+  "timing_reason": "Keep the verified 123-second picture timing. Measure every new voice clip locally before rendering."
+}

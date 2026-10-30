@@ -1,0 +1,59 @@
+{
+  "automatic_admission_gate": "UNCHANGED_BLOCKED",
+  "billing_receipt": "unknown",
+  "checker_sha256": "cae89ac39593009e84be975c7f481fc0a9dd93763032a0d8ff4389ba34ca93db",
+  "created_utc": "2026-10-26T16:07:55.990841+00:00",
+  "currency_amount": "unknown",
+  "delete_count": 0,
+  "drive_writes": 0,
+  "generated_model_calls_this_stage": 0,
+  "github_writes": 0,
+  "guest_input_sha256": "05e7dd41499adcf6fb322d35545854012708159be78fde05ec1694f99bbbf727",
+  "guest_outcomes_verified": true,
+  "guest_report_success": true,
+  "guest_rlimits": {
+    "address_space_bytes": 268435456,
+    "cpu_seconds": 20,
+    "subprocess_timeout_seconds": 5
+  },
+  "guest_stderr_bytes": 0,
+  "guest_stdout_bytes": 5641,
+  "guest_stdout_sha256": "31c9900c3e55c6d2f059cf00f836f7cae836e781921d91de739da7be8f723b36",
+  "http_status": 201,
+  "last_poll_http_status": 200,
+  "model_response_sha256": "ed0c2272968d84c4844a1305ca0ad68560451615d147c7eaa9f4f41231419920",
+  "money_charged": "unknown",
+  "observation_elapsed_ms": 413.08,
+  "operation_uuid": "01a178f7-ee09-7133-a4c4-87922e4db2eb",
+  "permission_grant": {
+    "filesystem": false,
+    "network": true,
+    "scope": "turn"
+  },
+  "poll_count": 1,
+  "post_count": 1,
+  "post_elapsed_ms": 926.3,
+  "preservation": {
+    "generation_receipt_unchanged": true,
+    "historical_fixture_unchanged": true,
+    "original_index_unchanged": true,
+    "original_tracked_worktree_matches_index": true
+  },
+  "provider_cpu_ram_allocation": "not exposed; no allocation claimed",
+  "readiness": {
+    "NEBIUS_API_KEY_state": "ready",
+    "exact_host_allowed": true,
+    "observations_current": true,
+    "policy_state": "enforced",
+    "revision": "30"
+  },
+  "redirects": 0,
+  "request_bytes": 15942,
+  "request_sha256": "7ae065030eaee662d7178a0e2d6da5bdb947b87f4f53de37fc6ebf88368b5011",
+  "resources_cost_units": "unconfirmed; not currency",
+  "retries": 0,
+  "run_id": "nebius-sandbox-validation-20261026-1",
+  "sandbox_pricing": "unverified",
+  "state": "TERMINAL_OBSERVED",
+  "terminal_observed": true
+}

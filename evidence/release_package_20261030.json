@@ -1,0 +1,14 @@
+[
+  {
+    "name": "LabRepair_Interactive_TestBuild_20261030.zip",
+    "bytes": 18519,
+    "sha256": "77a71859fa77f99c470d4b1a30ad3bf2aede92d5e79cbeb930e055b37cb69142",
+    "payloads_verified": 5
+  },
+  {
+    "name": "LabRepair_Release_Review_Package_20261030.zip",
+    "bytes": 17165123,
+    "sha256": "a9999c2f271068cf0097588641c2a05e11ca8c4839a5457a4c16c567e8533dfe",
+    "payloads_verified": 20
+  }
+]

@@ -1,0 +1,240 @@
+{
+  "schema": "LABREPAIR_JUDGE_SITE_TEST_RESULT_V3",
+  "started_at_utc": "2026-10-30T03:04:00.318Z",
+  "completed_at_utc": "2026-10-30T03:04:02.767Z",
+  "status": "PASS",
+  "provenance": {
+    "executed_by": "Codex delegated agent /root/judge_ui_audit",
+    "execution_context": "Current delegated accessible result visibility fix; local Windows workspace",
+    "working_directory": "outputs/nebius-labrepair",
+    "node_version": "v24.22.1",
+    "python_version": "3.12.10",
+    "recording_basis": "Actual commands, start/completion UTC times, stdout/stderr and code hashes from this run. Build stdout workspace path redacted. No browser or provider call."
+  },
+  "checks_passed": 18,
+  "checks_failed": 0,
+  "suites": [
+    {
+      "name": "engine_and_build",
+      "status": "PASS",
+      "checks_passed": 12,
+      "checks": [
+        {
+          "name": "all three results match the current Python reviewer",
+          "status": "PASS"
+        },
+        {
+          "name": "wrong total repair fails each pair while preserving the headline total",
+          "status": "PASS"
+        },
+        {
+          "name": "missing evidence stays unknown instead of becoming zero",
+          "status": "PASS"
+        },
+        {
+          "name": "tampered raw source is rejected",
+          "status": "PASS"
+        },
+        {
+          "name": "same values but altered source serialization cannot reuse raw-byte pin",
+          "status": "PASS"
+        },
+        {
+          "name": "unverified copied source cannot enter the calculator",
+          "status": "PASS"
+        },
+        {
+          "name": "receipt binds source, candidate and actual computed result",
+          "status": "PASS"
+        },
+        {
+          "name": "stale receipt and cross-scenario intent are refused",
+          "status": "PASS"
+        },
+        {
+          "name": "modified review objects and unknown cases do not pass as trusted review",
+          "status": "PASS"
+        },
+        {
+          "name": "saved cloud evidence is independently pinned and tampering is rejected",
+          "status": "PASS"
+        },
+        {
+          "name": "standalone HTML needs no module imports, fetch or external assets",
+          "status": "PASS"
+        },
+        {
+          "name": "standalone CSP hashes cover the exact inline code and style bytes",
+          "status": "PASS"
+        }
+      ],
+      "scope": "Offline browser-engine parity, negative controls, source/intent binding and portable build integrity."
+    },
+    {
+      "name": "result_visibility_dom_contract",
+      "status": "PASS",
+      "checks_passed": 6,
+      "checks": [
+        {
+          "name": "verdict is programmatically focusable and describes its result",
+          "status": "PASS"
+        },
+        {
+          "name": "primary CTA reveals computed wrong-pair result after busy clears",
+          "status": "PASS"
+        },
+        {
+          "name": "reduced-motion preference requests an immediate result reveal",
+          "status": "PASS"
+        },
+        {
+          "name": "sample selection waits for explicit check and reveals only the new outcome",
+          "status": "PASS"
+        },
+        {
+          "name": "failed computation reveals a blocked result without enabling receipts",
+          "status": "PASS"
+        },
+        {
+          "name": "repeated CTA during a pending calculation produces one reveal",
+          "status": "PASS"
+        }
+      ],
+      "scope": "Offline app-handler DOM contract; actual scrolling pixels, visual layout, screen-reader speech and browser downloads NOT_RUN."
+    }
+  ],
+  "standalone_classic_script_syntax": "PASS",
+  "inline_csp_exact_byte_hashes": "PASS (included in engine suite)",
+  "raw_output_hash_check": {
+    "status": "PASS",
+    "files": [
+      {
+        "file": "app.js",
+        "expected_sha256": "86d8926014c98610812f172ce5cdb94995bc469191227de639f18a42244a0055",
+        "actual_sha256": "86d8926014c98610812f172ce5cdb94995bc469191227de639f18a42244a0055",
+        "matches": true,
+        "contains_crlf": false
+      },
+      {
+        "file": "data.js",
+        "expected_sha256": "b9599fee32209384a816e26637fe89200ebb5422bbe6ed0bf7a8c3a8a822faaf",
+        "actual_sha256": "b9599fee32209384a816e26637fe89200ebb5422bbe6ed0bf7a8c3a8a822faaf",
+        "matches": true,
+        "contains_crlf": false
+      },
+      {
+        "file": "engine.js",
+        "expected_sha256": "de712944e6600280a6d29b2e832e941e21a228132feed45085ae907a71cfda7d",
+        "actual_sha256": "de712944e6600280a6d29b2e832e941e21a228132feed45085ae907a71cfda7d",
+        "matches": true,
+        "contains_crlf": false
+      },
+      {
+        "file": "index.html",
+        "expected_sha256": "ce80c16ba62ca1da8111b414202d5303d6046af2c33510e726a3209e7b596549",
+        "actual_sha256": "ce80c16ba62ca1da8111b414202d5303d6046af2c33510e726a3209e7b596549",
+        "matches": true,
+        "contains_crlf": false
+      },
+      {
+        "file": "integrity.js",
+        "expected_sha256": "f6a1c67e8e264e9f5b5559c98b89798e3e894cbc10817813a20be4d185610391",
+        "actual_sha256": "f6a1c67e8e264e9f5b5559c98b89798e3e894cbc10817813a20be4d185610391",
+        "matches": true,
+        "contains_crlf": false
+      },
+      {
+        "file": "style.css",
+        "expected_sha256": "46b10a9eee88113b070465b2803bd069959737eba33057fac2f7e7a0aa259a70",
+        "actual_sha256": "46b10a9eee88113b070465b2803bd069959737eba33057fac2f7e7a0aa259a70",
+        "matches": true,
+        "contains_crlf": false
+      }
+    ],
+    "all_output_files_lf": true
+  },
+  "build_pins": {
+    "policy_sha256": "9c39f245e283a1003b921149303728fe62625c7b009f5b7da42399530c12ff1a",
+    "recorded_sha256": "f36d0c1fb08df6d10976471a7fa5527f30a07893f30060fc6edf6b73359b99a9",
+    "snapshot_sha256": "2394f56595e8a5775381b440d3e039a0bd1979615c3509aeffa78d9955039af9",
+    "source_files": {
+      "analysis.py": "d53efa1e35238352505388a975685412509b784e0528878ef524ed8e82071879",
+      "counts.json": "ebe15738fd6443328681cc53f549d7d7d299b4c1958e2db7082d0de032c12eca",
+      "test_analysis.py": "d83e65c56f5244e61a49c2d300fe8df2e29f63f6aa7cba97fc1c2daca4b7e3e4"
+    },
+    "source_sha256": "991f570692eb8ef4dbe06b62318d5d3ac93318ccd44e9e540236568020413662"
+  },
+  "tested_artifact_sha256": {
+    "judge-site/build.py": "abc26cf5eb45ac14ff1bcf4c785e356f7fabd019252557971102fbb141066212",
+    "judge-site/src/app.js": "86d8926014c98610812f172ce5cdb94995bc469191227de639f18a42244a0055",
+    "judge-site/src/index.html": "74a10da5586195daf4dafc040673cfd075e5cbc568d6907a47327da6ad782cda",
+    "judge-site/src/engine.js": "de712944e6600280a6d29b2e832e941e21a228132feed45085ae907a71cfda7d",
+    "judge-site/tests/engine.test.mjs": "0b14748be890730340eb956d82f59a5e23c0088b426ef2f8a09fd82ccd238639",
+    "judge-site/tests/visibility.test.mjs": "03702888f93e2a0399d81a63f98d6532e45efc044564609fba007e2502f16703",
+    "judge-site/tests/python-reference.json": "7518fc20809a8e6ec06afc0b623e347776842596f90d3a3b7d4b0ba21bf59dca",
+    "judge-site/build-result.json": "31a40d9d6cc47dede9c6cf78d56f12dde730fdc62b6449dc9f29f0352c8186bd",
+    "judge-site/dist/index.html": "ce80c16ba62ca1da8111b414202d5303d6046af2c33510e726a3209e7b596549",
+    "judge-site/dist/app.js": "86d8926014c98610812f172ce5cdb94995bc469191227de639f18a42244a0055",
+    "judge-site/dist/engine.js": "de712944e6600280a6d29b2e832e941e21a228132feed45085ae907a71cfda7d"
+  },
+  "commands": [
+    {
+      "command": "node --version",
+      "started_at_utc": "2026-10-30T03:04:00.318Z",
+      "completed_at_utc": "2026-10-30T03:04:00.513Z",
+      "elapsed_seconds": 0.195,
+      "exit_code": 0,
+      "stdout": "v24.22.1\n",
+      "stderr": ""
+    },
+    {
+      "command": "python judge-site/build.py",
+      "started_at_utc": "2026-10-30T03:04:00.513Z",
+      "completed_at_utc": "2026-10-30T03:04:01.710Z",
+      "elapsed_seconds": 1.197,
+      "exit_code": 0,
+      "stdout": "{\"output\": \"[WORKSPACE]/outputs/nebius-labrepair/judge-site/dist\", \"source_sha256\": \"991f570692eb8ef4dbe06b62318d5d3ac93318ccd44e9e540236568020413662\", \"files\": 6, \"provider_calls\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "command": "node judge-site/tests/engine.test.mjs",
+      "started_at_utc": "2026-10-30T03:04:01.710Z",
+      "completed_at_utc": "2026-10-30T03:04:02.148Z",
+      "elapsed_seconds": 0.438,
+      "exit_code": 0,
+      "stdout": "PASS all three results match the current Python reviewer\nPASS wrong total repair fails each pair while preserving the headline total\nPASS missing evidence stays unknown instead of becoming zero\nPASS tampered raw source is rejected\nPASS same values but altered source serialization cannot reuse raw-byte pin\nPASS unverified copied source cannot enter the calculator\nPASS receipt binds source, candidate and actual computed result\nPASS stale receipt and cross-scenario intent are refused\nPASS modified review objects and unknown cases do not pass as trusted review\nPASS saved cloud evidence is independently pinned and tampering is rejected\nPASS standalone HTML needs no module imports, fetch or external assets\nPASS standalone CSP hashes cover the exact inline code and style bytes\n{\"checks\":12,\"status\":\"PASS\",\"provider_calls\":0,\"scope\":\"Offline browser-engine parity, negative controls, source/intent binding and portable build integrity.\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": "node judge-site/tests/visibility.test.mjs",
+      "started_at_utc": "2026-10-30T03:04:02.148Z",
+      "completed_at_utc": "2026-10-30T03:04:02.561Z",
+      "elapsed_seconds": 0.412,
+      "exit_code": 0,
+      "stdout": "PASS verdict is programmatically focusable and describes its result\nPASS primary CTA reveals computed wrong-pair result after busy clears\nPASS reduced-motion preference requests an immediate result reveal\nPASS sample selection waits for explicit check and reveals only the new outcome\nPASS failed computation reveals a blocked result without enabling receipts\nPASS repeated CTA during a pending calculation produces one reveal\n{\"checks\":6,\"status\":\"PASS\",\"scope\":\"Offline app-handler DOM contract; actual scrolling pixels, visual layout, screen-reader speech and browser downloads NOT_RUN.\",\"browser_used\":false,\"provider_calls\":0}\n",
+      "stderr": ""
+    },
+    {
+      "command": "node -e \"const fs=require('node:fs');const vm=require('node:vm');const html=fs.readFileSync('judge-site/dist/index.html','utf8');new vm.Script(html.match(/<script>([\\s\\S]*?)<\\/script>/)[1]);console.log('PASS standalone classic script syntax')\"",
+      "started_at_utc": "2026-10-30T03:04:02.561Z",
+      "completed_at_utc": "2026-10-30T03:04:02.759Z",
+      "elapsed_seconds": 0.198,
+      "exit_code": 0,
+      "stdout": "PASS standalone classic script syntax\n",
+      "stderr": ""
+    }
+  ],
+  "local_file_browser_qa": {
+    "status": "NOT_RUN",
+    "reason": "file:// URL policy restriction reported by parent; no workaround attempted. Offline DOM model is not a browser.",
+    "scroll_pixels": "NOT_OBSERVED",
+    "screen_reader_speech": "NOT_OBSERVED",
+    "layout_and_download_behavior": "NOT_OBSERVED"
+  },
+  "boundaries": {
+    "new_provider_calls": 0,
+    "candidate_python_execution": false,
+    "staging_or_commit_by_this_agent": false,
+    "public_deployment": "NOT_PERFORMED"
+  }
+}

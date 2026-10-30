@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A quantum research software repair review: two patches share a total, but only one preserves the evidence.">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-tqHvL1CmHRsEbOkhCjC+yoihUauKlh/8EGithF1tUYY='; style-src 'sha256-Lac9/KxeQ5BygUNI+h7d/FNdQn6OBiXxF3Tqg0K//Io='; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>LabRepair · Evidence before approval</title><style>
+:root{--ink:#182d30;--muted:#66746e;--paper:#f5f5f0;--white:#fdfefa;--line:#dce2d9;--teal:#146356;--mint:#e5eee5;--red:#a04332;--amber:#885f20;--mono:ui-monospace,Consolas,monospace}*{box-sizing:border-box}[hidden]{display:none!important}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}header{max-width:1360px;padding:23px 5%;margin:auto;display:flex;align-items:center;gap:28px;border-bottom:1px solid var(--line)}.brand{display:flex;gap:11px;align-items:center;font-size:21px;font-weight:650;text-decoration:none;color:var(--ink)}.brand>span{display:grid;place-items:center;background:var(--ink);color:#fff;width:31px;height:31px;font:12px var(--mono)}.header-note{font:9px var(--mono);letter-spacing:.04em;color:var(--muted)}header>.chip{margin-left:auto}main{max-width:1260px;padding:0 5%;margin:auto}.hero{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center;padding:56px 0}.eyebrow{font:10px/1.5 var(--mono);letter-spacing:.06em;color:var(--teal);margin:0 0 13px}h1{font-size:clamp(42px,5.1vw,67px);line-height:1.02;letter-spacing:-.055em;font-weight:660;margin:0 0 24px}h1 em{font-style:normal;color:var(--teal)}.lead{color:var(--muted);max-width:470px;font-size:15px;line-height:1.75;margin:0 0 25px}button{font:600 13px/1.5 system-ui,sans-serif;border:1px solid var(--teal);border-radius:2px;color:white;background:var(--teal);padding:12px 18px;cursor:pointer}button>span{margin-left:20px}button:disabled{opacity:.45;cursor:not-allowed}button:hover:enabled{filter:brightness(.93)}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #74aa99;outline-offset:4px}.caption{font-size:11px;color:var(--muted);line-height:1.6}.hero-proof{padding:25px 25px 0;background:var(--white);border:1px solid var(--line);box-shadow:0 18px 45px -30px #233c2d4d}.totals{display:grid;grid-template-columns:1fr 25px 1fr;gap:14px;align-items:center;margin:27px 0}.totals article>span,.totals small{display:block;color:var(--muted);font-size:11px}.totals strong{font:500 clamp(37px,5vw,64px)/1.4 var(--mono);letter-spacing:-.07em}.totals>b{color:#9da9a0;font-weight:400;font-size:27px}.hero-proof>p:not(.eyebrow){font-size:13px;color:var(--muted)}.locked{font:8px/1.6 var(--mono);padding:15px 0;border-top:1px solid var(--line);color:var(--muted)}.heading{display:flex;justify-content:space-between;align-items:center;gap:16px}.heading h2{font-size:27px;font-weight:600;line-height:1.25;letter-spacing:-.035em;margin:0}.heading h3{margin:0}.heading .eyebrow{margin-bottom:9px}.chip{display:inline-block;border:1px solid var(--line);padding:6px 8px;font:9px/1.5 var(--mono);color:var(--muted)}.chip[data-state="PASS"]{background:var(--mint);border-color:#a4c1b1;color:var(--teal)}.chip[data-state="FAIL"]{background:#f8eae4;color:var(--red);border-color:#d2b3a5}.chip[data-state="REVIEW"]{background:#f3efdc;color:var(--amber);border-color:#d7c79c}.samples{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:25px 0 20px}.sample{color:var(--ink);background:var(--white);border:1px solid var(--line);padding:19px;text-align:left;display:flex;flex-direction:column;gap:10px;min-height:136px;font-weight:400}.sample small{font:9px/1.4 var(--mono);color:var(--muted)}.sample strong{font-size:16px;line-height:1.4;font-weight:600;letter-spacing:-.02em}.sample>span{font-size:12px;color:var(--muted)}.sample[aria-pressed="true"]{border-color:var(--teal);box-shadow:inset 0 3px var(--teal);background:var(--mint)}.toolbar{display:flex;align-items:center;gap:20px;margin-bottom:24px}.toolbar>p{font-size:11px;color:var(--muted);margin:0}.metrics{display:grid;grid-template-columns:1fr 1fr 1.3fr;border:1px solid var(--line);margin:0 0 20px;background:var(--line);gap:1px}.metrics article{padding:22px;background:var(--white)}.metrics article>span,.saved-metrics span{font:9px var(--mono);color:var(--muted)}.metrics strong{display:block;font:500 43px/1.35 var(--mono);letter-spacing:-.06em;margin:16px 0 10px}.metrics small,.saved-metrics small{font-size:11px;color:var(--muted);display:block}.metrics .verdict{background:var(--mint)}.metrics .verdict strong{font:600 24px/1.3 system-ui,sans-serif;letter-spacing:-.03em;min-height:58px}.metrics .verdict[data-state="FAIL"]{background:#f7e9e2}.metrics .verdict[data-state="FAIL"] strong,.red{color:var(--red)}.metrics .verdict[data-state="REVIEW"]{background:#f3efdd}.metrics .verdict[data-state="REVIEW"] strong{color:var(--amber)}.panels{display:grid;grid-template-columns:1.1fr 1fr;gap:20px}.panel{border:1px solid var(--line);background:var(--white);padding:23px;min-width:0}h3{font-size:19px;font-weight:600;line-height:1.4;letter-spacing:-.02em;margin:0 0 17px}.muted{color:var(--muted);font-size:13px}.decision>p:not(.eyebrow){font-size:12px}.decision-buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.secondary,.download{background:transparent;color:var(--teal);border-color:#a4bbae;padding:10px 12px;font-size:12px}.download{margin-top:5px;border-color:transparent;text-decoration:underline;text-underline-offset:4px;padding-left:0}table{width:100%;border-collapse:collapse;font:12px/1.6 var(--mono);margin:18px 0}th,td{text-align:right;padding:12px 6px;border-bottom:1px solid var(--line)}th{font-size:9px;color:var(--muted);font-weight:400}th:first-child,td:first-child{text-align:left}.ok{color:var(--teal)}.bad{color:var(--red)}.unknown{color:var(--amber)}.insight{background:#edf2e9;padding:14px;border-left:3px solid var(--teal);font-size:12px;color:#456455}.source-details,.limits{border-top:1px solid var(--line);margin-top:22px;padding:15px 0;font-size:12px;color:var(--muted)}summary{cursor:pointer;color:var(--ink);font-size:12px;padding:5px 0}.source-columns{display:grid;grid-template-columns:1fr 1fr;gap:15px}.source-columns>div{min-width:0}h4{font-size:11px;font-weight:500}pre{font:10px/1.6 var(--mono);white-space:pre-wrap;overflow-wrap:anywhere;background:#1b3335;color:#e7eee5;padding:16px;margin:0;max-height:310px;overflow:auto}code{font:9px var(--mono);overflow-wrap:anywhere}.source-details code{display:block;margin-top:5px}.saved{background:#eef3ea;border:1px solid #ccd8c9;margin:36px 0 23px;padding:27px}.saved h2{font-size:25px;max-width:610px}.saved>.muted{max-width:850px}.saved-metrics{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:22px 0}.saved-metrics article{background:var(--white);padding:18px;border:1px solid #d5e0d2}.saved-metrics strong{display:block;font-size:25px;font-weight:500;margin:10px 0;color:var(--teal)}.saved details{font-size:12px;color:var(--muted)}.error{background:#f8eae4;color:var(--red);border:1px solid #d2b3a5;padding:15px;font-size:12px}.limits p{max-width:980px}footer{border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:25px;padding:25px 0;font:8px/1.7 var(--mono);color:var(--muted)}
+@media(max-width:900px){header{gap:16px}.header-note{display:none}.hero{gap:30px}.heading{flex-wrap:wrap}.hero-proof{padding:20px 18px 0}.totals{gap:8px}.totals strong{font-size:44px}.totals small{font-size:9px}.metrics article{padding:18px}.metrics .verdict strong{font-size:22px}.sample{padding:16px}.sample strong{font-size:15px}.panels{grid-template-columns:1fr}.source-columns{grid-template-columns:1fr}}
+@media(max-width:600px){header{padding:18px 5%;gap:10px}.brand{font-size:19px}header>.chip{font-size:8px;max-width:145px}.hero{grid-template-columns:1fr;padding:35px 0;gap:25px}h1{font-size:53px}.hero-proof{max-width:100%}.totals strong{font-size:55px}.totals small{font-size:10px}.heading h2{font-size:24px}.samples{grid-template-columns:1fr;gap:9px;margin-top:20px}.sample{min-height:0;gap:6px;padding:15px 18px}.sample strong{font-size:16px}.toolbar{flex-direction:column;align-items:flex-start;gap:12px}.toolbar>button{width:100%}.metrics{grid-template-columns:1fr 1fr}.metrics .verdict{grid-column:1/-1}.metrics .verdict strong{min-height:0}.metrics strong{font-size:39px}.metrics small{font-size:10px}.panel{padding:19px}.saved{padding:21px 17px}.saved h2{font-size:24px}.saved-metrics{grid-template-columns:1fr}.saved-metrics strong{font-size:23px}table{font-size:10px}th,td{padding:12px 3px}.saved table th{font-size:8px}.saved table td:first-child{max-width:110px}.saved table td:last-child{max-width:100px}.decision-buttons>button{flex:1}.caption{font-size:10px}footer{display:block}footer>span{display:block;margin:10px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+</style><script>
+document.addEventListener("DOMContentLoaded", () => {
+// Build-time pins from independently verified source and saved receipts.
+const PINS = Object.freeze({"policy_sha256":"9c39f245e283a1003b921149303728fe62625c7b009f5b7da42399530c12ff1a","recorded_sha256":"f36d0c1fb08df6d10976471a7fa5527f30a07893f30060fc6edf6b73359b99a9","snapshot_sha256":"2394f56595e8a5775381b440d3e039a0bd1979615c3509aeffa78d9955039af9","source_files":{"analysis.py":"d53efa1e35238352505388a975685412509b784e0528878ef524ed8e82071879","counts.json":"ebe15738fd6443328681cc53f549d7d7d299b4c1958e2db7082d0de032c12eca","test_analysis.py":"d83e65c56f5244e61a49c2d300fe8df2e29f63f6aa7cba97fc1c2daca4b7e3e4"},"source_sha256":"991f570692eb8ef4dbe06b62318d5d3ac93318ccd44e9e540236568020413662"});
+
+// Safe, fixed synthetic inputs and sanitized saved execution summary.
+const sourceText = "{\"counts\":{\"chsh_terms\":[1,1,1,-1],\"data_origin\":\"NEW_SYNTHETIC_LABREPAIR_FIXTURE_20261026\",\"original_claim\":{\"claim_state\":\"NOT_REPRODUCED\",\"claimed_s\":\"3.4\",\"physical_interpretation\":\"NOT_ESTABLISHED\"},\"pairs\":[\"A0B0\",\"A0B1\",\"A1B0\",\"A1B1\"],\"registered_channel_signs\":[1,1,-1,-1],\"rows\":[[850,150,150,850],[825,175,175,825],[125,875,875,125],[750,250,250,750]]},\"files\":{\"analysis.py\":\"CHANNEL_SIGNS = (1, 1, 1, 1)\\nOFFSETS = (0, 0, 0, 0)\\n\\n\\ndef correlations(rows):\\n    return tuple(\\n        sign * (row[0] - row[1] - row[2] + row[3]) / sum(row) + offset\\n        for row, sign, offset in zip(rows, CHANNEL_SIGNS, OFFSETS)\\n    )\\n\",\"counts.json\":\"{\\n  \\\"data_origin\\\": \\\"NEW_SYNTHETIC_LABREPAIR_FIXTURE_20261026\\\",\\n  \\\"pairs\\\": [\\\"A0B0\\\", \\\"A0B1\\\", \\\"A1B0\\\", \\\"A1B1\\\"],\\n  \\\"rows\\\": [[850, 150, 150, 850], [825, 175, 175, 825], [125, 875, 875, 125], [750, 250, 250, 750]],\\n  \\\"registered_channel_signs\\\": [1, 1, -1, -1],\\n  \\\"chsh_terms\\\": [1, 1, 1, -1],\\n  \\\"original_claim\\\": {\\\"claimed_s\\\": \\\"3.4\\\", \\\"claim_state\\\": \\\"NOT_REPRODUCED\\\", \\\"physical_interpretation\\\": \\\"NOT_ESTABLISHED\\\"}\\n}\\n\",\"test_analysis.py\":\"\\\"\\\"\\\"Protected specification; this new synthetic fixture is not the Maya notebook.\\\"\\\"\\\"\\n\\nEXPECTED_PAIRS = (0.7, 0.65, 0.75, -0.5)\\nEXPECTED_S = 2.6\\n\\n\\ndef check_correlations(actual):\\n    return len(actual) == 4 and all(\\n        abs(value - expected) < 1e-12\\n        for value, expected in zip(actual, EXPECTED_PAIRS)\\n    )\\n\"},\"policy\":{\"candidate_execution\":\"FORBIDDEN_ON_HOST\",\"claim_promotion\":\"NEVER_FROM_CODE_REPAIR\",\"editable\":[\"analysis.py\"],\"local_check\":\"PINNED_AST_SHAPE_AND_TRUSTED_ARITHMETIC_ONLY\",\"protected\":[\"counts.json\",\"test_analysis.py\"]},\"policy_sha256\":\"9c39f245e283a1003b921149303728fe62625c7b009f5b7da42399530c12ff1a\",\"reference_receipts\":{\"channel-fix\":\"c21379b226f6f5cb8f80304830ecc9007affa2ffb1c1c888a904c5544d88c424\",\"missing-pair\":\"45073aa41c921165f03dbe2b536e67561f6af9586c9f3b5cebb8541c0697e36d\",\"same-total\":\"0e9ccc91fd7cecc23e083d40d1480366ff2b22ee3da38081e236422b416e7337\"},\"schema\":\"LABREPAIR_FIXED_BROWSER_SOURCE_V1\",\"snapshot_sha256\":\"2394f56595e8a5775381b440d3e039a0bd1979615c3509aeffa78d9955039af9\"}";
+const recordedText = "{\"actual_billed_currency\":\"unknown\",\"automatic_cloud_dispatch\":\"DISABLED\",\"boundary\":\"Synthetic inputs only. Protected tests and counts are unchanged. The original claim remains NOT_REPRODUCED. Saved evidence playback keeps automatic cloud dispatch disabled.\",\"candidate_execution\":\"ACTUAL_NEBIUS_SANDBOX_ONLY\",\"cases\":[{\"case\":\"baseline\",\"checks_passed\":2,\"failures\":2,\"label\":\"Before repair\",\"outcome\":\"Expected failure observed\",\"pairs\":[0.7,0.65,-0.75,0.5],\"process_exit_code\":1,\"tests_run\":4,\"total_s\":0.09999999999999998},{\"case\":\"model_fix\",\"checks_passed\":4,\"failures\":0,\"label\":\"NVIDIA-proposed repair\",\"outcome\":\"Repair passed\",\"pairs\":[0.7,0.65,0.75,-0.5],\"process_exit_code\":0,\"tests_run\":4,\"total_s\":2.6},{\"case\":\"same_total_wrong_pairs\",\"checks_passed\":3,\"failures\":1,\"label\":\"Same total, wrong pairs\",\"outcome\":\"Expected failure observed\",\"pairs\":[0.7999999999999999,0.75,0.65,-0.4],\"process_exit_code\":1,\"tests_run\":4,\"total_s\":2.6}],\"description\":\"A real NVIDIA model suggestion generated on Nebius was independently checked, then the approved synthetic source variants ran against unchanged tests in a disposable Nebius Sandbox.\",\"executed_checks\":12,\"expected_case_outcomes_observed\":3,\"generation\":{\"completion_tokens\":38,\"completion_tokens_details\":null,\"http_status\":200,\"latency_ms\":826.48,\"model\":\"nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B\",\"prompt_tokens\":121,\"prompt_tokens_details\":null,\"total_tokens\":159},\"observed_utc\":\"2026-10-26T16:07:55.990841+00:00\",\"original_claim\":{\"claim_state\":\"NOT_REPRODUCED\",\"claimed_s\":\"3.4\",\"physical_interpretation\":\"NOT_ESTABLISHED\"},\"protected_files_unchanged\":true,\"provenance\":\"Client-observed provider receipts: HTTP 201 accepted, terminal SUCCESS, Linux / x86_64. Hashes establish content integrity, not a provider signature. Actual billed money remains unknown.\",\"provider_calls_by_replay\":0,\"receipt_sha256\":\"ea6a6134888926b028cf43023bb8f56fb2f36633904e1f51b0b3ff0c456c9777\",\"run_id\":\"nebius-sandbox-validation-20261026-1\",\"sandbox\":{\"architecture\":\"x86_64\",\"disposable\":true,\"duration_seconds\":1.273,\"exit_code\":0,\"guest_elapsed_seconds\":0.669504,\"image_uuid\":\"4fa16c8f-62a9-35a4-a4ea-07b7e8cd44ae\",\"network_interfaces\":[\"lo\"],\"operation_count\":1,\"operation_id\":\"01a178f7-ee09-7133-a4c4-87922e4db2eb\",\"python\":\"3.12.13\",\"result_image_uuid\":null,\"status\":\"SUCCESS\",\"system\":\"Linux\"},\"schema\":\"LABREPAIR_RECORDED_LIVE_VALIDATION_V1\",\"source_receipt_sha256\":{\"evidence/nebius-nano-repair-20261026-1/cloud-transport-receipt.json\":\"c3df4390f4990087a1ea72d78dab3cc24e1385e807b127e736c605cf30e91be7\",\"evidence/nebius-sandbox-validation-20261026-1/nebius-sandbox-validation-20261026-1.operation.safe.json\":\"0a91a78904e3cb59ef33c9b0233e2bbb568c9e172d82acfef440e3f57b7ad3da\",\"evidence/nebius-sandbox-validation-20261026-1/nebius-sandbox-validation-20261026-1.stdout.json\":\"31c9900c3e55c6d2f059cf00f836f7cae836e781921d91de739da7be8f723b36\",\"evidence/nebius-sandbox-validation-20261026-1/nebius-sandbox-validation-20261026-1.transport.safe.json\":\"2065a5678f168d9844ec38060904b98c5eb8023cac7330ee355249dc28a6e6b6\"},\"status\":\"VERIFIED_RECORDED_END_TO_END_RUN\"}";
+
+"use strict";
+
+const verifiedSources = new WeakSet();
+const reviews = new WeakSet();
+const intents = new WeakSet();
+const choices = new Set(["hold-for-evidence", "request-isolated-rerun"]);
+const CASES = Object.freeze({
+  "channel-fix": {title: "Declared channel repair", signs: [1,1,-1,-1], offsets: ["0","0","0","0"]},
+  "same-total": {title: "Same total, wrong pairs", signs: [1,1,-1,-1], offsets: ["0.1","0.1","-0.1","0.1"]},
+  "missing-pair": {title: "Incomplete evidence", signs: [1,1,-1,-1], offsets: ["0","0","0","0"]}
+});
+for (const c of Object.values(CASES)) { Object.freeze(c.signs); Object.freeze(c.offsets); Object.freeze(c); }
+const utf8 = new TextEncoder();
+async function digest(text) {
+  if (!globalThis.crypto?.subtle) throw new Error("SECURE_CRYPTO_UNAVAILABLE");
+  const bytes = await crypto.subtle.digest("SHA-256", utf8.encode(text));
+  return [...new Uint8Array(bytes)].map(x => x.toString(16).padStart(2,"0")).join("");
+}
+function canonical(value) {
+  if (Array.isArray(value)) return "[" + value.map(canonical).join(",") + "]";
+  if (value && typeof value === "object") return "{" + Object.keys(value).sort().map(k => JSON.stringify(k)+":"+canonical(value[k])).join(",") + "}";
+  return JSON.stringify(value);
+}
+function freeze(value) {
+  if (value && typeof value === "object") { Object.values(value).forEach(freeze); Object.freeze(value); }
+  return value;
+}
+async function verifySource(text) {
+  if (await digest(text) !== PINS.source_sha256) throw new Error("SOURCE_PAYLOAD_CHANGED");
+  const data = JSON.parse(text);
+  if (data.schema !== "LABREPAIR_FIXED_BROWSER_SOURCE_V1") throw new Error("SOURCE_SCHEMA_INVALID");
+  const actual = {};
+  if (canonical(Object.keys(data.files).sort()) !== canonical(Object.keys(PINS.source_files).sort())) throw new Error("SOURCE_FILES_INVALID");
+  for (const [name, expected] of Object.entries(PINS.source_files)) {
+    actual[name] = await digest(data.files[name]);
+    if (actual[name] !== expected) throw new Error("PROTECTED_SOURCE_CHANGED");
+  }
+  if (await digest(canonical(actual)) !== PINS.snapshot_sha256 || data.snapshot_sha256 !== PINS.snapshot_sha256) throw new Error("SOURCE_BINDING_INVALID");
+  if (await digest(canonical(data.policy)) !== PINS.policy_sha256 || data.policy_sha256 !== PINS.policy_sha256) throw new Error("POLICY_BINDING_INVALID");
+  if (canonical(JSON.parse(data.files["counts.json"])) !== canonical(data.counts)) throw new Error("COUNTS_BINDING_INVALID");
+  freeze(data); verifiedSources.add(data); return data;
+}
+async function verifyRecorded(text) {
+  if (await digest(text) !== PINS.recorded_sha256) throw new Error("RECORDED_EVIDENCE_CHANGED");
+  const data = JSON.parse(text);
+  if (data.status !== "VERIFIED_RECORDED_END_TO_END_RUN" || data.provider_calls_by_replay !== 0 || data.automatic_cloud_dispatch !== "DISABLED") throw new Error("RECORDED_EVIDENCE_INVALID");
+  return freeze(data);
+}
+const abs = x => x < 0n ? -x : x;
+function fraction(n, d=1n) {
+  if (d === 0n) throw new Error("INVALID_COUNTS");
+  if (d < 0n) { n=-n; d=-d; }
+  let a=abs(n), b=d; while (b) [a,b]=[b,a%b];
+  return {n:n/a,d:d/a};
+}
+const add = (a,b) => fraction(a.n*b.d+b.n*a.d,a.d*b.d);
+const scale = (a,s) => fraction(a.n*BigInt(s),a.d);
+const equal = (a,b) => a.n===b.n && a.d===b.d;
+const number = a => Number(a.n)/Number(a.d);
+function decimal(value) {
+  if (!/^-?\d+(\.\d+)?$/.test(value)) throw new Error("OFFSET_INVALID");
+  const digits=value.split("."); return fraction(BigInt(digits.join("")),10n**BigInt(digits[1]?.length||0));
+}
+function pairValues(rows, signs, offsets) {
+  if (rows.length!==4) throw new Error("MISSING_PAIR_EVIDENCE");
+  return rows.map((row,i)=>{
+    if (row.length!==4 || row.some(x=>!Number.isSafeInteger(x)||x<0)) throw new Error("INVALID_COUNTS");
+    const r=row.map(BigInt), sum=r.reduce((a,b)=>a+b,0n);
+    return add(scale(fraction(r[0]-r[1]-r[2]+r[3],sum),signs[i]),decimal(offsets[i]));
+  });
+}
+const total = (pairs, terms) => pairs.reduce((s,p,i)=>add(s,scale(p,terms[i])),fraction(0n));
+
+async function computeReview(source, scenario) {
+  if (!verifiedSources.has(source)) throw new Error("SOURCE_NOT_VERIFIED");
+  if (!Object.hasOwn(CASES,scenario)) throw new Error("UNKNOWN_SCENARIO");
+  const c=CASES[scenario], data=source.counts, zero=["0","0","0","0"];
+  const registered=pairValues(data.rows,data.registered_channel_signs,zero);
+  const baseline=pairValues(data.rows,[1,1,1,1],zero);
+  const rows=scenario==="missing-pair" ? data.rows.slice(0,3) : data.rows;
+  let candidate=null, result="REVIEW", reasons=["MISSING_PAIR_EVIDENCE"];
+  if (rows.length===4) {
+    candidate=pairValues(rows,c.signs,c.offsets);
+    const matches=candidate.every((p,i)=>equal(p,registered[i]));
+    result=matches?"LOCAL_SEMANTIC_MATCH":"REJECTED";
+    reasons=matches?[]:["PER_PAIR_EVIDENCE_MISMATCH"];
+  }
+  const candidateText=source.files["analysis.py"]
+    .replace("CHANNEL_SIGNS = (1, 1, 1, 1)","CHANNEL_SIGNS = ("+c.signs.join(", ")+")")
+    .replace("OFFSETS = (0, 0, 0, 0)","OFFSETS = ("+c.offsets.join(", ")+")");
+  const report={
+    schema:"LABREPAIR_BROWSER_REVIEW_V1", mode:"BROWSER_FIXED_CASE_RECOMPUTATION",
+    scenario,title:c.title,source_payload_sha256:PINS.source_sha256,
+    snapshot_sha256:source.snapshot_sha256,policy_sha256:source.policy_sha256,
+    original_source_sha256:{...PINS.source_files},
+    original_python_reference_receipt_sha256:source.reference_receipts[scenario],
+    candidate_source_sha256:await digest(candidateText),candidate_source:candidateText,
+    candidate_parameters:{signs:[...c.signs],offsets:[...c.offsets]},
+    pairs:[...data.pairs],registered_pairs:registered.map(number),baseline_pairs:baseline.map(number),
+    claimed_s:Number(data.original_claim.claimed_s),baseline_s:number(total(baseline,data.chsh_terms)),
+    registered_s:number(total(registered,data.chsh_terms)),
+    candidate_pairs:candidate?candidate.map(number):null,
+    candidate_s:candidate?number(total(candidate,data.chsh_terms)):null,
+    total_only_match:candidate?equal(total(candidate,data.chsh_terms),total(registered,data.chsh_terms)):false,
+    per_pair_match:candidate?candidate.every((p,i)=>equal(p,registered[i])):false,
+    local_result:result,reasons,original_claim:data.original_claim,original_claim_unchanged:true,
+    original_claim_sha256:await digest(canonical(data.original_claim)),
+    source_verified:true,arithmetic:"EXACT_RATIONAL_BIGINT",candidate_execution:"NOT_RUN",
+    provider_calls:0,automatic_cloud_dispatch:"DISABLED",actual_provider_charge:"unknown",
+    physical_interpretation:"NOT_ESTABLISHED_SYNTHETIC_DATA",
+    limitations:["Only three fixed, synthetic candidates are supported.","Candidate Python is never executed or interpreted by this page.","Hashes bind content; they do not authenticate a provider or reviewer.","Saved cloud execution is separate from this browser calculation."]
+  };
+  report.receipt_sha256=await digest(canonical(report)); freeze(report); reviews.add(report); return report;
+}
+function makeIntent(review, choice, expectedReceipt) {
+  if (!reviews.has(review) || expectedReceipt!==review.receipt_sha256) throw new Error("STALE_REVIEW_RECEIPT");
+  if (!choices.has(choice)) throw new Error("INVALID_REVIEW_CHOICE");
+  const intent=freeze({schema:"LABREPAIR_BROWSER_REVIEW_INTENT_V1",choice,
+    review_receipt_sha256:review.receipt_sha256,source_payload_sha256:review.source_payload_sha256,
+    original_claim_sha256:review.original_claim_sha256,review_intent_only:true,
+    executes_candidate:false,authorizes_payment:false,changes_scientific_claim:false,
+    persisted_by_service:false});
+  intents.add(intent); return intent;
+}
+function exportReview(review, intent=null) {
+  if (!reviews.has(review)) throw new Error("SOURCE_NOT_VERIFIED");
+  if (intent && (!intents.has(intent) || intent.review_receipt_sha256!==review.receipt_sha256 || intent.source_payload_sha256!==review.source_payload_sha256)) throw new Error("INTENT_BINDING_INVALID");
+  return {schema:"LABREPAIR_BROWSER_EXPORT_V1",review,review_intent:intent};
+}
+
+"use strict";
+
+
+const byId=id=>document.getElementById(id), samples=[...document.querySelectorAll(".sample")];
+const format=n=>n==null?"—":Number(n).toFixed(2);
+let source=null,recorded=null,selected="same-total",review=null,intent=null,busy=false,epoch=0;
+const links=new Set();
+function chip(id,state,label){byId(id).dataset.state=state;byId(id).textContent=label;}
+function controls(){byId("run").disabled=!source||busy;byId("check-wrong").disabled=!source||busy;samples.forEach(b=>b.disabled=!source||busy);["hold","rerun","download"].forEach(id=>byId(id).disabled=!review||busy);}
+function clear(){epoch++;review=null;intent=null;byId("candidate-total").textContent="—";byId("candidate-detail").textContent="No repair checked yet";byId("verdict").textContent="Awaiting review";delete byId("verdict").parentElement.dataset.state;byId("verdict-detail").textContent="Select a sample and check its evidence.";chip("result-state","READY","READY");byId("pair-table").replaceChildren();const r=document.createElement("tr"),c=document.createElement("td");c.colSpan=4;c.textContent="Run a check to compare the evidence.";r.append(c);byId("pair-table").append(r);byId("trap").textContent="A matching total is necessary. It is not sufficient.";byId("intent-note").textContent="Review intent only. No cloud action.";byId("receipt").textContent="—";byId("after-source").textContent="Check a repair first.";samples.forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.case===selected)));controls();}
+function select(id){if(!Object.hasOwn(CASES,id)||busy)return;selected=id;clear();byId("run-note").textContent="Sample selected. Check its evidence when ready.";}
+function cell(row,text,cls){const td=document.createElement("td");td.textContent=text;if(cls)td.className=cls;row.append(td);}
+function render(r){review=r;intent=null;const state={LOCAL_SEMANTIC_MATCH:"PASS",REJECTED:"FAIL",REVIEW:"REVIEW"}[r.local_result];const labels={PASS:"Repair matches",FAIL:"Repair rejected",REVIEW:"More evidence needed"};chip("result-state",state,state);byId("verdict").parentElement.dataset.state=state;byId("verdict").textContent=labels[state];byId("verdict-detail").textContent=state==="PASS"?"All four pairs agree. Original claim unchanged.":state==="FAIL"?"The total matches. The pair evidence does not.":"A pair is missing. No complete total is computed.";byId("candidate-total").textContent=format(r.candidate_s);byId("candidate-detail").textContent=state==="PASS"?"4 of 4 pair values match":state==="FAIL"?"0 of 4 pair values match":"Incomplete four-pair evidence";byId("pair-table").replaceChildren();r.pairs.forEach((pair,i)=>{const row=document.createElement("tr"),n=r.candidate_pairs?.[i],same=n!=null&&n===r.registered_pairs[i];cell(row,pair);cell(row,format(r.registered_pairs[i]));cell(row,format(n));cell(row,n==null?"UNKNOWN":same?"MATCH":"DIFF",n==null?"unknown":same?"ok":"bad");byId("pair-table").append(row);});byId("trap").textContent=state==="FAIL"?"Both repairs produce 2.60. This one changes every pair correlation, so the verifier rejects it.":state==="PASS"?"The declared channel repair matches every registered pair. That still cannot establish the original scientific claim.":"The fourth pair is absent. A plausible repair cannot stand in for missing evidence.";byId("after-source").textContent=r.candidate_source;byId("receipt").textContent=r.receipt_sha256;byId("run-note").textContent="Check complete · exact browser arithmetic · no cloud call";controls();}
+function revealResult(){
+  const reducedMotion=typeof window.matchMedia==="function"&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // Focus announces the new verdict; prevent native focus scrolling from
+  // competing with the intentional, motion-aware result reveal.
+  byId("verdict").focus({preventScroll:true});
+  byId("results").scrollIntoView({behavior:reducedMotion?"auto":"smooth",block:"start"});
+}
+async function run(){
+  if(!source||busy)return;
+  clear();const token=epoch;let completed=false;busy=true;controls();
+  byId("results").setAttribute("aria-busy","true");chip("result-state","REVIEW","CHECKING");
+  byId("run-note").textContent="Recomputing the four pair correlations…";
+  try{
+    const result=await computeReview(source,selected);
+    if(token===epoch){render(result);completed=true;}
+  }catch(error){
+    if(token===epoch){
+      clear();chip("result-state","FAIL","CHECK BLOCKED");
+      byId("verdict").parentElement.dataset.state="FAIL";
+      byId("verdict").textContent="Check unavailable";
+      byId("verdict-detail").textContent="No verified result or review receipt was produced.";
+      byId("run-note").textContent=error.message;completed=true;
+    }
+  }finally{
+    busy=false;controls();byId("results").setAttribute("aria-busy","false");
+    if(completed)revealResult();
+  }
+}
+function download(value,name){const url=URL.createObjectURL(new Blob([JSON.stringify(value,null,2)+"\n"],{type:"application/json"}));links.add(url);const a=document.createElement("a");a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>{URL.revokeObjectURL(url);links.delete(url);},1000);}
+samples.forEach(b=>b.addEventListener("click",()=>select(b.dataset.case)));
+byId("run").addEventListener("click",run);
+byId("check-wrong").addEventListener("click",()=>{select("same-total");void run();});
+function decide(choice){if(!review||busy)return;try{intent=makeIntent(review,choice,review.receipt_sha256);byId("intent-note").textContent=choice==="hold-for-evidence"?"Intent recorded in this page: hold for evidence.":"Intent recorded in this page: request a separately authorized rerun. Nothing dispatched.";}catch(error){intent=null;byId("intent-note").textContent="Intent not recorded: "+error.message;}}
+byId("hold").addEventListener("click",()=>decide("hold-for-evidence"));byId("rerun").addEventListener("click",()=>decide("request-isolated-rerun"));
+byId("download").addEventListener("click",()=>{if(review&&!busy)download(exportReview(review,intent),"labrepair-browser-"+review.scenario+".json");});
+byId("download-saved").addEventListener("click",()=>{if(recorded)download(recorded,"labrepair-saved-cloud-evidence.json");});
+window.addEventListener("pagehide",()=>{links.forEach(url=>URL.revokeObjectURL(url));links.clear();});
+async function setupSource(){try{source=await verifySource(sourceText);byId("before-source").textContent=source.files["analysis.py"];byId("snapshot").textContent=source.snapshot_sha256;chip("source-state","PASS","PINNED SYNTHETIC SOURCE");clear();byId("run-note").textContent="Ready. Check a fixed repair or choose another sample.";}catch(error){source=null;clear();chip("source-state","FAIL","SOURCE UNAVAILABLE");byId("setup-error").hidden=false;byId("setup-error").textContent="Source verification failed: "+error.message+". Review and downloads remain disabled; no retry or cloud call.";byId("run-note").textContent="Check blocked. Restore the original verified build.";}}
+async function setupRecorded(){try{recorded=await verifyRecorded(recordedText);chip("saved-state","PASS","SAVED REAL RUN · NO NEW CALL");byId("usage").textContent=recorded.generation.prompt_tokens+" in · "+recorded.generation.completion_tokens+" out";byId("duration").textContent=Number(recorded.sandbox.duration_seconds).toFixed(3)+" seconds";byId("saved-cases").replaceChildren();recorded.cases.forEach(c=>{const row=document.createElement("tr");cell(row,c.label);cell(row,format(c.total_s));cell(row,c.checks_passed+"/"+c.tests_run);cell(row,c.outcome,c.case==="model_fix"?"ok":"");byId("saved-cases").append(row);});byId("model-info").textContent="Observed model: "+recorded.generation.model+" · "+recorded.observed_utc;byId("saved-provenance").textContent=recorded.provenance;byId("saved-content").hidden=false;byId("download-saved").disabled=false;}catch(error){recorded=null;byId("saved-content").hidden=true;byId("download-saved").disabled=true;chip("saved-state","FAIL","SAVED EVIDENCE UNAVAILABLE");byId("saved-error").hidden=false;byId("saved-error").textContent="Saved evidence verification failed: "+error.message+". No successful cloud run is shown. Browser computation remains separate.";}}
+setupSource();setupRecorded();
+
+});
+</script></head>
+<body><header><a href="#" class="brand"><span>LR</span> LabRepair</a><span class="header-note">A VERIFICATION-FIRST DEVELOPER TOOL</span><span id="source-state" class="chip" role="status">Checking fixed source…</span></header>
+<main><section class="hero"><div><p class="eyebrow">FOR QUANTUM RESEARCH SOFTWARE ENGINEERS</p>
+<h1>Two patches.<br>Same total.<br><em>One is wrong.</em></h1>
+<p class="lead">A channel-mapping fix can recover a convincing number while corrupting the evidence underneath. Check every pair before accepting the repair.</p>
+<button id="check-wrong" disabled>Check the wrong-pair repair <span aria-hidden="true">↗</span></button>
+<p class="caption">Fixed synthetic data · computed in your browser · no key or cloud call</p></div>
+<aside class="hero-proof" aria-label="The two fixed example repairs"><p class="eyebrow">THE TOTAL-ONLY TRAP</p><div class="totals"><article><span>Declared repair</span><strong>2.60</strong><small>Four pair values agree</small></article><b aria-hidden="true">=</b><article><span>Wrong-pair repair</span><strong>2.60</strong><small>Four pair values disagree</small></article></div><p>The same headline number. Different evidence.</p><div class="locked">COUNTS & TESTS PROTECTED · ORIGINAL CLAIM UNCHANGED</div></aside></section>
+<section id="workbench" aria-labelledby="workbench-title"><div class="heading"><div><p class="eyebrow">01 / TRY THE REPAIR CHECK</p><h2 id="workbench-title">Which repair holds up?</h2></div><span class="chip">BROWSER COMPUTATION · THREE FIXED CASES</span></div>
+<div class="samples" role="group" aria-label="Fixed review samples">
+<button class="sample" data-case="channel-fix" disabled aria-pressed="false"><small>A / DECLARED REPAIR</small><strong>Fix the channel mapping</strong><span>All four correlations should agree.</span></button>
+<button class="sample" data-case="same-total" disabled aria-pressed="true"><small>B / WRONG-PAIR CONTROL</small><strong>Same total, wrong evidence</strong><span>A total-only check would accept it.</span></button>
+<button class="sample" data-case="missing-pair" disabled aria-pressed="false"><small>C / INCOMPLETE EVIDENCE</small><strong>Keep the decision on hold</strong><span>A missing pair must remain unknown.</span></button></div>
+<div class="toolbar"><button id="run" disabled>Check this repair <span aria-hidden="true">↗</span></button><p id="run-note" role="status" aria-live="polite">Verifying the fixed source before enabling review.</p></div>
+<p id="setup-error" class="error" role="alert" hidden></p>
+<div id="results" aria-busy="false"><div class="metrics"><article><span>REGISTERED REFERENCE</span><strong>2.60</strong><small>From all four pair values</small></article><article><span>CANDIDATE TOTAL</span><strong id="candidate-total">—</strong><small id="candidate-detail">No repair checked yet</small></article><article class="verdict"><span>REPAIR CHECK</span><strong id="verdict" tabindex="-1" aria-describedby="verdict-detail">Awaiting review</strong><small id="verdict-detail">Select a sample and check its evidence.</small></article></div>
+<div class="panels"><article class="panel"><div class="heading"><h3>Every pair must agree</h3><span id="result-state" class="chip">READY</span></div><table><thead><tr><th>Pair</th><th>Registered</th><th>Candidate</th><th>Check</th></tr></thead><tbody id="pair-table"><tr><td colspan="4">Run a check to compare the evidence.</td></tr></tbody></table><p id="trap" class="insight">A matching total is necessary. It is not sufficient.</p></article>
+<article class="panel decision"><p class="eyebrow">02 / PRESERVE THE SCIENTIFIC BOUNDARY</p><h3>The repair cannot approve the claim.</h3><p>Original claim <b>3.40</b> · <strong class="red">NOT REPRODUCED</strong></p><p class="muted">Choose a review intent for this source. Nothing is dispatched, paid for or stored by a service.</p><div class="decision-buttons"><button id="hold" class="secondary" disabled>Hold for evidence</button><button id="rerun" class="secondary" disabled>Request isolated rerun</button></div><p id="intent-note" class="caption" role="status">Review intent only. No cloud action.</p><button id="download" class="download" disabled>Download bound review ↓</button></article></div>
+<details class="source-details"><summary>Inspect the proposed source and its bindings</summary><p class="muted">Only fixed parameter arrays differ. Candidate Python is displayed as text and never executed. The source hashes cover protected counts and tests as well as the original analysis.</p><div class="source-columns"><div><h4>Original analysis.py</h4><pre id="before-source">No source loaded.</pre></div><div><h4>Candidate analysis.py</h4><pre id="after-source">Check a repair first.</pre></div></div><p class="caption">SOURCE SNAPSHOT SHA-256 <code id="snapshot">—</code></p><p class="caption">BROWSER RECEIPT SHA-256 <code id="receipt">—</code></p></details></div></section>
+<section id="saved-run" class="saved" aria-labelledby="saved-title"><div class="heading"><div><p class="eyebrow">03 / SAVED REAL EXECUTION · 26 OCTOBER 2026 UTC</p><h2 id="saved-title">A real model suggestion. A separately verified run.</h2></div><span id="saved-state" class="chip" role="status">Checking saved evidence…</span></div>
+<p class="muted">NVIDIA Nemotron 3 Nano on Nebius Token Factory proposed bounded parameters. A disposable Nebius Sandbox ran the three source variants against unchanged tests.</p><p id="saved-error" class="error" hidden role="alert"></p><div id="saved-content" hidden>
+<div class="saved-metrics"><article><span>NEBIUS TOKEN FACTORY / NVIDIA</span><strong id="usage">—</strong><small>Observed model token usage</small></article><article><span>DISPOSABLE NEBIUS SANDBOX</span><strong id="duration">—</strong><small>One actual operation · guest network disabled</small></article></div>
+<table><thead><tr><th>Executed variant</th><th>S</th><th>Checks passed</th><th>Observed outcome</th></tr></thead><tbody id="saved-cases"></tbody></table>
+<details><summary>What this saved run establishes</summary><p>The prompt supplied the declared A1 channel flip. Nemotron translated that convention into two parameter arrays; it did not autonomously discover the correction. A deterministic adapter built the patch. The wrong-pair control was operator-authored.</p><p>The incomplete-evidence browser case was not part of the real three-variant Sandbox run. Twelve checks include three intended control failures. These fixed examples are not an accuracy benchmark or a physical quantum experiment.</p><p id="model-info" class="caption"></p><p id="saved-provenance" class="caption"></p><p class="caption">Hashes establish content integrity, not a provider signature. Actual billed money and account-wide spending controls remain unknown.</p><button id="download-saved" class="download" disabled>Download saved evidence ↓</button></details></div></section>
+<details class="limits"><summary>How the browser check works</summary><p>SHA-256 pins verify the bundled synthetic source files, source snapshot and policy before any result is enabled. The browser recomputes each correlation and the CHSH total with exact rational arithmetic. It supports these three fixed candidates only and does not parse or execute arbitrary Python.</p><p>Browser reviews have their own receipt schema. They retain the original Python reference receipt hash for traceability; they do not claim to be a new Python or cloud execution. Review intent remains in this page until you download it. Reloading clears it.</p><p>There are no API calls, secrets, uploads, payment actions or live cloud controls in this page. Saved cloud results are playback. Publishing access to this site is a separate deployment step.</p></details>
+<footer><span>LABREPAIR / EVIDENCE BEFORE APPROVAL</span><span>New synthetic inputs · no private research or hardware data · physical interpretation not established</span></footer></main></body></html>

@@ -1,0 +1,44 @@
+{
+  "input_sha256": "05e7dd41499adcf6fb322d35545854012708159be78fde05ec1694f99bbbf727",
+  "script_sha256": "cd4b73bfc329704cbb01e6ab5a9e1f5d59a1faf65487272ea9a59f9913755c30",
+  "script_bytes": 11616,
+  "checker_sha256": "cae89ac39593009e84be975c7f481fc0a9dd93763032a0d8ff4389ba34ca93db",
+  "model_response_sha256": "ed0c2272968d84c4844a1305ca0ad68560451615d147c7eaa9f4f41231419920",
+  "cases": [
+    {
+      "name": "baseline",
+      "origin": "OPERATOR_SYNTHETIC_CONTROL",
+      "sha256": {
+        "analysis.py": "d53efa1e35238352505388a975685412509b784e0528878ef524ed8e82071879",
+        "counts.json": "ebe15738fd6443328681cc53f549d7d7d299b4c1958e2db7082d0de032c12eca",
+        "test_analysis.py": "d83e65c56f5244e61a49c2d300fe8df2e29f63f6aa7cba97fc1c2daca4b7e3e4"
+      },
+      "expected_exit_code": 1
+    },
+    {
+      "name": "model_fix",
+      "origin": "OBSERVED_NVIDIA_PARAMETERS",
+      "sha256": {
+        "analysis.py": "17118210eb9628cd9e1490807d936d4ecae869bf104b75625afc94f8d1e0793a",
+        "counts.json": "ebe15738fd6443328681cc53f549d7d7d299b4c1958e2db7082d0de032c12eca",
+        "test_analysis.py": "d83e65c56f5244e61a49c2d300fe8df2e29f63f6aa7cba97fc1c2daca4b7e3e4"
+      },
+      "expected_exit_code": 0
+    },
+    {
+      "name": "same_total_wrong_pairs",
+      "origin": "OPERATOR_SYNTHETIC_CONTROL",
+      "sha256": {
+        "analysis.py": "5c82772f79440b900f315d36948b3031f641757b87976ac07aea98899418d8c0",
+        "counts.json": "ebe15738fd6443328681cc53f549d7d7d299b4c1958e2db7082d0de032c12eca",
+        "test_analysis.py": "d83e65c56f5244e61a49c2d300fe8df2e29f63f6aa7cba97fc1c2daca4b7e3e4"
+      },
+      "expected_exit_code": 1
+    }
+  ],
+  "cpu_and_vm_memory_configuration": "NOT_EXPOSED_BY_REST_SCHEMA; guest process limits are not VM allocation limits",
+  "model_calls": 0,
+  "host_candidate_execution": "NOT_RUN",
+  "request_sha256": "7ae065030eaee662d7178a0e2d6da5bdb947b87f4f53de37fc6ebf88368b5011",
+  "request_bytes": 15942
+}

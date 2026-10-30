@@ -1,0 +1,65 @@
+{
+  "schema": "LABREPAIR_MEDIA_VERIFICATION_V2",
+  "source_ui_commit": "4c1cc58bf244db9b3a63704a12c62068136bbd72",
+  "movie": {
+    "name": "LabRepair_DEMO_NeuralVoice_20261028.mp4",
+    "size_bytes": 6332363,
+    "sha256": "edcaa6b08ae9a348f9687c8e976e0a093ad6d056263c8ee732d22a24396cb497"
+  },
+  "stream": {
+    "ffmpeg_version": "7.1-essentials_build-www.gyan.dev built with gcc 14.2.0 (Rev1, Built by MSYS2 project)",
+    "codec": "h264",
+    "pix_fmt": "yuv420p(progressive)",
+    "audio_codec": "aac",
+    "fps": 25.0,
+    "source_size": [
+      1920,
+      1080
+    ],
+    "size": [
+      1920,
+      1080
+    ],
+    "rotate": 0,
+    "duration": 160.0
+  },
+  "full_decode_exit_code": 0,
+  "measured_audio": {
+    "input_i": "-16.50",
+    "input_tp": "-1.32",
+    "input_lra": "5.50",
+    "input_thresh": "-26.88",
+    "output_i": "-16.20",
+    "output_tp": "-1.50",
+    "output_lra": "5.50",
+    "output_thresh": "-26.57",
+    "normalization_type": "dynamic",
+    "target_offset": "0.20"
+  },
+  "decoded_frames_inspected_at_seconds": [
+    5,
+    12,
+    29,
+    55,
+    80,
+    105,
+    123,
+    139,
+    154
+  ],
+  "subtitle_intervals": 41,
+  "subtitle_timing_valid": true,
+  "tts_clips_fit": true,
+  "spoken_product_names_in_script": [
+    "Nebius Token Factory",
+    "NVIDIA Nemotron"
+  ],
+  "generic_neural_voice": "Kokoro af_heart",
+  "windows_system_speech": false,
+  "new_paid_tts_calls": 0,
+  "provider_calls_during_recording": 0,
+  "continuous_real_time_desktop_video": false,
+  "recording_method": "Timestamped actual browser screenshot frames during real interactions; edited holds, crop focus and omitted waits.",
+  "raw_download_wait_preserved_in_provenance": true,
+  "submission_ready": false
+}

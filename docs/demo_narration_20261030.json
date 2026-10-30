@@ -1,0 +1,96 @@
+{
+  "schema": "LABREPAIR_CINEMATIC_NARRATION_V1",
+  "target_seconds": 123,
+  "voice": {
+    "engine": "Local Kokoro ONNX",
+    "voice": "am_michael",
+    "generic_synthetic_voice": true,
+    "windows_system_speech": false,
+    "paid_api_calls": 0
+  },
+  "visual_direction": "Full-width illustrated situation, neutral-number mystery, actual interface, progressive evidence reveal, human handover. Composition follows the story instead of repeating a slide template.",
+  "scenes": [
+    {
+      "id": "01_question",
+      "duration": 5,
+      "title": "Would you approve it?",
+      "narration": "Nora has a repaired analysis to review. Would you approve it?"
+    },
+    {
+      "id": "02_hook",
+      "duration": 4,
+      "title": "Two patches. Same total.",
+      "narration": "Two patches. Same total. One is wrong."
+    },
+    {
+      "id": "03_wrong",
+      "duration": 10,
+      "title": "Check the evidence.",
+      "narration": "This repair returns the expected total. But watch what happens when we check the evidence."
+    },
+    {
+      "id": "04_difference",
+      "duration": 11,
+      "title": "The evidence does not match.",
+      "narration": "Every pair is different. The headline matches. The evidence does not. A total-only check would miss this wrong repair."
+    },
+    {
+      "id": "05_repair",
+      "duration": 9,
+      "title": "Same total. Different verdict.",
+      "narration": "Now the declared repair. Same total again. This time, all four pairs agree."
+    },
+    {
+      "id": "06_claim",
+      "duration": 9,
+      "title": "The code passed. The claim did not.",
+      "narration": "The code passed. The original three point four zero claim did not. Those are separate decisions."
+    },
+    {
+      "id": "07_model",
+      "duration": 16,
+      "title": "A bounded model proposal.",
+      "narration": "Given the declared channel convention, NVIDIA Nemotron on Nebius Token Factory proposed two parameter arrays. It translated the convention; it did not discover it. Counts and tests stayed protected."
+    },
+    {
+      "id": "08_sandbox",
+      "duration": 13,
+      "title": "One recorded real operation.",
+      "narration": "One recorded Nebius Sandbox operation tested all three variants. The repair passed. Both controls failed as expected. Guest networking was disabled."
+    },
+    {
+      "id": "09_unknown",
+      "duration": 12,
+      "title": "Missing evidence needs review.",
+      "narration": "When evidence is missing, LabRepair asks for review. It does not fill the gap with a confident answer. This is a curated local control."
+    },
+    {
+      "id": "10_handover",
+      "duration": 14,
+      "title": "Keep the decision inspectable.",
+      "narration": "Nora records a hold against this exact source. Her decision preserves the checks and reasons. It launches no new job. The evidence receipt is ready for the next reviewer."
+    },
+    {
+      "id": "11_person",
+      "duration": 13,
+      "title": "What changed. What failed. What remains.",
+      "narration": "She can hand over what changed, what failed, and what still needs evidence. One synthetic case, with recorded real generation and isolated execution."
+    },
+    {
+      "id": "12_close",
+      "duration": 7,
+      "title": "Repair the analysis. Preserve the evidence.",
+      "narration": "LabRepair. Repair the analysis. Preserve the evidence."
+    }
+  ],
+  "boundaries": [
+    "Character shots are AI illustration, not customers or physical quantum measurements.",
+    "Actual UI capture is edited replay, not new provider dispatch or a performance benchmark.",
+    "The wrong-pair control is operator-authored.",
+    "The prompt supplies the declared convention; autonomous discovery is not claimed.",
+    "Original 3.40 claim remains NOT_REPRODUCED.",
+    "Local pair matching and recorded protected-test counts are distinct.",
+    "No fresh cloud call, paid TTS or paid resource for this edit."
+  ],
+  "timing_reason": "Measured speech is 98.506 seconds; reduce silent holds while retaining evidence reading time."
+}

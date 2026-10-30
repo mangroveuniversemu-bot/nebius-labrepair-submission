@@ -1,0 +1,88 @@
+{
+  "schema": "LABREPAIR_DEMO_DELIVERY_V3",
+  "observed_at_utc": "2026-10-29T16:11:00.475074+00:00",
+  "production_revision": "2026-10-29",
+  "duration_seconds": 142,
+  "ui_source_commit": "a7cf2f5629975a00511beadd9e2a90eac3349a52",
+  "test_build_source_commit": "3f180b272cbcf13c480f39d1077a3276cd39067a",
+  "github_repository": "mangroveuniversemu-bot/nebius-labrepair",
+  "github_branch": "codex/poc-completion-20261026",
+  "repository_visibility": "PRIVATE",
+  "pull_request": "OPEN_DRAFT_UNMERGED",
+  "drive_files": [
+    {
+      "name": "LabRepair_DEMO_Production_20261029.zip",
+      "id": "10ACSTGqGFQQ76w2c4d9WyA7nOkf8GLwN",
+      "parent_folder_id": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+      "observed_rounded_size": "37.7 MB",
+      "local": {
+        "bytes": 39557704,
+        "sha256": "29c0ad5d2c83eb4ea661ff3775c6b7edce0171f28f77145661e2b76909aa7d78"
+      }
+    },
+    {
+      "name": "LabRepair_DEMO_20261029.mp4",
+      "id": "1mQmK8T2xQulNOPMpk1b6KyQvz7VgZ1oP",
+      "parent_folder_id": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+      "observed_rounded_size": "6.4 MB",
+      "local": {
+        "bytes": 6693616,
+        "sha256": "f455fb15b6b9d0e0ea5e77aec51266e738c95026d0e7ec1f56b1cd0100f4b2be"
+      }
+    },
+    {
+      "name": "LabRepair_Judge_TestBuild_20261029.zip",
+      "id": "1K_mWmtaOM5D4f33PpSLUmx9Rt3ijTBxJ",
+      "parent_folder_id": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+      "observed_rounded_size": "562 KB",
+      "local": {
+        "bytes": 574991,
+        "sha256": "46443379c146a4ba9a82dc4fc2a567cbd805f48a5a0d59ca4f3b838838fdf3d5"
+      }
+    },
+    {
+      "name": "LabRepair_DEMO_20261029.en.srt",
+      "id": "1Wg3RMU7HkvRNYKlF_-s7JZO46BW_Izt1",
+      "parent_folder_id": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+      "observed_rounded_size": "3 KB",
+      "local": {
+        "bytes": 3250,
+        "sha256": "d52fe2d3a9fca66b413d30253d90f0f98f22f19621ff96fea1bf1760f4fd31f6"
+      }
+    },
+    {
+      "name": "LabRepair_natural_narration_20261029.wav",
+      "id": "1yzOa8C46upsNKSf1icthIYKI_VxzOmDL",
+      "parent_folder_id": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+      "observed_rounded_size": "6.5 MB",
+      "local": {
+        "bytes": 6816044,
+        "sha256": "b01042a123484b2ae1b867c87e88696cb51777d03f63bf818ca09f1b2527db7f"
+      }
+    }
+  ],
+  "drive_movie_preview": "PRIVATE_PICTURE_PLAYBACK_OBSERVED_2M22",
+  "drive_movie_observed_progress": "0:13 / 2:22",
+  "drive_access_observation": "Movie and production archive each displayed ONLY_ME; sharing was not changed",
+  "drive_archive_preview": "Readable root listing, not full cloud archive-byte verification",
+  "cloud_original_byte_hash_matching": "NOT_VERIFIED",
+  "local_media_verification": "Full decode PASS, 10 sampled final frames plus 16s homepage inspected, 42 valid subtitle intervals",
+  "package": {
+    "name": "LabRepair_DEMO_Production_20261029.zip",
+    "bytes": 39557704,
+    "sha256": "29c0ad5d2c83eb4ea661ff3775c6b7edce0171f28f77145661e2b76909aa7d78",
+    "entries": 122,
+    "payload_hashes_verified": 121
+  },
+  "voice": "Local Kokoro af_heart; no Windows system speech",
+  "new_model_or_sandbox_calls": 0,
+  "new_paid_calls": 0,
+  "public_submission": "NOT_PERFORMED",
+  "limits": [
+    "One synthetic case; no physical hardware result or customer testimonial.",
+    "Animation figures/documents are cropped or masked; raw generated inputs are illustrative only.",
+    "Saved real execution is separate from curated local controls.",
+    "Hashes establish content integrity, not provider signatures.",
+    "Source test-build precedes final media documentation; UI code is identical to captured source."
+  ]
+}

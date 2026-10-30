@@ -1,0 +1,57 @@
+{
+  "schema": "LABREPAIR_BROWSER_ACCEPTANCE_V1",
+  "date": "2026-10-26",
+  "browser": "ChatGPT in-app browser",
+  "target": "Loopback-only interactive scientific workbench",
+  "data": "New synthetic scientific fixture; no private research",
+  "backend_and_test_revision": "747f7c000cc9de23578bcf08bc6170c4bd8fb0ae",
+  "backend_and_test_python_changed_after_linux_validation": false,
+  "frontend_revision": "Native same-origin attachment link, separately browser-tested",
+  "scenarios": [
+    {
+      "id": "channel-fix",
+      "observed": "Locally consistent; four pair MATCH; original claim not reproduced"
+    },
+    {
+      "id": "same-total",
+      "observed": "Proposal rejected; four DIFF; same S=2.60 does not approve repair"
+    },
+    {
+      "id": "protected-test",
+      "observed": "Proposal rejected; protected file change"
+    },
+    {
+      "id": "stale-source",
+      "observed": "Proposal rejected; stale or wrong source"
+    },
+    {
+      "id": "injected-code",
+      "observed": "Proposal rejected; candidate AST shape not permitted"
+    },
+    {
+      "id": "missing-pair",
+      "observed": "More evidence needed; missing pair evidence"
+    }
+  ],
+  "review_intent": {
+    "choice": "hold-for-evidence",
+    "actor_scope": "Agent UI acceptance test, not human authorization",
+    "changes_claim": false,
+    "executes_candidate": false,
+    "authorizes_payment": false
+  },
+  "download": {
+    "actual_browser_file_observed": true,
+    "bytes": 3657,
+    "sha256": "ca204d7f19718fee34abb315590e8bea2222cabf826119ad95358fcea9660ed1",
+    "review_matches_fresh_tools": true,
+    "intent_matches_fresh_tools": true,
+    "initial_blob_navigation_export": "Did not yield an observed browser artifact; replaced with source-bound HTTP attachment and native link",
+    "raw_file_in_private_review_kit": "browser-evidence-export.json"
+  },
+  "new_paid_resources": false,
+  "nebius_generation": "NOT_RUN",
+  "sandbox_execution": "NOT_RUN",
+  "video_recording": "NOT_RUN",
+  "submission_ready": false
+}

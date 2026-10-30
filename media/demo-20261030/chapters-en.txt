@@ -1,0 +1,12 @@
+00:00 Would you approve it?
+00:05 Two patches. Same total.
+00:09 Check the evidence.
+00:19 The evidence does not match.
+00:30 Same total. Different verdict.
+00:39 The code passed. The claim did not.
+00:48 A bounded model proposal.
+01:04 One recorded real operation.
+01:17 Missing evidence needs review.
+01:29 Keep the decision inspectable.
+01:43 What changed. What failed. What remains.
+01:56 Repair the analysis. Preserve the evidence.

@@ -1,0 +1,52 @@
+{
+  "admission": {
+    "actual_network_requests": 0,
+    "actual_provider_cost": "unknown",
+    "actual_provider_latency": "unknown",
+    "actual_provider_usage": "unknown",
+    "candidate_execution": "NOT_RUN",
+    "claimed_request_cost_upper_bound_usd": "unknown",
+    "credentials_accessed": false,
+    "evidence_kind": "unknown",
+    "evidence_sha256": null,
+    "maximum_authorized_actual_cash_usd": "0",
+    "mode": "OFFLINE_PROVIDER_ADMISSION_EVALUATION",
+    "model": "NOT_RUN",
+    "policy_evaluation": "BLOCKED",
+    "policy_reasons": [
+      "ADMISSION_EVIDENCE_MISSING"
+    ],
+    "request_body_sha256": "6bba81df2620d1890b58fe6bae0b140e07d6ed533d743f2b0216b92db71dc509",
+    "runtime_admission": "BLOCKED",
+    "runtime_reasons": [
+      "INDEPENDENT_ACCOUNT_EVIDENCE_NOT_AUTHENTICATED",
+      "LIVE_HTTP_TRANSPORT_NOT_IMPLEMENTED"
+    ],
+    "schema": "LABREPAIR_PROVIDER_ADMISSION_V1",
+    "status": "BLOCKED"
+  },
+  "evidence_authentication": "NOT_IMPLEMENTED",
+  "generated_at_utc": "2026-10-11T18:55:29.132455+00:00",
+  "hash_meaning": "INTEGRITY_AND_BINDING_ONLY_NOT_AUTHENTICITY",
+  "implementation_sha256": {
+    "labrepair/admission_view.py": "202cb4d524657c226cb2a9cdc6af38545fdc809d487a49fe245c4e456ae755db",
+    "labrepair/candidate_review.py": "87a7c8b5f2faa955581bdb71385f8feb1a67cb5b6bbde297ea28fad1f29fe0bc",
+    "labrepair/provider_admission.py": "497249ef38848a141500bafde6e21825464f6fd66936e8561d54d067e4a94d48",
+    "labrepair/provider_envelope.py": "66739abad37f4a047282a12d4b6fa88002d91cae4001056eddccf37864aba332",
+    "labrepair/q4_pins.py": "49e79dd688744a3d3808445d41d2e5420e5bf0b88c4552e50220972dc5f2f0af",
+    "labrepair/q4_source.py": "20ea777cbe8f3614769c0ffcb19c28ece470091e1f996e43a0e9bcee8ef3d2f5",
+    "requirements.txt": "999f4b2bb47eaf3157c7acb8ff6e3aa9fee9bc35a13d2bedf86faaf29aa49501"
+  },
+  "latest_remote_fixture_match": "UNVERIFIED",
+  "mode": "FRESH_OFFLINE_ADMISSION_REVIEW",
+  "point_in_time_only": true,
+  "schema": "LABREPAIR_ADMISSION_VIEW_V1",
+  "source_bindings": {
+    "policy_sha256": "547f68a1689ca4058022adb9c1c7a6792826ed097dc5f974b284ea39903ba2be",
+    "snapshot_sha256": "8cf0a003ab54e39d292cfc9371f6c7a54fc308ad981218fef0d305da82ad3d05",
+    "source_archive_sha256": "b05e56d9c553ecd7ec19b159501cd966d55eab5b0c43a3c34399e3dbf7ef0b5f",
+    "suite_sha256": "f5e30fdbdf700ed765bd7ed3774e65eb256b3723afc5b4fe990279feb91d987c",
+    "workspace_manifest_sha256": "c76e2ae9adedb72ff5844c4a3bddd3c90b1721a0561ba5dbc4e6503d1e314434"
+  },
+  "source_kind": "PINNED_OLDER_SYNTHETIC_INVOICE_FIXTURE"
+}

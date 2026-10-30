@@ -1,0 +1,45 @@
+{
+  "observed_at_utc": "2026-10-30T02:28:42.267Z",
+  "folder_id": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+  "folder_url": "https://drive.google.com/drive/folders/1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+  "upload_status": "THREE_FILES_SUCCESS_UI_OBSERVED",
+  "sharing_changed": false,
+  "movie_sharing": "ONLY_ME_UI_OBSERVED",
+  "cloud_original_byte_hash_matching": "NOT_VERIFIED",
+  "movie_playback": {
+    "status": "PASS",
+    "duration_display": "2:03",
+    "played_to_seconds": 26,
+    "observed_content": "New comparison hook and recorded workbench UI",
+    "proof_screenshot": "qa/drive-release-preview.png"
+  },
+  "files": [
+    {
+      "id": "1K5BCtsYbbDK-HH_Pa7jQycYtEuY0dTxt",
+      "name": "LabRepair_Release_Review_Package_20261030.zip",
+      "url": "https://drive.google.com/file/d/1K5BCtsYbbDK-HH_Pa7jQycYtEuY0dTxt/view",
+      "parent_folder_id": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+      "observed_row": "LabRepair_Release_Review_Package_20261030.zip\n我\n上午10:20\n16.4 MB\n更多動作 (Alt+A)",
+      "local_bytes": 17165123,
+      "local_sha256": "a9999c2f271068cf0097588641c2a05e11ca8c4839a5457a4c16c567e8533dfe"
+    },
+    {
+      "id": "16ofbITVgLx3SppdYYn3FCGsJjD_Fi8bd",
+      "name": "LabRepair_Interactive_TestBuild_20261030.zip",
+      "url": "https://drive.google.com/file/d/16ofbITVgLx3SppdYYn3FCGsJjD_Fi8bd/view",
+      "parent_folder_id": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+      "observed_row": "LabRepair_Interactive_TestBuild_20261030.zip\n我\n上午10:20\n18 KB\n更多動作 (Alt+A)",
+      "local_bytes": 18519,
+      "local_sha256": "77a71859fa77f99c470d4b1a30ad3bf2aede92d5e79cbeb930e055b37cb69142"
+    },
+    {
+      "id": "10BUUJUjwRobxgxDB3zp77g6DdJPAaxqA",
+      "name": "LabRepair_DEMO_Release_20261030.mp4",
+      "url": "https://drive.google.com/file/d/10BUUJUjwRobxgxDB3zp77g6DdJPAaxqA/view",
+      "parent_folder_id": "1cSP7UzFUJB0E_SoEg6JcJd4bwku0mzrs",
+      "observed_row": "LabRepair_DEMO_Release_20261030.mp4\n我\n上午10:15\n13.2 MB\n更多動作 (Alt+A)",
+      "local_bytes": 13811050,
+      "local_sha256": "d7603453833c30b8a44c64d02cdbd855237a6e9a96c2f746491c91ad574b98a7"
+    }
+  ]
+}
