@@ -1,0 +1,139 @@
+1
+00:00:00,180 --> 00:00:01,194
+Two patches.
+
+2
+00:00:01,194 --> 00:00:02,207
+Same total.
+
+3
+00:00:02,207 --> 00:00:03,728
+One is wrong.
+
+4
+00:00:03,728 --> 00:00:04,235
+LabRepair.
+
+5
+00:00:05,180 --> 00:00:08,017
+AI agents now patch research code.
+
+6
+00:00:09,180 --> 00:00:12,855
+Check only the final number, and a wrong repair
+
+7
+00:00:12,855 --> 00:00:14,080
+can look right.
+
+8
+00:00:14,080 --> 00:00:15,713
+LabRepair checks the evidence.
+
+9
+00:00:19,180 --> 00:00:20,926
+Every pair is different.
+
+10
+00:00:20,926 --> 00:00:22,235
+The headline matches.
+
+11
+00:00:22,235 --> 00:00:23,981
+The evidence does not.
+
+12
+00:00:23,981 --> 00:00:27,473
+A total-only check would miss this wrong repair.
+
+13
+00:00:30,180 --> 00:00:31,987
+Now the declared repair.
+
+14
+00:00:31,987 --> 00:00:33,343
+Same total again.
+
+15
+00:00:33,343 --> 00:00:36,054
+This time, all four pairs agree.
+
+16
+00:00:39,180 --> 00:00:43,496
+NVIDIA Nemotron on Nebius Token Factory proposed this repair.
+
+17
+00:00:43,496 --> 00:00:46,852
+We told it which channels to flip.
+
+18
+00:00:46,852 --> 00:00:51,168
+It returned two arrays; counts and tests stayed protected.
+
+19
+00:00:55,180 --> 00:00:59,738
+Nebius Sandbox took one point two seven three seconds.
+
+20
+00:00:59,738 --> 00:01:02,270
+The repair passed four checks.
+
+21
+00:01:02,270 --> 00:01:04,802
+Both controls failed as expected.
+
+22
+00:01:04,802 --> 00:01:06,828
+Guest networking stayed disabled.
+
+23
+00:01:08,180 --> 00:01:09,457
+The code passed.
+
+24
+00:01:09,457 --> 00:01:13,286
+The original three point four zero claim did not.
+
+25
+00:01:13,286 --> 00:01:14,989
+Those are separate decisions.
+
+26
+00:01:17,180 --> 00:01:19,505
+Missing evidence changes the decision.
+
+27
+00:01:19,505 --> 00:01:24,620
+This local control asks for review instead of inventing a result.
+
+28
+00:01:29,180 --> 00:01:32,506
+Nora records a hold against this exact source.
+
+29
+00:01:32,506 --> 00:01:35,416
+Her decision preserves the checks and reasons.
+
+30
+00:01:35,416 --> 00:01:37,494
+It launches no new job.
+
+31
+00:01:37,494 --> 00:01:41,235
+The evidence receipt is ready for the next reviewer.
+
+32
+00:01:43,180 --> 00:01:46,752
+This synthetic case does not prove a quantum result.
+
+33
+00:01:46,752 --> 00:01:51,119
+It shows how to make a repair, and its limits, inspectable.
+
+34
+00:01:56,180 --> 00:01:57,865
+Try the wrong-pair case.
+
+35
+00:01:57,865 --> 00:02:01,236
+Leave a decision the next reviewer can inspect.

@@ -1,9 +1,31 @@
 # LabRepair — repair the analysis, preserve the evidence
 
-Working draft. Track target: **Coding and Agentic Engineering**. Positioning:
-**verification-first developer tool**. The official track accepts developer
-tools; this draft does not claim an autonomous discovery or agent loop.
-Judge-accessibility and publication gates below remain unresolved.
+Current submission draft, updated **30 October 2026**. The dated filename is
+retained so existing links keep working. This is preparation, not a submitted
+Devpost entry.
+
+Track target: **Coding and Agentic Engineering**. Positioning:
+**verification-first developer tool**, using a bounded, human-authorized,
+single-pass workflow. No autonomous repair loop or scientific discovery is claimed.
+
+## Public links and current gates
+
+- [Public MIT-licensed submission repository](https://github.com/mangroveuniversemu-bot/nebius-labrepair-submission)
+- [Public key-free interactive Demo](https://mangroveuniversemu-bot.github.io/nebius-labrepair-submission/)
+- [Selected public film and canonical media index](../media/demo-public-20261030/README.md)
+- Public YouTube URL: **NOT_UPLOADED**.
+- Event registration: **REGISTER_NOT_JOINED**. The signed-in account's My projects
+  screen requested event registration. Its form is open but not submitted.
+  Owner survey responses and eligibility/rules/terms confirmation remain pending.
+  Builder Program participation is not this event's registration.
+- Devpost entry: **NOT_SUBMITTED**.
+
+Public source/MIT and Pages access were verified on 30 October. All six
+anonymously fetched HTTPS assets returned HTTP 200 with expected hashes. Actual
+browser interaction verified all three cases, result visibility and a 3,615-byte
+evidence download. The original development repository remains private; this
+clean snapshot includes no old private Git/PR history or old private Release
+attachments.
 
 ## Tagline
 
@@ -11,115 +33,159 @@ Two patches. Same total. One is wrong. Check the evidence behind the score.
 
 ## Inspiration
 
-A researcher rarely needs another confident summary. They need to know which
-input, convention or program produced a disputed result—and what a correction
-would actually change. A plausible patch can match the headline number while
-damaging the evidence beneath it. LabRepair makes that disagreement inspectable.
+AI can patch a research program until its headline number looks right. A research
+software engineer still needs to know whether the correction agrees with the
+underlying evidence. A plausible patch can match the score while changing the
+meaning of the result. LabRepair makes that disagreement inspectable before the
+analysis is carried into a research decision.
 
-This is relevant to score-driven AI workflows: a successful headline metric can
-hide a broken underlying condition. Our wrong-pair control demonstrates that
-failure with fixed synthetic inputs. It is not evidence that a deployed model
-performed reward hacking, nor a general detector or prevention benchmark.
+The synthetic Bell–CHSH example makes the problem concrete: two repairs both
+produce 2.60, but only one matches the four registered correlations. This is a
+counterexample to total-only checking, not evidence that a deployed model
+performed reward hacking or that the tool detects it generally.
 
 ## What it does
 
-LabRepair turns a synthetic research-analysis discrepancy into a bounded review.
-It binds a proposed patch to frozen source and policy, protects raw counts and
-tests, recomputes each registered correlation and preserves the original claim.
-A reviewer receives a replayable record and an explicit choice to hold or request
-an isolated rerun. Repair acceptance and scientific-claim acceptance stay separate.
+LabRepair binds a bounded repair to frozen source and policy, protects raw counts
+and tests, recomputes each registered value and preserves the original claim.
+The reviewer can inspect the candidate change, record a hold/review intent and
+download source-bound evidence. Review intent launches no new job and authorizes
+neither execution nor payment.
 
-The new demonstration shows a declared detector-channel mapping omitted from
-analysis code. The original claim is 3.40; the registered synthetic replay is
-2.60. A correct mapping makes every pair agree. A misleading alternative also
-produces 2.60 but fails the pairwise check. Other cases expose protected-test
-tampering, stale source, injected executable instructions and incomplete evidence.
+The public browser provides **exactly three fixed interactive cases**:
+
+| Browser case | Computed S | Registered pair matches | Verdict |
+| --- | ---: | ---: | --- |
+| Declared channel repair | 2.60 | 4/4 | Repair passes |
+| Same-total, wrong-pair control | 2.60 | 0/4 | Repair rejected |
+| Missing pair | unknown | Incomplete | REVIEW |
+
+The original **3.40 claim remains NOT_REPRODUCED in every case**. Browser
+calculation is local, needs no key/account, sends no inference request and does
+not execute candidate Python. The incomplete-evidence sample is a curated browser
+case, not part of the recorded Sandbox experiment.
 
 ## How we built it
 
-The existing MIT-licensed verification core remains unchanged. New code adds a
-source-pinned scientific fixture, bounded proposal review, a local syntax-and-
-arithmetic evaluator, an interactive workbench, review-intent records and an
-evidence download. The browser and local server have no dispatch, payment,
-credential-entry or arbitrary file access route.
+NVIDIA Nemotron 3 Nano on **Nebius Token Factory** proposed two bounded integer
+arrays. The prompt supplied the declared channel convention. The model translated
+that instruction into parameters; it did not discover an unknown convention.
+An operator-owned adapter validates the arrays and constructs an allowlisted
+source change. Arbitrary model-generated Python is not accepted by this intake.
 
-Verified bounded architecture: NVIDIA Nemotron 3 Nano served through Nebius
-Token Factory proposed the two parameter arrays. Independent tools checked the
-source/policy binding, and an explicitly authorized Nebius Sandbox executed the
-three source variants against unchanged protected tests. The correct repair
-passed 4/4 checks; baseline and same-total/wrong-pair controls failed as expected.
-The UI separately labels recorded live results and curated local scenarios.
+The earlier real run then used one disposable **Nebius Sandbox** operation to
+execute baseline, model repair and an operator-written negative control against
+unchanged protected inputs/tests. It was accepted on 26 October UTC / 27 October
+Taipei and took 1.273 seconds, with guest networking disabled:
 
-The recorded prompt explicitly supplied the declared convention that flips the
-A1 channels. The model's task was to translate that instruction into typed
-parameters, not infer the missing convention from unknown experimental evidence.
-We gave the model a deliberately small job; even a correct parameter response
-cannot authorize the original scientific claim. The negative control is
-operator-authored, not a second model generation.
+| Historical Sandbox variant | S | Protected checks passed | Process exit |
+| --- | ---: | ---: | ---: |
+| Baseline | 0.10 | 2/4 | 1, expected failure |
+| Model-proposed repair | 2.60 | 4/4 | 0 |
+| Operator wrong-pair control | 2.60 | 3/4 | 1, expected failure |
 
-## Demonstrated results and limits
+These are three historical cloud variants, with twelve executed checks and three
+intended control failures, **not twelve passing checks**. The cloud negative
+control differs from the browser's 0/4 same-total sample. See the
+[exact Sandbox observation and boundaries](REAL_SANDBOX_VALIDATION_20261027.md).
 
-Six fixed cases distinguish a locally consistent repair from four refused
-proposals and an evidence request. A total-only comparison falsely accepts one
-case in that fixed set; the full pairwise checker refuses it. These are bounded
-synthetic observations, not a production accuracy or security benchmark.
+On **30 October**, the repository's own direct CLI performed one additional real
+Token Factory inference: **HTTP 200, 121 input / 38 completion tokens, 0.9245
+seconds**, followed by deterministic verification. It made one attempt with no
+retry and **no new Sandbox dispatch**. The new request, response, transport and
+review records are [separate exact receipts](../evidence/nebius-direct-cli-20261030-1/).
+Offline replay of a saved result does not become a fresh provider call.
 
-The original scientific claim remains not reproduced after the correct repair.
-Synthetic CHSH arithmetic does not establish a physical Bell experiment,
-loophole closure, quantum advantage or a universal claim.
+The direct CLI has a fixed model/request, at most 64 completion tokens, a
+30-second network timeout, no redirects and no retries. A shared persistent
+ledger permits at most **five attempts / US$0.05 reserved per Taipei day**,
+retaining US$0.01 for each failure or uncertain attempt. The sixth attempt is
+blocked before HTTP. This is an **application reservation envelope, not a
+Nebius account-wide hard spending cap**. Actual billed currency is unknown.
+
+## Verification and supported review path
+
+For **Windows with Python 3.12**, run from the repository root:
+
+```powershell
+python scripts/verify_poc.py
+```
+
+This standard-library product verifier performs no provider call and executes
+no candidate Python. Its recorded Windows increment passed 61 product,
+mocked-transport and budget checks. A new invocation reports its own result.
+The verifier also checks **six curated offline fixtures**, separate from the
+three interactive browser cases and three historical Sandbox variants. Their
+counts are not an accuracy benchmark.
+
+Optional Node.js verification of the portable browser implementation is separate:
+
+```sh
+node judge-site/tests/engine.test.mjs
+node judge-site/tests/visibility.test.mjs
+```
+
+The recorded portable suite passed 18 engine/DOM checks. The full legacy security
+suite requires the reviewed Linux environment and its descriptor/filesystem
+contracts. No macOS verification is claimed. Earlier 27-test evidence at
+`c33fefb` is historical and is not proof of a later checkout's result.
 
 ## Significant work during this competition
 
-Pre-existing: the unchanged EvidencePilot verification core and earlier Q4
-invoice fixtures, with attribution and licenses retained.
+The pre-existing MIT-licensed EvidencePilot verification core remains unchanged,
+with its license, attribution and source pin retained. Earlier Q4 fixtures are
+also identified separately. The original EvidencePilot repositories were not
+modified.
 
-Added: the Nebius-oriented bounded request/admission contract, durable offline
-reservation controls, portable source restoration, authenticated access checks,
-new scientific repair fixture, complete interactive review, counterexample and
-negative cases, downloadable decision evidence and the current test build.
-No old private Git history, unpublished research or real hardware data is used.
+New work adds the Nebius/NVIDIA integration, bounded parameter-to-source repair,
+synthetic research fixture and counterexamples, recorded isolated validation,
+interactive review and evidence download, portable public Pages build, direct
+Token Factory CLI, persistent daily reservations and the current demo film. The
+clean public snapshot contains no old private Git/PR history or old private
+Release attachments. No unpublished research, patent materials or real quantum
+hardware measurements are used.
 
-## Feedback from actual integration
+## Tool feedback
 
-- Model catalogs and Sandbox token permissions are separate checks. Both returned
-  HTTP 200; a later real disposable operation returned SUCCESS and exit 0.
-- A credit balance is insufficient evidence of a no-overdraft spending policy.
-  Clear account-effective spending controls and Sandbox promotion coverage would
-  make small developer experiments easier to approve.
-- Cloud command-network permission and managed destination/secret policy are
-  separate. Diagnosing a permission error before the provider response resolved
-  the separate NVIDIA developer-endpoint smoke without bypassing the proxy.
+- The Token Factory chat-completion interface made a tightly bounded integration
+  practical. Typed Nemotron parameters were easier to validate independently
+  than unconstrained model prose. The successful model was
+  `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B`.
+- Disposable Sandbox execution with networking disabled helped contain the three
+  source variants and preserve inspectable records. Model access and Sandbox
+  permissions remained separate checks.
+- Clear account-effective spending caps, explicit credit coverage and consistently
+  documented cost units would help distinguish a credit balance from a
+  no-overdraft guarantee. We preserve unknown billed currency instead of treating
+  a rounded balance as proof of zero cost.
 
-## Final fields still required
+## Selected movie and remaining steps
 
-Technical recording prerequisite completed: actual Nebius-hosted NVIDIA repair
-generation plus isolated before/after/negative-control execution. See
-[observed results](REAL_SANDBOX_VALIDATION_20261027.md).
+The current selected film is **LabRepair_DEMO_Public_20261030.mp4**, 123 seconds,
+1080p/25 fps, with matching English subtitles and unchanged natural local Kokoro
+male narration. Its corrected end card shows the verified public Demo and clean
+submission repo. Exact artifact names, hashes and provenance belong to the
+[canonical public media index](../media/demo-public-20261030/README.md).
 
-A new 123-second English demo records interactions with the current judge UI
-and is privately saved in Drive. Its local natural male neural voice explicitly
-names Nebius Token Factory and NVIDIA Nemotron and discloses the supplied
-channel convention. The movie combines actual timestamped browser frames,
-explanatory cards and saved real-run evidence; it is not a continuous real-time
-recording or a fresh provider execution. Full-width generated character scenes are labeled illustration; their fictional
-lab screens are scenery, not product or research evidence. Drive picture playback and 2:03
-duration were observed; this revision does not claim cloud-original byte-hash
-matching. See [current private media delivery](DEMO_RELEASE_20261030.md). The
-earlier 155-second, 160-second and 142-second movies are preserved as historical artifacts.
+The movie combines edited actual application footage, explanatory cards, labeled
+AI illustration and saved real-run evidence. It is not continuous real-time
+capture or a fresh Sandbox execution. Historical image content predates the
+latest portable result-scrolling fix. The old
+`media/demo-20261030-live-review/render_live_review.py` is an archived predecessor
+renderer, not the selected-public-film entry point.
 
-1. Confirmed Devpost entry status; Builder Program receipt is not registration.
-2. A judge-accessible test build URL or release, with its access and launch path
-   actually verified. A private archive or a local server alone does not pass.
-3. Public repository URL after the user's separate publication approval.
-4. Public YouTube URL for a video under three minutes, after publication is
-   approved. Existing owner-only Drive delivery is not public video publication.
+Remaining actions are event registration, public YouTube upload/watch-URL
+verification and Devpost entry submission. Open registration/upload dialogs are
+not completed actions. The YouTube channel is signed in, but no video has been
+sent. Required owner answers and binding rules/terms confirmations are pending;
+this draft does not supply them.
 
-Official requirements rechecked 30 October 2026:
-https://nebiusglobalaihackathon.devpost.com/rules
+The [official rules](https://nebiusglobalaihackathon.devpost.com/rules) were checked
+on 30 October: deadline **30 October 2026, 10:00 PDT / 31 October 2026, 01:00
+Taipei**. The public project must remain freely available to judges through the
+judging period ending 23 December 2026, 12:00 Pacific. Track eligibility remains
+the organizer's decision.
 
-Deadline: 30 October 2026 10:00 PDT / 31 October 2026 01:00 Asia/Taipei.
-Current private repository is preparation, not a completed public submission.
-The delivery version is on `codex/poc-completion-20261026` in draft PR #1;
-`main` has not been merged. Re-run verification on the exact release candidate
-before reporting its test status. Earlier 27-test evidence at `c33fefb` is
-historical; it does not establish the later HEAD's current result.
+No physical Bell experiment, loophole closure, quantum advantage, autonomous
+scientific discovery, general repair security benchmark or successful
+reproduction of the original 3.40 claim is established.

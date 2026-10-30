@@ -1,0 +1,26 @@
+{
+  "schema": "LABREPAIR_CURRENT_PUBLIC_FILM_INDEX_V1",
+  "movie_filename": "LabRepair_DEMO_Public_20261030.mp4",
+  "bytes": 12468647,
+  "sha256": "df520bcf87b50d80e34805783462f030f18d386a1009ed4c1696609267e3b887",
+  "duration_seconds": 123,
+  "resolution": [1920, 1080],
+  "fps": 25,
+  "subtitles_filename": "LabRepair_DEMO_Public_20261030.en.srt",
+  "subtitles_sha256": "bc5628c9bbbf6e83eba6fafe1c9678787419a1f6e1c53deebd9be20f0aa4dae3",
+  "pages_url": "https://mangroveuniversemu-bot.github.io/nebius-labrepair-submission/",
+  "repository_url": "https://github.com/mangroveuniversemu-bot/nebius-labrepair-submission",
+  "owner_workspace_delivery_directory": "outputs/nebius-publication-20261030/video/",
+  "private_drive_preview": {
+    "id": "1G4mSo6diaacyMf_W0y93G1jd0uTKhhRk",
+    "url": "https://drive.google.com/file/d/1G4mSo6diaacyMf_W0y93G1jd0uTKhhRk/view",
+    "access": "PRIVATE_NOT_A_PUBLIC_YOUTUBE_SUBMISSION_LINK"
+  },
+  "current_renderer": "render_public_endcard.py",
+  "renderer_scope": "End-card derivative requiring the hash-pinned predecessor MP4, ASS/SRT, Pillow, FFmpeg and explicit font files; not a standalone full-film renderer",
+  "historical_private_renderer": "../demo-20261030-live-review/render_live_review.py",
+  "historical_renderer_is_current": false,
+  "youtube_upload": "NOT_ESTABLISHED",
+  "devpost_submission": "NOT_ESTABLISHED",
+  "new_inference_or_tts_calls": 0
+}

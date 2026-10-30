@@ -1,0 +1,72 @@
+{
+  "schema": "LABREPAIR_PUBLIC_ENDCARD_MEDIA_V1",
+  "created_at_utc": "2026-10-30T09:35:15.606190+00:00",
+  "public_pages_url": "https://mangroveuniversemu-bot.github.io/nebius-labrepair-submission/",
+  "pages_verification_at_utc_from_coordinator": "2026-10-30T09:34:17Z",
+  "repository_url": "https://github.com/mangroveuniversemu-bot/nebius-labrepair-submission",
+  "source_movie_sha256": "9ab36becebe9b4061e9ecc62e607cff88f0b84bc6c9065079d3df4ced56e531a",
+  "source_unchanged": true,
+  "editorial_change_seconds": [
+    116,
+    123
+  ],
+  "picture_before_116": "Same decoded source content, one additional H.264 encode",
+  "reason_for_video_reencode": "Stream-copy cut retained two reordered frames past 116 seconds; avoid stale private-status flash",
+  "prefix_quality": "PSNR y:53.944608 u:62.872747 v:61.328337 average:55.380697 min:46.834925 max:69.985503",
+  "aac_payload_bit_identical": true,
+  "aac_payload_hash": "SHA256=b74d4f16168dccb5bf3e0ba0a3b1a42e84f34336bb90d0762f044817200c40d3",
+  "natural_voice": "Existing local Kokoro am_michael, unchanged",
+  "new_tts_or_provider_calls": 0,
+  "new_paid_resources": false,
+  "full_decode_exit_code": 0,
+  "stream": {
+    "ffmpeg_version": "7.1-essentials_build-www.gyan.dev built with gcc 14.2.0 (Rev1, Built by MSYS2 project)",
+    "codec": "h264",
+    "pix_fmt": "yuv420p(tv, smpte170m/bt709/iec61966-2-1, progressive)",
+    "audio_codec": "aac",
+    "fps": 25.0,
+    "source_size": [
+      1920,
+      1080
+    ],
+    "size": [
+      1920,
+      1080
+    ],
+    "rotate": 0,
+    "duration": 123.0
+  },
+  "subtitle_intervals": 35,
+  "subtitles_unchanged": true,
+  "historical_evidence": "Existing 26 October Token Factory/Sandbox footage unchanged; not a new run or continuous live capture",
+  "files": {
+    "LabRepair_DEMO_Public_20261030.mp4": {
+      "bytes": 12468647,
+      "sha256": "df520bcf87b50d80e34805783462f030f18d386a1009ed4c1696609267e3b887"
+    },
+    "LabRepair_DEMO_Public_20261030.en.srt": {
+      "bytes": 2563,
+      "sha256": "bc5628c9bbbf6e83eba6fafe1c9678787419a1f6e1c53deebd9be20f0aa4dae3"
+    },
+    "public-endcard.png": {
+      "bytes": 106623,
+      "sha256": "ede3b615d2ab9f0115b5aa803b96e750ce4aa4deadfc8a992d198a8b2aab164e"
+    }
+  },
+  "publication": "PREPARED_ONLY_NOT_UPLOADED",
+  "actual_end_frame_visual_review": {
+    "status": "PASS",
+    "reviewed_at_utc": "2026-10-30T09:35:48.388814+00:00",
+    "decoded_final_movie_frame_seconds": [
+      116,
+      118,
+      122
+    ],
+    "public_demo_url_legible": true,
+    "public_submission_repo_url_legible": true,
+    "private_review_label_removed": true,
+    "old_private_repo_url_on_final_card": false,
+    "subtitle_overlap_or_clipping_observed": false,
+    "scope": "Visual inspection of actual decoded final-film end frames, not an OCR or whole-film privacy guarantee."
+  }
+}

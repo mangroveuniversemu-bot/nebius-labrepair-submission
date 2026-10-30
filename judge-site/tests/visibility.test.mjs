@@ -49,6 +49,10 @@ await test("sample selection waits for explicit check and reveals only the new o
   const a=await setup();a.nodes.get("check-wrong").click();await until(()=>a.trace.length===2);a.nodes.get("hold").click();a.samples[0].click();assert.equal(a.trace.length,2);assert.equal(a.nodes.get("download").disabled,true);
   await a.nodes.get("run").click();assert.equal(a.nodes.get("verdict").textContent,"Repair matches");assert.equal(a.trace.length,4);assert.equal(a.trace[2].verdict,"Repair matches");
   a.samples[2].click();await a.nodes.get("run").click();assert.equal(a.nodes.get("verdict").textContent,"More evidence needed");assert.equal(a.trace[4].verdict,"More evidence needed");assert.equal(a.nodes.get("candidate-total").textContent,"—");
+  const rows=a.nodes.get("pair-table").children;
+  assert.deepEqual(rows.map(row=>row.children[2].textContent),["0.70","0.65","0.75","UNKNOWN"]);
+  assert.deepEqual(rows.map(row=>row.children[3].textContent),["MATCH","MATCH","MATCH","UNKNOWN"]);
+  assert.equal(a.nodes.get("candidate-detail").textContent,"3 known pair values · fourth pair unknown");
 });
 await test("failed computation reveals a blocked result without enabling receipts",async()=>{
   const a=await setup({compute:async()=>{throw new Error("CONTROLLED_CHECK_FAILURE");}});a.nodes.get("check-wrong").click();await until(()=>a.trace.length===2);assert.equal(a.trace[0].verdict,"Check unavailable");assert.equal(a.trace[0].busy,"false");assert.equal(a.nodes.get("download").disabled,true);assert.equal(a.nodes.get("hold").disabled,true);assert.equal(a.nodes.get("run-note").textContent,"CONTROLLED_CHECK_FAILURE");

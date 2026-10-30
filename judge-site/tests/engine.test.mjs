@@ -20,13 +20,25 @@ await test("all three results match the current Python reviewer",async()=>{
 await test("wrong total repair fails each pair while preserving the headline total",async()=>{
   const r=await computeReview(source,"same-total");assert.equal(r.candidate_s,2.6);assert.deepEqual(r.candidate_pairs,[.8,.75,.65,-.4]);assert.ok(r.candidate_pairs.every((n,i)=>n!==r.registered_pairs[i]));assert.equal(r.local_result,"REJECTED");
 });
-await test("missing evidence stays unknown instead of becoming zero",async()=>{const r=await computeReview(source,"missing-pair");assert.equal(r.candidate_pairs,null);assert.equal(r.candidate_s,null);assert.equal(r.local_result,"REVIEW");});
+await test("missing evidence retains three known values without inventing the fourth or a total",async()=>{
+  const r=await computeReview(source,"missing-pair");
+  assert.equal(r.candidate_pairs,null);assert.equal(r.candidate_s,null);assert.equal(r.local_result,"REVIEW");
+  assert.deepEqual(r.partial_candidate_pairs,[.70,.65,.75,null]);
+  assert.equal(r.total_only_match,false);assert.equal(r.per_pair_match,false);
+  assert.equal(r.original_claim_unchanged,true);assert.equal(r.claimed_s,3.4);
+  const {receipt_sha256,...content}=r;assert.equal(receipt_sha256,await digest(canonical(content)));
+  const substituted={...content,partial_candidate_pairs:[.70,.65,.75,r.registered_pairs[3]]};
+  assert.notEqual(await digest(canonical(substituted)),receipt_sha256,"Backfilling the absent row must invalidate its receipt");
+  assert.throws(()=>exportReview({...r,partial_candidate_pairs:substituted.partial_candidate_pairs}),/SOURCE_NOT_VERIFIED/);
+});
 await test("tampered raw source is rejected",async()=>{await assert.rejects(verifySource(sourceText.replace('850','851')),/SOURCE_PAYLOAD_CHANGED/);});
 await test("same values but altered source serialization cannot reuse raw-byte pin",async()=>{await assert.rejects(verifySource(JSON.stringify(JSON.parse(sourceText),null,2)),/SOURCE_PAYLOAD_CHANGED/);});
 await test("unverified copied source cannot enter the calculator",async()=>{await assert.rejects(computeReview(JSON.parse(sourceText),"channel-fix"),/SOURCE_NOT_VERIFIED/);assert.throws(()=>{source.counts.rows[0][0]=0;},TypeError);});
 await test("receipt binds source, candidate and actual computed result",async()=>{
   const r=await computeReview(source,"channel-fix");const {receipt_sha256,...content}=r;
   assert.equal(receipt_sha256,await digest(canonical(content)));assert.equal(r.source_payload_sha256,PINS.source_sha256);assert.equal(r.candidate_source_sha256,await digest(r.candidate_source));assert.equal(r.snapshot_sha256,refs["channel-fix"].snapshot_sha256);
+  assert.equal(r.receipt_sha256,"82987c0d0bb0e5f416a96910991cde872d7d47e5f201712071516bb8214aeccf","Complete case A must retain its published receipt");
+  assert.equal((await computeReview(source,"same-total")).receipt_sha256,"c10b563970962938abd71e1abf776cbcbf48015aebdc9650337d4262eff7785f","Complete case B must retain its published receipt");
 });
 await test("stale receipt and cross-scenario intent are refused",async()=>{
   const a=await computeReview(source,"channel-fix"),b=await computeReview(source,"same-total");

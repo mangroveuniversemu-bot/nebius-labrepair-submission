@@ -62,13 +62,14 @@ function decimal(value) {
   if (!/^-?\d+(\.\d+)?$/.test(value)) throw new Error("OFFSET_INVALID");
   const digits=value.split("."); return fraction(BigInt(digits.join("")),10n**BigInt(digits[1]?.length||0));
 }
+function pairValue(row, sign, offset) {
+  if (row.length!==4 || row.some(x=>!Number.isSafeInteger(x)||x<0)) throw new Error("INVALID_COUNTS");
+  const r=row.map(BigInt), sum=r.reduce((a,b)=>a+b,0n);
+  return add(scale(fraction(r[0]-r[1]-r[2]+r[3],sum),sign),decimal(offset));
+}
 function pairValues(rows, signs, offsets) {
   if (rows.length!==4) throw new Error("MISSING_PAIR_EVIDENCE");
-  return rows.map((row,i)=>{
-    if (row.length!==4 || row.some(x=>!Number.isSafeInteger(x)||x<0)) throw new Error("INVALID_COUNTS");
-    const r=row.map(BigInt), sum=r.reduce((a,b)=>a+b,0n);
-    return add(scale(fraction(r[0]-r[1]-r[2]+r[3],sum),signs[i]),decimal(offsets[i]));
-  });
+  return rows.map((row,i)=>pairValue(row,signs[i],offsets[i]));
 }
 const total = (pairs, terms) => pairs.reduce((s,p,i)=>add(s,scale(p,terms[i])),fraction(0n));
 
@@ -111,6 +112,12 @@ export async function computeReview(source, scenario) {
     physical_interpretation:"NOT_ESTABLISHED_SYNTHETIC_DATA",
     limitations:["Only three fixed, synthetic candidates are supported.","Candidate Python is never executed or interpreted by this page.","Hashes bind content; they do not authenticate a provider or reviewer.","Saved cloud execution is separate from this browser calculation."]
   };
+  if (!candidate) {
+    // Bind only the available candidate rows. Never use the registered reference
+    // to fill a missing observation or promote a partial vector into a total.
+    report.partial_candidate_pairs=data.pairs.map((_,i)=>i<rows.length
+      ? number(pairValue(rows[i],c.signs[i],c.offsets[i])) : null);
+  }
   report.receipt_sha256=await digest(canonical(report)); freeze(report); reviews.add(report); return report;
 }
 export function makeIntent(review, choice, expectedReceipt) {

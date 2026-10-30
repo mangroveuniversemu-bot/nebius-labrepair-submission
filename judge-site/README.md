@@ -24,6 +24,13 @@ and the CHSH total from fixed synthetic counts using exact rational arithmetic:
 | Same-total control | 0.80, 0.75, 0.65, -0.40 | 2.60 | FAIL |
 | Missing pair | No complete four-pair result | unknown | REVIEW |
 
+For the missing-pair case, the table retains the three computed candidate values
+`0.70`, `0.65`, `0.75`; only the fourth row is `UNKNOWN`. These values are computed
+from the three available candidate rows, not copied from the registered reference.
+The exported browser receipt binds them as `partial_candidate_pairs`, while its
+complete `candidate_pairs` and `candidate_s` remain null. The original claim and
+REVIEW verdict are unchanged; no subtotal is presented as a complete result.
+
 The original claim remains 3.40 / NOT_REPRODUCED. A repair cannot establish a
 physical quantum result. Candidate Python is displayed as text, never executed.
 Only these three fixed candidates are supported; this is not a general Python

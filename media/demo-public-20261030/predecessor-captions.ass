@@ -1,0 +1,45 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,41,&H00F0F5F1,&H00F0F5F1,&H0010150B,&H0010150B,0,0,0,0,100,100,0,0,1,2,1,2,110,110,39,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.18,0:00:01.19,Default,,0,0,0,,Two patches.
+Dialogue: 0,0:00:01.19,0:00:02.21,Default,,0,0,0,,Same total.
+Dialogue: 0,0:00:02.21,0:00:03.73,Default,,0,0,0,,One is wrong.
+Dialogue: 0,0:00:03.73,0:00:04.23,Default,,0,0,0,,LabRepair.
+Dialogue: 0,0:00:05.18,0:00:08.02,Default,,0,0,0,,AI agents now patch research code.
+Dialogue: 0,0:00:09.18,0:00:12.85,Default,,0,0,0,,Check only the final number, and a wrong repair
+Dialogue: 0,0:00:12.85,0:00:14.08,Default,,0,0,0,,can look right.
+Dialogue: 0,0:00:14.08,0:00:15.71,Default,,0,0,0,,LabRepair checks the evidence.
+Dialogue: 0,0:00:19.18,0:00:20.93,Default,,0,0,0,,Every pair is different.
+Dialogue: 0,0:00:20.93,0:00:22.24,Default,,0,0,0,,The headline matches.
+Dialogue: 0,0:00:22.24,0:00:23.98,Default,,0,0,0,,The evidence does not.
+Dialogue: 0,0:00:23.98,0:00:27.47,Default,,0,0,0,,A total-only check would miss this wrong repair.
+Dialogue: 0,0:00:30.18,0:00:31.99,Default,,0,0,0,,Now the declared repair.
+Dialogue: 0,0:00:31.99,0:00:33.34,Default,,0,0,0,,Same total again.
+Dialogue: 0,0:00:33.34,0:00:36.05,Default,,0,0,0,,This time, all four pairs agree.
+Dialogue: 0,0:00:39.18,0:00:43.50,Default,,0,0,0,,NVIDIA Nemotron on Nebius Token Factory proposed this repair.
+Dialogue: 0,0:00:43.50,0:00:46.85,Default,,0,0,0,,We told it which channels to flip.
+Dialogue: 0,0:00:46.85,0:00:51.17,Default,,0,0,0,,It returned two arrays; counts and tests stayed protected.
+Dialogue: 0,0:00:55.18,0:00:59.74,Default,,0,0,0,,Nebius Sandbox took one point two seven three seconds.
+Dialogue: 0,0:00:59.74,0:01:02.27,Default,,0,0,0,,The repair passed four checks.
+Dialogue: 0,0:01:02.27,0:01:04.80,Default,,0,0,0,,Both controls failed as expected.
+Dialogue: 0,0:01:04.80,0:01:06.83,Default,,0,0,0,,Guest networking stayed disabled.
+Dialogue: 0,0:01:08.18,0:01:09.46,Default,,0,0,0,,The code passed.
+Dialogue: 0,0:01:09.46,0:01:13.29,Default,,0,0,0,,The original three point four zero claim did not.
+Dialogue: 0,0:01:13.29,0:01:14.99,Default,,0,0,0,,Those are separate decisions.
+Dialogue: 0,0:01:17.18,0:01:19.50,Default,,0,0,0,,Missing evidence changes the decision.
+Dialogue: 0,0:01:19.50,0:01:24.62,Default,,0,0,0,,This local control asks for review instead of inventing a result.
+Dialogue: 0,0:01:29.18,0:01:32.51,Default,,0,0,0,,Nora records a hold against this exact source.
+Dialogue: 0,0:01:32.51,0:01:35.42,Default,,0,0,0,,Her decision preserves the checks and reasons.
+Dialogue: 0,0:01:35.42,0:01:37.49,Default,,0,0,0,,It launches no new job.
+Dialogue: 0,0:01:37.49,0:01:41.24,Default,,0,0,0,,The evidence receipt is ready for the next reviewer.
+Dialogue: 0,0:01:43.18,0:01:46.75,Default,,0,0,0,,This synthetic case does not prove a quantum result.
+Dialogue: 0,0:01:46.75,0:01:51.12,Default,,0,0,0,,It shows how to make a repair, and its limits, inspectable.
+Dialogue: 0,0:01:56.18,0:01:57.87,Default,,0,0,0,,Try the wrong-pair case.
+Dialogue: 0,0:01:57.87,0:02:01.24,Default,,0,0,0,,Leave a decision the next reviewer can inspect.

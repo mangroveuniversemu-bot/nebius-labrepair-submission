@@ -1,3 +1,7 @@
+# ARCHIVE: historical private review cut; not the current public film.
+# Current film and derivative source: ../demo-public-20261030/README.md
+# Its original private ending below is intentionally preserved.
+
 """Cinematic LabRepair edit: motivated shots, real UI, labeled illustration.
 
 Readonly sources are the existing browser capture and user-supplied animations.

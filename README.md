@@ -25,22 +25,39 @@ reviewed hashes, all three cases behaved correctly, the first button revealed
 its result, and an actual review download succeeded. The saved cloud record is
 a separate historical execution, not a new model call by this page.
 
+## Windows quickstart — Python 3.12
+
+From the repository root, run the Windows product verification entry point:
+
+```powershell
+python scripts/verify_poc.py
+```
+
+It uses the Python standard library and checks the local product, recorded-result
+replay, mocked transport and daily budget controls. It makes no provider or
+Sandbox request and does not execute candidate Python. The recorded Windows
+increment passed 61 checks; a fresh invocation reports its own results.
+
+To open the original local workbench:
+
+```powershell
+python -m labrepair.serve --port 8770
+```
+
+Open **http://127.0.0.1:8770/**. The public Pages demo above needs neither Python
+nor Node.js. Optional Node.js checks are listed separately under verification.
+The **full legacy security suite requires the reviewed Linux environment** and
+its descriptor/filesystem guarantees. No macOS verification is claimed.
+
+## Portable browser build
+
 The [portable browser review](judge-site/README.md) is the shortest path: open
 its built `index.html`, select the wrong-pair repair, and check the evidence.
 It needs no API key and performs fixed-case arithmetic in your browser. The
 separate saved Nebius records remain historical executions.
 
-For the original Python workbench and source inspection:
-
-From this checkout, use **Python 3.12**; the review needs only its standard library:
-
-```sh
-python -m labrepair.serve --port 8770
-```
-
-Open **http://127.0.0.1:8770/**. No key, account, package installation or cloud call
-is needed. Local review checks syntax and arithmetic without executing candidate
-Python. Try the valid repair, same-total control and incomplete-evidence case.
+The Python workbench uses the same key-free local syntax/arithmetic review.
+Try the valid repair, same-total control and incomplete-evidence case.
 
 ## Live mode with your own key
 
@@ -129,24 +146,35 @@ passing checks. These are fixed synthetic cases, not an accuracy benchmark.
 - [Judge review guide](docs/POC_REVIEW_GUIDE.md)
 - [Actual model response and limits](docs/REAL_GENERATION_20261026.md)
 - [Actual Sandbox results and receipt boundaries](docs/REAL_SANDBOX_VALIDATION_20261027.md)
-- [New 123-second narration refinements](media/demo-20261030-live-review/NARRATION_REFINEMENT.md)
-- [Published rc.1 film and portable build](docs/DEMO_RELEASE_20261030.md)
+- [Selected 123-second public film and media provenance](media/demo-public-20261030/README.md)
+- [Archived predecessor narration refinements](media/demo-20261030-live-review/NARRATION_REFINEMENT.md)
+- [Historical private rc.1 film and portable-build notes](docs/DEMO_RELEASE_20261030.md)
 - [Previous cinematic review cut](docs/DEMO_MEDIA_20261030.md)
 - [Previous 142-second UI demo](docs/DEMO_MEDIA_20261029.md)
 - [Design research and reference decisions](docs/DESIGN_REVIEW_20261029.md)
 - [Previous 160-second current-UI demo and natural narration](docs/DEMO_MEDIA_20261028.md)
 - [Historical 155-second demo delivery](docs/DEMO_MEDIA_20261027.md)
 
-To run the current checkout's local product checks without a provider call:
+The Windows product verification command is the quickstart near the top of this
+README. **Optional Node.js checks** cover the portable browser engine and
+result-visibility contract separately:
 
 ```sh
-python scripts/verify_poc.py
+node judge-site/tests/engine.test.mjs
+node judge-site/tests/visibility.test.mjs
 ```
 
 The published 27-test result belongs to earlier commit `c33fefb`; it is historical,
 not proof that a later HEAD passed. Full legacy security verification requires
 the reviewed Linux environment. [Archived commands and design notes](docs/ARCHIVED_VALIDATION.md)
 are separate from this quickstart.
+
+The local Python verifier contains **six curated offline fixtures**. They are a
+different set from the **three interactive browser cases**, and from the **three
+historically executed Sandbox variants**. Their counts and outcomes must not be
+combined into an accuracy score. The browser's same-total sample has 0/4 pair
+matches and is rejected; the historical cloud negative control passed 3/4 protected checks
+and correctly failed overall.
 
 The Live-mode increment on 30 October ran [61 product, mocked-transport and persistent-budget checks](evidence/poc_daily_budget_20261030.json),
 the portable build's [18 offline checks](judge-site/test-result.json), and three
@@ -166,7 +194,16 @@ Release assets are not published here. Earlier dated private-release documents
 are historical records, not the current access status.
 
 The public Demo is live on GitHub Pages. The original development repo stays
-private. Public YouTube upload and confirmed Devpost submission remain pending.
+private. The selected public film is 123 seconds with the actual public URLs on
+its end card. Its [canonical media index](media/demo-public-20261030/README.md)
+identifies the current artifact; `media/demo-20261030-live-review/render_live_review.py`
+is an archived predecessor renderer.
+
+The current Devpost account is **REGISTER_NOT_JOINED**: the event registration
+form was opened but not submitted. Public YouTube upload is **NOT_UPLOADED**, and
+Devpost entry is **NOT_SUBMITTED**. An open upload/registration dialog is not a
+completed action. Owner survey responses and action-time rules/terms confirmation
+remain pending.
 See [submission preparation](docs/SUBMISSION_DRAFT_20261026.md).
 
 Automatic provider dispatch stays disabled. Existing saved runs do not establish

@@ -1,0 +1,58 @@
+{
+  "schema": "LABREPAIR_PUBLIC_REVIEW_POLISH_V1",
+  "recorded_at_utc": "2026-10-30T10:10:03.097538+00:00",
+  "basis": "Actual successful build and Node test commands executed by the coordinator in this increment",
+  "status": "PASS",
+  "node": "v24.22.1",
+  "checks": {
+    "engine": 12,
+    "dom_contract": 6
+  },
+  "commands": [
+    "python judge-site/build.py",
+    "node judge-site/tests/engine.test.mjs",
+    "node judge-site/tests/visibility.test.mjs"
+  ],
+  "case_c": {
+    "partial_candidate_pairs": [
+      0.7,
+      0.65,
+      0.75,
+      null
+    ],
+    "candidate_pairs": null,
+    "candidate_s": null,
+    "result": "REVIEW",
+    "missing_row_backfill_negative_control": "REJECTED_BY_RECEIPT_BINDING"
+  },
+  "case_a_b_published_receipts": "UNCHANGED",
+  "source_pins": {
+    "policy_sha256": "9c39f245e283a1003b921149303728fe62625c7b009f5b7da42399530c12ff1a",
+    "recorded_sha256": "f36d0c1fb08df6d10976471a7fa5527f30a07893f30060fc6edf6b73359b99a9",
+    "snapshot_sha256": "2394f56595e8a5775381b440d3e039a0bd1979615c3509aeffa78d9955039af9",
+    "source_files": {
+      "analysis.py": "d53efa1e35238352505388a975685412509b784e0528878ef524ed8e82071879",
+      "counts.json": "ebe15738fd6443328681cc53f549d7d7d299b4c1958e2db7082d0de032c12eca",
+      "test_analysis.py": "d83e65c56f5244e61a49c2d300fe8df2e29f63f6aa7cba97fc1c2daca4b7e3e4"
+    },
+    "source_sha256": "991f570692eb8ef4dbe06b62318d5d3ac93318ccd44e9e540236568020413662"
+  },
+  "built_assets": {
+    "app.js": "d3e56b74f513c18349301c3505cb3058dfded9354a5f5fa1dff67b6acb80f947",
+    "data.js": "b9599fee32209384a816e26637fe89200ebb5422bbe6ed0bf7a8c3a8a822faaf",
+    "engine.js": "2872f95ce570153801c972b9a9d11fc973f09ced1f31cb92011cddc8366ceb85",
+    "index.html": "fa248f6ef17d9f9c38f05c7cc8bf046af5136903f32379f82a1ee00f9d66183e",
+    "integrity.js": "f6a1c67e8e264e9f5b5559c98b89798e3e894cbc10817813a20be4d185610391",
+    "style.css": "46b10a9eee88113b070465b2803bd069959737eba33057fac2f7e7a0aa259a70"
+  },
+  "new_provider_calls": 0,
+  "paid_resources_created": false,
+  "hosted_revision_browser_check": "PENDING_NEW_PAGES_DEPLOYMENT",
+  "current_film_sha256": "df520bcf87b50d80e34805783462f030f18d386a1009ed4c1696609267e3b887",
+  "source_sha256": {
+    "judge-site/src/engine.js": "2872f95ce570153801c972b9a9d11fc973f09ced1f31cb92011cddc8366ceb85",
+    "judge-site/src/app.js": "d3e56b74f513c18349301c3505cb3058dfded9354a5f5fa1dff67b6acb80f947",
+    "judge-site/tests/engine.test.mjs": "95b50797af2d8454c2dd2ade52edf4340d6b8bb1423aefdb3848c61980244bd8",
+    "judge-site/tests/visibility.test.mjs": "fd23bf22f4e468602d8bda4f0eedbd013acf9437232957d34ddc643b436f4cf9"
+  }
+}

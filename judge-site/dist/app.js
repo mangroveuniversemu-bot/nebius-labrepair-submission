@@ -10,7 +10,27 @@ function controls(){byId("run").disabled=!source||busy;byId("check-wrong").disab
 function clear(){epoch++;review=null;intent=null;byId("candidate-total").textContent="—";byId("candidate-detail").textContent="No repair checked yet";byId("verdict").textContent="Awaiting review";delete byId("verdict").parentElement.dataset.state;byId("verdict-detail").textContent="Select a sample and check its evidence.";chip("result-state","READY","READY");byId("pair-table").replaceChildren();const r=document.createElement("tr"),c=document.createElement("td");c.colSpan=4;c.textContent="Run a check to compare the evidence.";r.append(c);byId("pair-table").append(r);byId("trap").textContent="A matching total is necessary. It is not sufficient.";byId("intent-note").textContent="Review intent only. No cloud action.";byId("receipt").textContent="—";byId("after-source").textContent="Check a repair first.";samples.forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.case===selected)));controls();}
 function select(id){if(!Object.hasOwn(CASES,id)||busy)return;selected=id;clear();byId("run-note").textContent="Sample selected. Check its evidence when ready.";}
 function cell(row,text,cls){const td=document.createElement("td");td.textContent=text;if(cls)td.className=cls;row.append(td);}
-function render(r){review=r;intent=null;const state={LOCAL_SEMANTIC_MATCH:"PASS",REJECTED:"FAIL",REVIEW:"REVIEW"}[r.local_result];const labels={PASS:"Repair matches",FAIL:"Repair rejected",REVIEW:"More evidence needed"};chip("result-state",state,state);byId("verdict").parentElement.dataset.state=state;byId("verdict").textContent=labels[state];byId("verdict-detail").textContent=state==="PASS"?"All four pairs agree. Original claim unchanged.":state==="FAIL"?"The total matches. The pair evidence does not.":"A pair is missing. No complete total is computed.";byId("candidate-total").textContent=format(r.candidate_s);byId("candidate-detail").textContent=state==="PASS"?"4 of 4 pair values match":state==="FAIL"?"0 of 4 pair values match":"Incomplete four-pair evidence";byId("pair-table").replaceChildren();r.pairs.forEach((pair,i)=>{const row=document.createElement("tr"),n=r.candidate_pairs?.[i],same=n!=null&&n===r.registered_pairs[i];cell(row,pair);cell(row,format(r.registered_pairs[i]));cell(row,format(n));cell(row,n==null?"UNKNOWN":same?"MATCH":"DIFF",n==null?"unknown":same?"ok":"bad");byId("pair-table").append(row);});byId("trap").textContent=state==="FAIL"?"Both repairs produce 2.60. This one changes every pair correlation, so the verifier rejects it.":state==="PASS"?"The declared channel repair matches every registered pair. That still cannot establish the original scientific claim.":"The fourth pair is absent. A plausible repair cannot stand in for missing evidence.";byId("after-source").textContent=r.candidate_source;byId("receipt").textContent=r.receipt_sha256;byId("run-note").textContent="Check complete · exact browser arithmetic · no cloud call";controls();}
+function render(r){
+  review=r;intent=null;
+  const state={LOCAL_SEMANTIC_MATCH:"PASS",REJECTED:"FAIL",REVIEW:"REVIEW"}[r.local_result];
+  const labels={PASS:"Repair matches",FAIL:"Repair rejected",REVIEW:"More evidence needed"};
+  chip("result-state",state,state);byId("verdict").parentElement.dataset.state=state;
+  byId("verdict").textContent=labels[state];
+  byId("verdict-detail").textContent=state==="PASS"?"All four pairs agree. Original claim unchanged.":state==="FAIL"?"The total matches. The pair evidence does not.":"The fourth pair is missing. No complete total is computed.";
+  byId("candidate-total").textContent=format(r.candidate_s);
+  byId("candidate-detail").textContent=state==="PASS"?"4 of 4 pair values match":state==="FAIL"?"0 of 4 pair values match":"3 known pair values · fourth pair unknown";
+  const availablePairs=r.candidate_pairs??r.partial_candidate_pairs;
+  byId("pair-table").replaceChildren();
+  r.pairs.forEach((pair,i)=>{
+    const row=document.createElement("tr"),n=availablePairs?.[i],same=n!=null&&n===r.registered_pairs[i];
+    cell(row,pair);cell(row,format(r.registered_pairs[i]));cell(row,n==null?"UNKNOWN":format(n));
+    cell(row,n==null?"UNKNOWN":same?"MATCH":"DIFF",n==null?"unknown":same?"ok":"bad");
+    byId("pair-table").append(row);
+  });
+  byId("trap").textContent=state==="FAIL"?"Both repairs produce 2.60. This one changes every pair correlation, so the verifier rejects it.":state==="PASS"?"The declared channel repair matches every registered pair. That still cannot establish the original scientific claim.":"The fourth pair is absent. The three available values cannot stand in for missing evidence.";
+  byId("after-source").textContent=r.candidate_source;byId("receipt").textContent=r.receipt_sha256;
+  byId("run-note").textContent="Check complete · exact browser arithmetic · no cloud call";controls();
+}
 function revealResult(){
   const reducedMotion=typeof window.matchMedia==="function"&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   // Focus announces the new verdict; prevent native focus scrolling from
